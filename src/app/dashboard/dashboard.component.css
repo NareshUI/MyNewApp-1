@@ -1,0 +1,18 @@
+.custom-container{
+    background-color: #a9a9a9ab;
+    padding: 18px;
+    border-radius: 5px;
+}
+.control-label{
+    font-size: 14px;
+    font-weight: 500;
+    color: green;
+}
+.form-select:focus {
+    box-shadow: none;
+}
+.btnGrp{
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+}

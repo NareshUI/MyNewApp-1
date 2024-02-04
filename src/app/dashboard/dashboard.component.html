@@ -1,0 +1,153 @@
+
+<div class="row custom-container">
+<form [formGroup]="suveyForm">
+  <div class="col-md-12">
+    <div class="row">
+      <div class="col-md-1">
+        <label class="control-label">Question</label>
+      </div>
+      <div class="col-md-8">
+        <select class="form-select form-select-sm" aria-label="Default select example" formControlName = "question">
+          <option >Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+      <div class="col-md-1">
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" data-size="sm" checked>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-md-4 row">
+        <div class="col-md-3">
+          <label class="control-label">State</label>
+        </div>
+        <div class="col-md-9">
+          <select class="form-select form-select-sm" aria-label="Default select example" disabled>
+            <option value="1" selected>Andhara Pradesh</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-4 row">
+        <div class="col-md-3">
+          <label class="control-label">District</label>
+        </div>
+        <div class="col-md-9">
+          <select class="form-select form-select-sm" aria-label="Default select example">
+            <option selected>Select the District</option>
+            <option *ngFor="let dist of districtList">{{dist.districtValueHindi}}</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-4 row">
+        <div class="col-md-3">
+          <label class="control-label">Parlamemnt</label>
+        </div>
+        <div class="col-md-9">
+          <select class="form-select form-select-sm" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-md-4 row">
+        <div class="col-md-3">
+          <label class="control-label">Constituency</label>
+        </div>
+        <div class="col-md-9">
+          <select class="form-select form-select-sm" aria-label="Default select example">
+            <option selected>Select the Constituency</option>
+            <option *ngFor="let const of constutions">{{const.constutionHindi}}</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-4 row">
+        
+      </div>
+      <div class="col-md-4 row">
+        <div class="col-md-3">
+          <label class="control-label">Village/Ward</label>
+        </div>
+        <div class="col-md-9">
+          <select class="form-select form-select-sm" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-md-4 row">
+        <div class="col-md-3">
+          <label class="control-label">From Date</label>
+        </div>
+        <div class="col-md-9">
+          <input type="date" class="form-control form-control-sm"/>
+        </div>
+      </div>
+      <div class="col-md-4 row">
+        <div class="col-md-3">
+          <label class="control-label">To Date</label>
+        </div>
+        <div class="col-md-9">
+          <input type="date" class="form-control form-control-sm"/>
+        </div>
+      </div>
+      <div class="col-md-4 row">
+       <div class="btnGrp">
+          <button type="button" class="btn btn-primary btn-sm" (click)="printPage()">Print </button>
+          <button type="button" class="btn btn-success btn-sm">Search </button>
+          <button type="button" class="btn btn-outline-success btn-sm">Clear </button>
+       </div>
+      </div>
+    </div>
+  </div>
+</form>
+
+  
+  
+</div>
+
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <div id="chart-column"></div>
+  </div>
+ 
+</div>
+
+<div class="row">
+  <!-- <div class="col-md-3" *ngFor="let student of studentArray;index as i">
+      <div class="card">
+          <div class="card-header">Name : {{student.studName}}</div> 
+          <div class="card-body">Father Name : {{student.fName}}</div> 
+          <div class="card-footer" style="display: flex;justify-content: space-around;">
+              <button class="btn btn-primary" (click)="viewDetails(mymodal,student)">View</button>
+              <button class="btn btn-primary" (click)="viewDetails(marksmodal,student)">Marks</button>
+              <button class="btn btn-primary" (click)="viewDetails(profilemmodal,student)">Profile</button>
+          </div>
+        </div>
+  </div> -->
+</div>
+
+<ng-template #mymodal let-modal>
+   <app-modal [data]="currentStudent"></app-modal>
+</ng-template>
+<ng-template #marksmodal let-modal>
+  <app-modal [data]="currentStudent"></app-modal>
+</ng-template>
+<ng-template #profilemmodal let-modal>
+  <app-modal [data]="currentStudent"></app-modal>
+</ng-template>
+
