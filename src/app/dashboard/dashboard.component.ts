@@ -23,6 +23,10 @@ export class DashboardComponent implements OnInit {
     { 'studNo' : 102 , 'studName' : "Naresh" , 'fName':'Paul', 'class' : 9 , 'marks': 90, 'address' : " Dor no 2, abc Street , Vizag, AndhraPradesh   " },
     { 'studNo' : 103 , 'studName' : "suresh" , 'fName':'Smith', 'class' : 8 , 'marks': 80 , 'address' : "Dor no 3, xyz Street , UK"  },
    ];
+  questionsList: any =[];
+  parlimentList: any;
+  selectedDistrict: any;
+  selectedParliment: any;
   constructor(private modalService:NgbModal,private httpService : HttpClient,public fb: FormBuilder) { }
 
   ngOnInit(): void {
@@ -134,9 +138,22 @@ export class DashboardComponent implements OnInit {
   loadData(){
     this.httpService.get(this.url).subscribe((resp :any) =>{
       if(resp){
+        this.questionsList = resp.questionsList;
         this.districtList = resp.districtList;
+        this.parlimentList = resp.parlimentList;
         this.constutions = resp.constutions;
       }
     })
+  }
+  districtChange(event:any){
+    this.selectedDistrict = event.target.value;
+    this.parlimentList = this.parlimentList.filter((p:any) => p.districtNo === this.selectedDistrict);
+
+  }
+  parlimentChange(event:any){
+    // debugger
+    this.selectedParliment = event.target.value;
+    this.constutions = this.constutions.filter((c:any) => c.parlimentNo === this.selectedParliment);
+
   }
 }
