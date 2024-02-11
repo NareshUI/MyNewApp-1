@@ -18,24 +18,22 @@ export class DashboardComponent implements OnInit {
   districtList :any=[];
   constutions :any =[];
   suveyForm!:FormGroup;
-  studentArray = [ 
-    { 'studNo' : 101 , 'studName' : "Satish" , 'fName':'John', 'class' : 10 , 'marks': 100, 'address' : "Dor no 1, some Street ,Hyderabad,Telangana Hyderabad and Hyderabad"},
-    { 'studNo' : 102 , 'studName' : "Naresh" , 'fName':'Paul', 'class' : 9 , 'marks': 90, 'address' : " Dor no 2, abc Street , Vizag, AndhraPradesh   " },
-    { 'studNo' : 103 , 'studName' : "suresh" , 'fName':'Smith', 'class' : 8 , 'marks': 80 , 'address' : "Dor no 3, xyz Street , UK"  },
-   ];
+  today: string = "";
   questionsList: any =[];
   parlimentList: any;
   selectedDistrict: any;
   selectedParliment: any;
+  chart : any;
   constructor(private modalService:NgbModal,private httpService : HttpClient,public fb: FormBuilder) { }
 
   ngOnInit(): void {
+    this.today = new Date().toISOString().split('T')[0];
     this.suveyForm =  new FormGroup({
       'question':new FormControl(null,[Validators.required])
     });
     
     this.loadData();
-    this.createChartColumn();
+   
   }
 
   viewDetails(content:any,item:any){
@@ -56,21 +54,31 @@ export class DashboardComponent implements OnInit {
     }
   }
 
-  private createChartColumn(): void {
+  questionChange(eve:any){
+    if(this.chart){
+      this.chart.destroy();
+    }
+    if(eve.target.selectedIndex > 0){
+      let data = this.questionsList[eve.target.selectedIndex].data;
+      this.createChartColumn(data);
+    }
+  }
+
+  private createChartColumn(seriesdata:any): void {
     let date = new Date();
     const data: any[] = [];
     let colors = ['#00FF00','#FF00BF','#FF001B','#FG00C0','#FD0090']
 
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < seriesdata.length; i++) {
       date.setDate(new Date().getDate() + i);
       data.push({
-        name: `${date.getDate()}/${date.getMonth() + 1}`,
+        name: seriesdata[i],
         y: this.getRandomNumber(0, 1000),
         color: colors[i],
       });
     }
 
-    const chart = Highcharts.chart(
+    this.chart = Highcharts.chart(
       'chart-column' as any,
       {
         chart: {
@@ -100,6 +108,7 @@ export class DashboardComponent implements OnInit {
         },
         plotOptions: {
           bar: {
+            pointWidth: 15,
             dataLabels: {
               enabled: true,
             },
@@ -107,28 +116,22 @@ export class DashboardComponent implements OnInit {
         },
         series: [
           {
-            name: 'Amount',
+            name: 'Poll Survey',
             data,
           },
         ],
       } as any
     );
-
-    // setInterval(() => {
-    //   date.setDate(date.getDate() + 1);
-    //   chart.series[0].addPoint(
-    //     {
-    //       name: `${date.getDate()}/${date.getMonth() + 1}`,
-    //       y: this.getRandomNumber(0, 1000),
-    //     },
-    //     true,
-    //     true
-    //   );
-    // }, 15000);
   }
 
   private getRandomNumber(min: number, max: number): number {
     return Math.floor(Math.random() * (max - min + 1) + min);
+  }
+  resetForm(){
+    if(this.chart){
+      this.chart.destroy();
+    }
+    this.suveyForm.reset();
   }
 
   printPage(){

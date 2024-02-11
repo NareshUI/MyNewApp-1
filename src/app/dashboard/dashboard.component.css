@@ -2,6 +2,8 @@
     background-color: #a9a9a9ab;
     padding: 18px;
     border-radius: 5px;
+    width: 99.4%;
+    margin: 5px;
 }
 .control-label{
     font-size: 14px;
