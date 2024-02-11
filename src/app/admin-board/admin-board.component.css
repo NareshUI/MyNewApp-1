@@ -1,0 +1,27 @@
+.card-footer{
+    display: flex;
+    gap: 10px;
+}
+.card-footer .btn{
+   width: 50%;
+}
+.custom-container{
+    display: flex;
+    justify-content: center;
+}
+label{
+    font-size: 13px;
+    font-weight: bold;
+    text-indent: -4.8px;
+    margin-top: 4px;
+}
+.form-select {
+    font-size: 12px !important;
+}
+.spinner-border{
+    width: 8rem !important;
+    height: 8rem !important;
+    position: relative;
+    left: 40%;
+    margin-top: 16%;
+}

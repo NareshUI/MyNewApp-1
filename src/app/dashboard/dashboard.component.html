@@ -1,123 +1,123 @@
 
 <div class="row custom-container">
-<form [formGroup]="suveyForm">
-  <div class="col-md-12">
-    <div class="row">
-      <div class="col-md-1">
-        <label class="control-label">Question</label>
+  <form [formGroup]="suveyForm">
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-1">
+          <label class="control-label">Question</label>
+        </div>
+        <div class="col-md-8" style="padding-left: 5px;">
+          <select class="form-select form-select-sm"  aria-label="Default select example" formControlName = "question" (change)="questionChange($event)">
+            <option >Please Select Question</option>
+            <option id="{{question.id}}"  title="{{question.id}}" *ngFor="let question of questionsList">{{question.questionValue}}</option>
+          </select>
+        </div>
+        <div class="col-md-1">
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" data-size="sm" checked>
+          </div>
+        </div>
       </div>
-      <div class="col-md-8" style="padding-left: 5px;">
-        <select class="form-select form-select-sm"  aria-label="Default select example" formControlName = "question" (change)="questionChange($event)">
-          <option >Please Select Question</option>
-          <option id="{{question.id}}"  title="{{question.id}}" *ngFor="let question of questionsList">{{question.questionValue}}</option>
-        </select>
+      <div class="row mt-3">
+        <div class="col-md-4 row">
+          <div class="col-md-3">
+            <label class="control-label">State</label>
+          </div>
+          <div class="col-md-9">
+            <select class="form-select form-select-sm" aria-label="Default select example">
+              <option value="0" selected>Please Select State</option>
+              <option value="1">Telangana</option>
+              <option value="2">Andhra Pradesh</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-4 row">
+          <div class="col-md-3">
+            <label class="control-label">District</label>
+          </div>
+          <div class="col-md-9">
+            <select class="form-select form-select-sm" aria-label="Default select example" (change)="districtChange($event)">
+              <option selected>Select the District</option>
+              <option *ngFor="let dist of districtList" value="{{dist.districtNo}}">{{dist.districtValue}}</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-4 row">
+          <div class="col-md-3">
+            <label class="control-label">Parlamemnt</label>
+          </div>
+          <div class="col-md-9">
+            <select class="form-select form-select-sm" aria-label="Default select example" (change)="parlimentChange($event)">
+              <option selected>Please Select Parlamemnt</option>
+              <option *ngFor="let parliment of parlimentList" value="{{parliment.parlimentNo}}">{{parliment.parlimentValue}}</option>
+            </select>
+          </div>
+        </div>
       </div>
-      <div class="col-md-1">
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" data-size="sm" checked>
+      <div class="row mt-3">
+        <div class="col-md-4 row">
+          <div class="col-md-3">
+            <label class="control-label">Constituency</label>
+          </div>
+          <div class="col-md-9">
+            <select class="form-select form-select-sm" aria-label="Default select example">
+              <option selected>Please Select Constituency</option>
+              <option *ngFor="let const of constutions">{{const.constutionValue}}</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-4 row">
+          <div class="col-md-3">
+            <label class="control-label">Mandal</label>
+          </div>
+          <div class="col-md-9">
+            <select class="form-select form-select-sm" aria-label="Default select example">
+              <option selected>Select Mandal</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-4 row">
+          <div class="col-md-3">
+            <label class="control-label">Village/Ward</label>
+          </div>
+          <div class="col-md-9">
+            <select class="form-select form-select-sm" aria-label="Default select example" disabled>
+              <option selected>Select Village/Ward</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-4 row">
+          <div class="col-md-3">
+            <label class="control-label">From Date</label>
+          </div>
+          <div class="col-md-9">
+            <input type="date" class="form-control form-control-sm"/>
+          </div>
+        </div>
+        <div class="col-md-4 row">
+          <div class="col-md-3">
+            <label class="control-label">To Date</label>
+          </div>
+          <div class="col-md-9">
+            <input type="date" class="form-control form-control-sm" value="{{today}}"/>
+          </div>
+        </div>
+        <div class="col-md-4 row">
+        <div class="btnGrp">
+            <button type="button" class="btn btn-primary btn-sm">Search </button>
+            <button type="button" class="btn btn-success btn-sm" (click)="printPage()">Print </button>
+            <button type="button" class="btn btn-dark btn-sm" (click)="resetForm()">Clear </button>
+        </div>
         </div>
       </div>
     </div>
-    <div class="row mt-3">
-      <div class="col-md-4 row">
-        <div class="col-md-3">
-          <label class="control-label">State</label>
-        </div>
-        <div class="col-md-9">
-          <select class="form-select form-select-sm" aria-label="Default select example">
-            <option value="0" selected>Please Select State</option>
-            <option value="1">Telangana</option>
-            <option value="2">Andhra Pradesh</option>
-          </select>
-        </div>
-      </div>
-      <div class="col-md-4 row">
-        <div class="col-md-3">
-          <label class="control-label">District</label>
-        </div>
-        <div class="col-md-9">
-          <select class="form-select form-select-sm" aria-label="Default select example" (change)="districtChange($event)">
-            <option selected>Select the District</option>
-            <option *ngFor="let dist of districtList" value="{{dist.districtNo}}">{{dist.districtValue}}</option>
-          </select>
-        </div>
-      </div>
-      <div class="col-md-4 row">
-        <div class="col-md-3">
-          <label class="control-label">Parlamemnt</label>
-        </div>
-        <div class="col-md-9">
-          <select class="form-select form-select-sm" aria-label="Default select example" (change)="parlimentChange($event)">
-            <option selected>Please Select Parlamemnt</option>
-            <option *ngFor="let parliment of parlimentList" value="{{parliment.parlimentNo}}">{{parliment.parlimentValue}}</option>
-          </select>
-        </div>
-      </div>
-    </div>
-    <div class="row mt-3">
-      <div class="col-md-4 row">
-        <div class="col-md-3">
-          <label class="control-label">Constituency</label>
-        </div>
-        <div class="col-md-9">
-          <select class="form-select form-select-sm" aria-label="Default select example">
-            <option selected>Please Select Constituency</option>
-            <option *ngFor="let const of constutions">{{const.constutionValue}}</option>
-          </select>
-        </div>
-      </div>
-      <div class="col-md-4 row">
-        <div class="col-md-3">
-          <label class="control-label">Mandal</label>
-        </div>
-        <div class="col-md-9">
-          <select class="form-select form-select-sm" aria-label="Default select example">
-            <option selected>Select Mandal</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-          </select>
-        </div>
-      </div>
-      <div class="col-md-4 row">
-        <div class="col-md-3">
-          <label class="control-label">Village/Ward</label>
-        </div>
-        <div class="col-md-9">
-          <select class="form-select form-select-sm" aria-label="Default select example" disabled>
-            <option selected>Select Village/Ward</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-          </select>
-        </div>
-      </div>
-    </div>
-    <div class="row mt-3">
-      <div class="col-md-4 row">
-        <div class="col-md-3">
-          <label class="control-label">From Date</label>
-        </div>
-        <div class="col-md-9">
-          <input type="date" class="form-control form-control-sm"/>
-        </div>
-      </div>
-      <div class="col-md-4 row">
-        <div class="col-md-3">
-          <label class="control-label">To Date</label>
-        </div>
-        <div class="col-md-9">
-          <input type="date" class="form-control form-control-sm" value="{{today}}"/>
-        </div>
-      </div>
-      <div class="col-md-4 row">
-       <div class="btnGrp">
-          <button type="button" class="btn btn-primary btn-sm">Search </button>
-          <button type="button" class="btn btn-success btn-sm" (click)="printPage()">Print </button>
-          <button type="button" class="btn btn-dark btn-sm" (click)="resetForm()">Clear </button>
-       </div>
-      </div>
-    </div>
-  </div>
-</form>
+  </form>
 
   
   
@@ -131,7 +131,7 @@
  
 </div>
 
-<div class="row">
+<!--<div class="row">
   <!-- <div class="col-md-3" *ngFor="let student of studentArray;index as i">
       <div class="card">
           <div class="card-header">Name : {{student.studName}}</div> 
@@ -142,10 +142,10 @@
               <button class="btn btn-primary" (click)="viewDetails(profilemmodal,student)">Profile</button>
           </div>
         </div>
-  </div> -->
-</div>
+  </div> 
+</div>-->
 
-<ng-template #mymodal let-modal>
+<!-- <ng-template #mymodal let-modal>
    <app-modal [data]="currentStudent"></app-modal>
 </ng-template>
 <ng-template #marksmodal let-modal>
@@ -153,5 +153,5 @@
 </ng-template>
 <ng-template #profilemmodal let-modal>
   <app-modal [data]="currentStudent"></app-modal>
-</ng-template>
+</ng-template> -->
 

@@ -1,0 +1,118 @@
+
+
+<div class="spinner-border" style="width: 3rem; height: 3rem;" role="status" *ngIf="showLoader">
+    <span class="sr-only"></span>
+</div>
+<div class="row custom-container mt-5" *ngIf="!showLoader">
+    
+    <div class="card col-md-5" style="padding: 1px;">
+        <form [formGroup]="suveyForm" >
+            <div class="card-header">
+                <h3 class="text-center text-primary"> Survey Entry Form</h3>
+            </div>
+            <div class="card-body">
+               
+                    <div class="row mt-3 mb-3">
+                        <div class="col-md-2">
+                            <label class="control-label">Question :</label>
+                        </div>
+                        <div class="col-md-10">
+                            <select *ngIf="questionsList.length>0" class="form-select form-select-sm"  aria-label="Default select example" formControlName = "question" (change)="questionChange($event)">
+                                <option >Please Select Question</option>
+                                <option id="{{question.id}}" *ngFor="let question of questionsList">{{question.questionValue}}</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-2">
+                            <label class="control-label">Answers :</label>
+                        </div>
+                        <div class="col-md-10">
+                            <select class="form-select form-select-sm"  aria-label="Default select example" formControlName = "answer">
+                                <option selected>Please Select Answer</option>
+                                <option id="{{item}}" *ngFor="let item of answersList">{{item}}</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-2">
+                            <label class="control-label">State :</label>
+                        </div>
+                        <div class="col-md-10">
+                            <select class="form-select form-select-sm" aria-label="Default select example">
+                                <option value="0" selected>Please Select State</option>
+                                <option value="1">Telangana</option>
+                                <option value="2">Andhra Pradesh</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-2">
+                            <label class="control-label">District :</label>
+                        </div>
+                        <div class="col-md-10">
+                            <select class="form-select form-select-sm" aria-label="Default select example">
+                                <option selected>Select the District</option>
+                                <option *ngFor="let dist of districtList" value="{{dist.districtNo}}">{{dist.districtValue}}</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-2">
+                            <label class="control-label">Parlament :</label>
+                        </div>
+                        <div class="col-md-10">
+                            <select class="form-select form-select-sm" aria-label="Default select example">
+                                <option selected>Please Select Parlamemnt</option>
+                                <option *ngFor="let parliment of parlimentList" value="{{parliment.parlimentNo}}">{{parliment.parlimentValue}}</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-2">
+                            <label class="control-label">Constituency :</label>
+                        </div>
+                        <div class="col-md-10">
+                            <select class="form-select form-select-sm" aria-label="Default select example">
+                                <option selected>Please Select Constituency</option>
+                                <option *ngFor="let const of constutions">{{const.constutionValue}}</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-2">
+                            <label class="control-label">Mandal :</label>
+                        </div>
+                        <div class="col-md-10">
+                            <select class="form-select form-select-sm" aria-label="Default select example">
+                                <option selected>Select Mandal</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-2">
+                            <label class="control-label">Date :</label>
+                        </div>
+                        <div class="col-md-10">
+                            <input type="date" class="form-control form-control-sm"/>
+                        </div>
+                    </div>
+            </div>
+            <div class="card-footer">
+               
+                    <button type="button" class="btn btn-primary">Save</button>
+                    <button type="reset" class="btn btn-dark">Reset</button>
+                
+            </div>
+        </form>
+    </div>
+  </div>

@@ -9,12 +9,14 @@ import { ModalComponent } from './Shared/modal/modal.component';
 import { HighchartsChartModule } from 'highcharts-angular';
 import { HttpClientModule } from  '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AdminBoardComponent } from './admin-board/admin-board.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    ModalComponent
+    ModalComponent,
+    AdminBoardComponent
   ],
   imports: [
     BrowserModule,
