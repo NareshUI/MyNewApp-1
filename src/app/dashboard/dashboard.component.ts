@@ -24,16 +24,25 @@ export class DashboardComponent implements OnInit {
   selectedDistrict: any;
   selectedParliment: any;
   chart : any;
+  arr:any=[];
+  stateList: any;
+  selectedState: any;
+  currentQIndex: any =0;
   constructor(private modalService:NgbModal,private httpService : HttpClient,public fb: FormBuilder) { }
 
   ngOnInit(): void {
+
+    let data=localStorage.getItem('chartData');
+    if(data){
+      this.arr=JSON.parse(data)
+    }
     this.today = new Date().toISOString().split('T')[0];
     this.suveyForm =  new FormGroup({
       'question':new FormControl(null,[Validators.required])
     });
     
     this.loadData();
-   
+    
   }
 
   viewDetails(content:any,item:any){
@@ -58,22 +67,28 @@ export class DashboardComponent implements OnInit {
     if(this.chart){
       this.chart.destroy();
     }
-    if(eve.target.selectedIndex > 0){
-      let data = this.questionsList[eve.target.selectedIndex].data;
-      this.createChartColumn(data);
+    this.currentQIndex = eve.target.selectedIndex;
+  }
+
+  searchData(){
+    if(this.currentQIndex > 0){
+      let data = this.questionsList.find((x: { id: any; }) => x.id == this.currentQIndex);
+      let obj = this.arr.find((x: { QId: any; }) => x.QId == this.currentQIndex);
+      if(obj && data){
+        this.createChartColumn(data.data,obj.value,obj.colors);
+      }
     }
   }
 
-  private createChartColumn(seriesdata:any): void {
-    let date = new Date();
+  private createChartColumn(seriesdata:any,values:any,colors:any): void {
     const data: any[] = [];
-    let colors = ['#00FF00','#FF00BF','#FF001B','#FG00C0','#FD0090']
+    // let colors = ['#00FF00','#FF00BF','#FF001B','#FG00C0','#FD0090'];
+    // let values = [80,70,65,73,69];
 
     for (let i = 0; i < seriesdata.length; i++) {
-      date.setDate(new Date().getDate() + i);
       data.push({
         name: seriesdata[i],
-        y: this.getRandomNumber(0, 1000),
+        y: values[i],
         color: colors[i],
       });
     }
@@ -95,24 +110,29 @@ export class DashboardComponent implements OnInit {
         },
         yAxis: {
           min: 0,
-          title: undefined,
+          title: "",
+          lineWidth: 1,
+          showLastLabel: true,
         },
         xAxis: {
           type: 'category',
         },
         tooltip: {
-          headerFormat: `<div>Date: {point.key}</div>`,
+          headerFormat: `<div>Value: {point.key}</div>`,
           pointFormat: `<div>{series.name}: {point.y}</div>`,
           shared: true,
           useHTML: true,
         },
         plotOptions: {
-          bar: {
-            pointWidth: 15,
+         
+          series:{
+            pointWidth: values.length > 4 ? 100 : 120,
             dataLabels: {
               enabled: true,
+              format: `{point.y:.1f} %`,
+              valueDecimals: 1,
             },
-          },
+          }
         },
         series: [
           {
@@ -124,9 +144,6 @@ export class DashboardComponent implements OnInit {
     );
   }
 
-  private getRandomNumber(min: number, max: number): number {
-    return Math.floor(Math.random() * (max - min + 1) + min);
-  }
   resetForm(){
     if(this.chart){
       this.chart.destroy();
@@ -142,11 +159,16 @@ export class DashboardComponent implements OnInit {
     this.httpService.get(this.url).subscribe((resp :any) =>{
       if(resp){
         this.questionsList = resp.questionsList;
+        this.stateList = resp.statesList;
         this.districtList = resp.districtList;
         this.parlimentList = resp.parlimentList;
         this.constutions = resp.constutions;
       }
     })
+  }
+  stateChange(event:any){
+    this.selectedState = event.target.value;
+    this.districtList = this.districtList.filter((s:any) => s.state=== this.selectedState);
   }
   districtChange(event:any){
     this.selectedDistrict = event.target.value;

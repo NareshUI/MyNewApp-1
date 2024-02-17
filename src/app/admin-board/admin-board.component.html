@@ -18,8 +18,8 @@
                         </div>
                         <div class="col-md-10">
                             <select *ngIf="questionsList.length>0" class="form-select form-select-sm"  aria-label="Default select example" formControlName = "question" (change)="questionChange($event)">
-                                <option >Please Select Question</option>
-                                <option id="{{question.id}}" *ngFor="let question of questionsList">{{question.questionValue}}</option>
+                                <option selected>Please Select Question</option>
+                                <option id="{{question.id}}" *ngFor="let question of questionsList;">{{question.questionValue}}</option>
                             </select>
                         </div>
                     </div>
@@ -29,9 +29,10 @@
                             <label class="control-label">Answers :</label>
                         </div>
                         <div class="col-md-10">
-                            <select class="form-select form-select-sm"  aria-label="Default select example" formControlName = "answer">
-                                <option selected>Please Select Answer</option>
-                                <option id="{{item}}" *ngFor="let item of answersList">{{item}}</option>
+                            <select  class="form-select form-select-sm"  aria-label="Default select example" formControlName = "answer">
+                                <option selected *ngIf="answersList.length == 0">Please Select Answer</option>
+                                <option selected *ngIf="answersList.length > 0">Please Select Answer</option>
+                                <option id="{{i}}" *ngFor="let item of answersList;index as i">{{item}}</option>
                             </select>
                         </div>
                     </div>
@@ -106,13 +107,26 @@
                             <input type="date" class="form-control form-control-sm"/>
                         </div>
                     </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-2">
+                            <label class="control-label">Value:</label>
+                        </div>
+                        <div class="col-md-10">
+                            <input type="number" class="form-control form-control-sm" formControlName = "value"/>
+                        </div>
+                    </div>
             </div>
             <div class="card-footer">
                
-                    <button type="button" class="btn btn-primary">Save</button>
+                    <button type="button" class="btn btn-primary" (click)="saveData(mymodal)" [ngClass]="{'disabled':!suveyForm.valid}">Save</button>
                     <button type="reset" class="btn btn-dark">Reset</button>
-                
+                    <button type="reset" class="btn btn-info" (click)="redirection()">Close</button>
             </div>
         </form>
     </div>
   </div>
+
+  <ng-template #mymodal let-modal>
+    <app-modal [data]="result"></app-modal>
+ </ng-template>

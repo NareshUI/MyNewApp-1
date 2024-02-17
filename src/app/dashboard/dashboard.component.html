@@ -24,10 +24,9 @@
             <label class="control-label">State</label>
           </div>
           <div class="col-md-9">
-            <select class="form-select form-select-sm" aria-label="Default select example">
+            <select class="form-select form-select-sm" aria-label="Default select example" (change)="stateChange($event)">
               <option value="0" selected>Please Select State</option>
-              <option value="1">Telangana</option>
-              <option value="2">Andhra Pradesh</option>
+              <option *ngFor="let st of stateList" value="{{st.stateNo}}">{{st.stateValue}}</option>
             </select>
           </div>
         </div>
@@ -110,7 +109,7 @@
         </div>
         <div class="col-md-4 row">
         <div class="btnGrp">
-            <button type="button" class="btn btn-primary btn-sm">Search </button>
+            <button type="button" class="btn btn-primary btn-sm" (click)="searchData()">Search </button>
             <button type="button" class="btn btn-success btn-sm" (click)="printPage()">Print </button>
             <button type="button" class="btn btn-dark btn-sm" (click)="resetForm()">Clear </button>
         </div>
@@ -124,15 +123,15 @@
 </div>
 
 <div class="row">
-  <div class="col-md-2"></div>
-  <div class="col-md-8">
+  <div class="col-md-3"></div>
+  <div class="col-md-5">
     <div id="chart-column"></div>
   </div>
  
 </div>
 
 <!--<div class="row">
-  <!-- <div class="col-md-3" *ngFor="let student of studentArray;index as i">
+   <div class="col-md-3" *ngFor="let student of studentArray;index as i">
       <div class="card">
           <div class="card-header">Name : {{student.studName}}</div> 
           <div class="card-body">Father Name : {{student.fName}}</div> 

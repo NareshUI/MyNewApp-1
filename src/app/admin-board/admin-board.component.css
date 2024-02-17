@@ -25,3 +25,17 @@ label{
     left: 40%;
     margin-top: 16%;
 }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.btn.disabled{
+    opacity: 0.5 !important;
+}

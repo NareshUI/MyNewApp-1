@@ -40,6 +40,16 @@
         }
 
     ],
+    "statesList":[
+      {
+        "stateNo":"S01",
+        "stateValue":"Telangana"
+      },
+      {
+        "stateNo":"S02",
+        "stateValue":"Andhra Pradesh"
+      }
+    ],
     "districtList" : [
         {
             "state": "S01",
@@ -190,7 +200,331 @@
         "modifiedDttm": null,
         "expiresIn": 86400,
         "districtCd": "S0109"
-    }
+    },
+    {
+      "state": "S02",
+      "districtNo": "1",
+      "districtValue": "Parvathipuram Manyam",
+      "districtValueHindi": "ఖమ్మం",
+      "isActive": "Y",
+      "createdBy": "CDAC",
+      "createdDttm": "1679994885000",
+      "modifiedBy": null,
+      "modifiedDttm": null,
+      "districtCd": "S0109"
+  },
+  {
+    "state": "S02",
+    "districtNo": "2",
+    "districtValue": "Alluri Sitharama Raju",
+    "districtValueHindi": "ఖమ్మం",
+    "isActive": "Y",
+    "createdBy": "CDAC",
+    "createdDttm": "1679994885000",
+    "modifiedBy": null,
+    "modifiedDttm": null,
+    "districtCd": "S0109"
+},
+{
+  "state": "S02",
+  "districtNo": "3",
+  "districtValue": "Srikakulam",
+  "districtValueHindi": "ఖమ్మం",
+  "isActive": "Y",
+  "createdBy": "CDAC",
+  "createdDttm": "1679994885000",
+  "modifiedBy": null,
+  "modifiedDttm": null,
+  "districtCd": "S0109"
+},
+{
+  "state": "S02",
+  "districtNo": "4",
+  "districtValue": "Vizianagaram",
+  "districtValueHindi": "ఖమ్మం",
+  "isActive": "Y",
+  "createdBy": "CDAC",
+  "createdDttm": "1679994885000",
+  "modifiedBy": null,
+  "modifiedDttm": null,
+  "districtCd": "S0109"
+},
+{
+  "state": "S02",
+  "districtNo": "5",
+  "districtValue": "Visakhapatnam",
+  "districtValueHindi": "ఖమ్మం",
+  "isActive": "Y",
+  "createdBy": "CDAC",
+  "createdDttm": "1679994885000",
+  "modifiedBy": null,
+  "modifiedDttm": null,
+  "districtCd": "S0109"
+},
+{
+  "state": "S02",
+  "districtNo": "6",
+  "districtValue": "Anakapalli",
+  "districtValueHindi": "ఖమ్మం",
+  "isActive": "Y",
+  "createdBy": "CDAC",
+  "createdDttm": "1679994885000",
+  "modifiedBy": null,
+  "modifiedDttm": null,
+  "districtCd": "S0109"
+},
+{
+  "state": "S02",
+  "districtNo": "7",
+  "districtValue": "Kakinada",
+  "districtValueHindi": "ఖమ్మం",
+  "isActive": "Y",
+  "createdBy": "CDAC",
+  "createdDttm": "1679994885000",
+  "modifiedBy": null,
+  "modifiedDttm": null,
+  "districtCd": "S0109"
+},
+{
+  "state": "S02",
+  "districtNo": "8",
+  "districtValue": "Konaseema",
+  "districtValueHindi": "ఖమ్మం",
+  "isActive": "Y",
+  "createdBy": "CDAC",
+  "createdDttm": "1679994885000",
+  "modifiedBy": null,
+  "modifiedDttm": null,
+  "districtCd": "S0109"
+},
+{
+  "state": "S02",
+  "districtNo": "9",
+  "districtValue": "East Godavari",
+  "districtValueHindi": "ఖమ్మం",
+  "isActive": "Y",
+  "createdBy": "CDAC",
+  "createdDttm": "1679994885000",
+  "modifiedBy": null,
+  "modifiedDttm": null,
+  "districtCd": "S0109"
+},
+{
+  "state": "S02",
+  "districtNo": "10",
+  "districtValue": "West Godavari",
+  "districtValueHindi": "ఖమ్మం",
+  "isActive": "Y",
+  "createdBy": "CDAC",
+  "createdDttm": "1679994885000",
+  "modifiedBy": null,
+  "modifiedDttm": null,
+  "districtCd": "S0109"
+},
+{
+  "state": "S02",
+  "districtNo": "11",
+  "districtValue": "Eluru",
+  "districtValueHindi": "ఖమ్మం",
+  "isActive": "Y",
+  "createdBy": "CDAC",
+  "createdDttm": "1679994885000",
+  "modifiedBy": null,
+  "modifiedDttm": null,
+  "districtCd": "S0109"
+},
+{
+  "state": "S02",
+  "districtNo": "12",
+  "districtValue": "Krishna,N.T.R",
+  "districtValueHindi": "ఖమ్మం",
+  "isActive": "Y",
+  "createdBy": "CDAC",
+  "createdDttm": "1679994885000",
+  "modifiedBy": null,
+  "modifiedDttm": null,
+  "districtCd": "S0109"
+},
+{
+  "state": "S02",
+  "districtNo": "13",
+  "districtValue": "N.T.R",
+  "districtValueHindi": "ఖమ్మం",
+  "isActive": "Y",
+  "createdBy": "CDAC",
+  "createdDttm": "1679994885000",
+  "modifiedBy": null,
+  "modifiedDttm": null,
+  "districtCd": "S0109"
+},
+{
+  "state": "S02",
+  "districtNo": "14",
+  "districtValue": "Guntur",
+  "districtValueHindi": "ఖమ్మం",
+  "isActive": "Y",
+  "createdBy": "CDAC",
+  "createdDttm": "1679994885000",
+  "modifiedBy": null,
+  "modifiedDttm": null,
+  "districtCd": "S0109"
+},
+{
+  "state": "S02",
+  "districtNo": "15",
+  "districtValue": "Palnadu",
+  "districtValueHindi": "ఖమ్మం",
+  "isActive": "Y",
+  "createdBy": "CDAC",
+  "createdDttm": "1679994885000",
+  "modifiedBy": null,
+  "modifiedDttm": null,
+  "districtCd": "S0109"
+},
+{
+  "state": "S02",
+  "districtNo": "16",
+  "districtValue": "Bapatla",
+  "districtValueHindi": "ఖమ్మం",
+  "isActive": "Y",
+  "createdBy": "CDAC",
+  "createdDttm": "1679994885000",
+  "modifiedBy": null,
+  "modifiedDttm": null,
+  "districtCd": "S0109"
+},
+{
+  "state": "S02",
+  "districtNo": "17",
+  "districtValue": "Prakasam",
+  "districtValueHindi": "ఖమ్మం",
+  "isActive": "Y",
+  "createdBy": "CDAC",
+  "createdDttm": "1679994885000",
+  "modifiedBy": null,
+  "modifiedDttm": null,
+  "districtCd": "S0109"
+},
+{
+  "state": "S02",
+  "districtNo": "18",
+  "districtValue": "Nandyal",
+  "districtValueHindi": "ఖమ్మం",
+  "isActive": "Y",
+  "createdBy": "CDAC",
+  "createdDttm": "1679994885000",
+  "modifiedBy": null,
+  "modifiedDttm": null,
+  "districtCd": "S0109"
+},
+{
+  "state": "S02",
+  "districtNo": "19",
+  "districtValue": "Kurnool",
+  "districtValueHindi": "ఖమ్మం",
+  "isActive": "Y",
+  "createdBy": "CDAC",
+  "createdDttm": "1679994885000",
+  "modifiedBy": null,
+  "modifiedDttm": null,
+  "districtCd": "S0109"
+},
+{
+  "state": "S02",
+  "districtNo": "20",
+  "districtValue": "Anantapur",
+  "districtValueHindi": "ఖమ్మం",
+  "isActive": "Y",
+  "createdBy": "CDAC",
+  "createdDttm": "1679994885000",
+  "modifiedBy": null,
+  "modifiedDttm": null,
+  "districtCd": "S0109"
+},
+{
+  "state": "S02",
+  "districtNo": "21",
+  "districtValue": "Sri Sathya Sai",
+  "districtValueHindi": "ఖమ్మం",
+  "isActive": "Y",
+  "createdBy": "CDAC",
+  "createdDttm": "1679994885000",
+  "modifiedBy": null,
+  "modifiedDttm": null,
+  "districtCd": "S0109"
+},
+{
+  "state": "S02",
+  "districtNo": "22",
+  "districtValue": "Kadapa",
+  "districtValueHindi": "ఖమ్మం",
+  "isActive": "Y",
+  "createdBy": "CDAC",
+  "createdDttm": "1679994885000",
+  "modifiedBy": null,
+  "modifiedDttm": null,
+  "districtCd": "S0109"
+},
+{
+  "state": "S02",
+  "districtNo": "23",
+  "districtValue": "Anantapur",
+  "districtValueHindi": "ఖమ్మం",
+  "isActive": "Y",
+  "createdBy": "CDAC",
+  "createdDttm": "1679994885000",
+  "modifiedBy": null,
+  "modifiedDttm": null,
+  "districtCd": "S0109"
+},
+{
+  "state": "S02",
+  "districtNo": "24",
+  "districtValue": "Nellore",
+  "districtValueHindi": "ఖమ్మం",
+  "isActive": "Y",
+  "createdBy": "CDAC",
+  "createdDttm": "1679994885000",
+  "modifiedBy": null,
+  "modifiedDttm": null,
+  "districtCd": "S0109"
+},
+{
+  "state": "S02",
+  "districtNo": "25",
+  "districtValue": "Tirupati",
+  "districtValueHindi": "ఖమ్మం",
+  "isActive": "Y",
+  "createdBy": "CDAC",
+  "createdDttm": "1679994885000",
+  "modifiedBy": null,
+  "modifiedDttm": null,
+  "districtCd": "S0109"
+},
+{
+  "state": "S02",
+  "districtNo": "26",
+  "districtValue": "Annamayya",
+  "districtValueHindi": "ఖమ్మం",
+  "isActive": "Y",
+  "createdBy": "CDAC",
+  "createdDttm": "1679994885000",
+  "modifiedBy": null,
+  "modifiedDttm": null,
+  "districtCd": "S0109"
+},
+{
+  "state": "S02",
+  "districtNo": "27",
+  "districtValue": "Chittoor",
+  "districtValueHindi": "ఖమ్మం",
+  "isActive": "Y",
+  "createdBy": "CDAC",
+  "createdDttm": "1679994885000",
+  "modifiedBy": null,
+  "modifiedDttm": null,
+  "districtCd": "S0109"
+}
   ],
   "parlimentList":[
     {
