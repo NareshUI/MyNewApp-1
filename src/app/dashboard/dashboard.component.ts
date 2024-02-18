@@ -75,7 +75,7 @@ export class DashboardComponent implements OnInit {
       let data = this.questionsList.find((x: { id: any; }) => x.id == this.currentQIndex);
       let obj = this.arr.find((x: { QId: any; }) => x.QId == this.currentQIndex);
       if(obj && data){
-        this.createChartColumn(data.data,obj.value,obj.colors);
+        this.createChartColumn(data.data,obj.value,data.colors);
       }
     }
   }
@@ -168,7 +168,7 @@ export class DashboardComponent implements OnInit {
   }
   stateChange(event:any){
     this.selectedState = event.target.value;
-    this.districtList = this.districtList.filter((s:any) => s.state=== this.selectedState);
+    this.parlimentList = this.parlimentList.filter((p:any) => p.state=== this.selectedState);
   }
   districtChange(event:any){
     this.selectedDistrict = event.target.value;
@@ -176,9 +176,8 @@ export class DashboardComponent implements OnInit {
 
   }
   parlimentChange(event:any){
-    // debugger
     this.selectedParliment = event.target.value;
-    this.constutions = this.constutions.filter((c:any) => c.parlimentNo === this.selectedParliment);
+    this.constutions = this.constutions.filter((c:any) => c.parlimentNo === this.selectedParliment && c.state === this.selectedState);
 
   }
 }

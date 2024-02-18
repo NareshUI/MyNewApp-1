@@ -32,17 +32,6 @@
         </div>
         <div class="col-md-4 row">
           <div class="col-md-3">
-            <label class="control-label">District</label>
-          </div>
-          <div class="col-md-9">
-            <select class="form-select form-select-sm" aria-label="Default select example" (change)="districtChange($event)">
-              <option selected>Select the District</option>
-              <option *ngFor="let dist of districtList" value="{{dist.districtNo}}">{{dist.districtValue}}</option>
-            </select>
-          </div>
-        </div>
-        <div class="col-md-4 row">
-          <div class="col-md-3">
             <label class="control-label">Parlamemnt</label>
           </div>
           <div class="col-md-9">
@@ -52,8 +41,6 @@
             </select>
           </div>
         </div>
-      </div>
-      <div class="row mt-3">
         <div class="col-md-4 row">
           <div class="col-md-3">
             <label class="control-label">Constituency</label>
@@ -62,6 +49,21 @@
             <select class="form-select form-select-sm" aria-label="Default select example">
               <option selected>Please Select Constituency</option>
               <option *ngFor="let const of constutions">{{const.constutionValue}}</option>
+            </select>
+          </div>
+        </div>
+       
+       
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-4 row">
+          <div class="col-md-3">
+            <label class="control-label">District</label>
+          </div>
+          <div class="col-md-9">
+            <select class="form-select form-select-sm" aria-label="Default select example" (change)="districtChange($event)">
+              <option selected>Select the District</option>
+              <option *ngFor="let dist of districtList" value="{{dist.districtNo}}">{{dist.districtValue}}</option>
             </select>
           </div>
         </div>
