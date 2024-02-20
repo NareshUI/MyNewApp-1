@@ -28,6 +28,10 @@ export class DashboardComponent implements OnInit {
   stateList: any;
   selectedState: any;
   currentQIndex: any =0;
+  selectedConstution: any;
+  selectedDist: any;
+  Configuration: any;
+  mandals:any =[];
   constructor(private modalService:NgbModal,private httpService : HttpClient,public fb: FormBuilder) { }
 
   ngOnInit(): void {
@@ -158,6 +162,7 @@ export class DashboardComponent implements OnInit {
   loadData(){
     this.httpService.get(this.url).subscribe((resp :any) =>{
       if(resp){
+        this.Configuration = resp;
         this.questionsList = resp.questionsList;
         this.stateList = resp.statesList;
         this.districtList = resp.districtList;
@@ -167,17 +172,25 @@ export class DashboardComponent implements OnInit {
     })
   }
   stateChange(event:any){
+    this.parlimentList = [];
     this.selectedState = event.target.value;
-    this.parlimentList = this.parlimentList.filter((p:any) => p.state=== this.selectedState);
-  }
-  districtChange(event:any){
-    this.selectedDistrict = event.target.value;
-    this.parlimentList = this.parlimentList.filter((p:any) => p.districtNo === this.selectedDistrict);
-
+    this.parlimentList = this.Configuration.parlimentList.filter((p:any) => p.state=== this.selectedState);
   }
   parlimentChange(event:any){
+    this.constutions = [];
+    this.mandals = [];
     this.selectedParliment = event.target.value;
-    this.constutions = this.constutions.filter((c:any) => c.parlimentNo === this.selectedParliment && c.state === this.selectedState);
-
+    this.constutions = this.Configuration.constutions.filter((c:any) => c.parlimentNo === this.selectedParliment && c.state === this.selectedState);
+  }
+  constutionsChange(event:any){
+    this.selectedConstution = event.target.value;
+    let constutionObj = this.constutions.find((x: { constutionNo: any; }) => x.constutionNo == this.selectedConstution);
+    this.mandals = constutionObj.mandals;
+    this.selectedDist = {};
+    this.selectedDist = this.districtList.find((x: {
+      parlimentNo: any; state: any; }) => x.state == this.selectedState && x.parlimentNo == this.selectedParliment);
+    if(this.selectedDist.constutionNo.includes(this.selectedConstution)){
+      return this.selectedDist;
+    }
   }
 }

@@ -77,14 +77,7 @@
             "districtNo": "2",
             "districtValue": "Nizamabad",
             "districtValueHindi": "నిజామాబాదు",
-            "effectiveFrom": "1640975400000",
-            "effectiveTo": "4102338600000",
             "isActive": "Y",
-            "createdBy": "CDAC",
-            "createdDttm": "1679994885000",
-            "modifiedBy": null,
-            "modifiedDttm": null,
-            "expiresIn": 86400,
             "districtCd": "S0104"
         },
     {
@@ -210,326 +203,236 @@
     {
       "state": "S02",
       "districtNo": "1",
+      "constutionNo":[1,2,3],
       "districtValue": "Parvathipuram Manyam",
       "districtValueHindi": "ఖమ్మం",
-      "isActive": "Y",
-      "createdBy": "CDAC",
-      "createdDttm": "1679994885000",
-      "modifiedBy": null,
-      "modifiedDttm": null,
-      "districtCd": "S0109"
+      "parlimentNo":"1",
+      "isActive": "Y"
   },
   {
     "state": "S02",
     "districtNo": "2",
+    "constutionNo":[4,5,6],
     "districtValue": "Alluri Sitharama Raju",
     "districtValueHindi": "ఖమ్మం",
-    "isActive": "Y",
-    "createdBy": "CDAC",
-    "createdDttm": "1679994885000",
-    "modifiedBy": null,
-    "modifiedDttm": null,
-    "districtCd": "S0109"
-},
+    "parlimentNo":"1",
+    "isActive": "Y"
+  },
 {
   "state": "S02",
   "districtNo": "3",
+  "constutionNo":[1,2,3,4,5,6,7],
   "districtValue": "Srikakulam",
   "districtValueHindi": "ఖమ్మం",
   "isActive": "Y",
-  "createdBy": "CDAC",
-  "createdDttm": "1679994885000",
-  "modifiedBy": null,
-  "modifiedDttm": null,
-  "districtCd": "S0109"
+  "parlimentNo":"2"
 },
 {
   "state": "S02",
   "districtNo": "4",
+  "constutionNo":[1,2,3,4,5,6,7],
   "districtValue": "Vizianagaram",
   "districtValueHindi": "ఖమ్మం",
-  "isActive": "Y",
-  "createdBy": "CDAC",
-  "createdDttm": "1679994885000",
-  "modifiedBy": null,
-  "modifiedDttm": null,
-  "districtCd": "S0109"
+  "parlimentNo":"3",
+  "isActive": "Y"
 },
 {
   "state": "S02",
   "districtNo": "5",
+  "constutionNo":[1,2,3,4,5,6],
   "districtValue": "Visakhapatnam",
   "districtValueHindi": "ఖమ్మం",
-  "isActive": "Y",
-  "createdBy": "CDAC",
-  "createdDttm": "1679994885000",
-  "modifiedBy": null,
-  "modifiedDttm": null,
-  "districtCd": "S0109"
+  "parlimentNo":"4",
+  "isActive": "Y"
 },
 {
   "state": "S02",
   "districtNo": "6",
+  "constutionNo":[1,2,3,4,5,6,7],
   "districtValue": "Anakapalli",
   "districtValueHindi": "ఖమ్మం",
-  "isActive": "Y",
-  "createdBy": "CDAC",
-  "createdDttm": "1679994885000",
-  "modifiedBy": null,
-  "modifiedDttm": null,
-  "districtCd": "S0109"
+  "parlimentNo":"5",
+  "isActive": "Y"
 },
 {
   "state": "S02",
   "districtNo": "7",
+  "constutionNo":[1,2,3,4,5,6,7],
   "districtValue": "Kakinada",
   "districtValueHindi": "ఖమ్మం",
   "isActive": "Y",
-  "createdBy": "CDAC",
-  "createdDttm": "1679994885000",
-  "modifiedBy": null,
-  "modifiedDttm": null,
-  "districtCd": "S0109"
+  "parlimentNo":"6"
 },
 {
   "state": "S02",
   "districtNo": "8",
+  "constutionNo":[1,2,3,4,5,6,7],
   "districtValue": "Konaseema",
   "districtValueHindi": "ఖమ్మం",
   "isActive": "Y",
-  "createdBy": "CDAC",
-  "createdDttm": "1679994885000",
-  "modifiedBy": null,
-  "modifiedDttm": null,
-  "districtCd": "S0109"
+  "parlimentNo":"7"
 },
 {
   "state": "S02",
   "districtNo": "9",
+  "constutionNo":[1,2,3,4,5,6,7],
   "districtValue": "East Godavari",
   "districtValueHindi": "ఖమ్మం",
   "isActive": "Y",
-  "createdBy": "CDAC",
-  "createdDttm": "1679994885000",
-  "modifiedBy": null,
-  "modifiedDttm": null,
-  "districtCd": "S0109"
+  "parlimentNo":"8"
 },
 {
   "state": "S02",
   "districtNo": "10",
+  "constutionNo":[1,2,3,4,5,6,7],
   "districtValue": "West Godavari",
   "districtValueHindi": "ఖమ్మం",
   "isActive": "Y",
-  "createdBy": "CDAC",
-  "createdDttm": "1679994885000",
-  "modifiedBy": null,
-  "modifiedDttm": null,
-  "districtCd": "S0109"
+  "parlimentNo":"9"
 },
 {
   "state": "S02",
   "districtNo": "11",
+  "constutionNo":[1,2,3,4,5,6,7],
   "districtValue": "Eluru",
   "districtValueHindi": "ఖమ్మం",
   "isActive": "Y",
-  "createdBy": "CDAC",
-  "createdDttm": "1679994885000",
-  "modifiedBy": null,
-  "modifiedDttm": null,
-  "districtCd": "S0109"
+  "parlimentNo":"10"
 },
 {
   "state": "S02",
   "districtNo": "12",
+  "constutionNo":[1,2,3,4,5,6,7],
   "districtValue": "Krishna,N.T.R",
   "districtValueHindi": "ఖమ్మం",
   "isActive": "Y",
-  "createdBy": "CDAC",
-  "createdDttm": "1679994885000",
-  "modifiedBy": null,
-  "modifiedDttm": null,
-  "districtCd": "S0109"
+  "parlimentNo":"11"
 },
 {
   "state": "S02",
   "districtNo": "13",
+  "constutionNo":[1,2,3,4,5,6,7],
   "districtValue": "N.T.R",
   "districtValueHindi": "ఖమ్మం",
   "isActive": "Y",
-  "createdBy": "CDAC",
-  "createdDttm": "1679994885000",
-  "modifiedBy": null,
-  "modifiedDttm": null,
-  "districtCd": "S0109"
+  "parlimentNo":"12"
 },
 {
   "state": "S02",
   "districtNo": "14",
+  "constutionNo":[1,2,3,4,5,6,7],
   "districtValue": "Guntur",
   "districtValueHindi": "ఖమ్మం",
   "isActive": "Y",
-  "createdBy": "CDAC",
-  "createdDttm": "1679994885000",
-  "modifiedBy": null,
-  "modifiedDttm": null,
-  "districtCd": "S0109"
+  "parlimentNo":"13"
 },
 {
   "state": "S02",
   "districtNo": "15",
+  "constutionNo":[1,2,3,4,5,6,7],
   "districtValue": "Palnadu",
   "districtValueHindi": "ఖమ్మం",
   "isActive": "Y",
-  "createdBy": "CDAC",
-  "createdDttm": "1679994885000",
-  "modifiedBy": null,
-  "modifiedDttm": null,
-  "districtCd": "S0109"
+  "parlimentNo":"14"
 },
 {
   "state": "S02",
   "districtNo": "16",
+  "constutionNo":[1,2,3,4,5],
   "districtValue": "Bapatla",
   "districtValueHindi": "ఖమ్మం",
   "isActive": "Y",
-  "createdBy": "CDAC",
-  "createdDttm": "1679994885000",
-  "modifiedBy": null,
-  "modifiedDttm": null,
-  "districtCd": "S0109"
+  "parlimentNo":"15"
 },
 {
   "state": "S02",
   "districtNo": "17",
+  "constutionNo":[1,2,3,4,5,6,7,8],
   "districtValue": "Prakasam",
   "districtValueHindi": "ఖమ్మం",
   "isActive": "Y",
-  "createdBy": "CDAC",
-  "createdDttm": "1679994885000",
-  "modifiedBy": null,
-  "modifiedDttm": null,
-  "districtCd": "S0109"
+  "parlimentNo":"16"
 },
 {
   "state": "S02",
   "districtNo": "18",
+  "constutionNo":[1,2,3,4,5,6,7],
   "districtValue": "Nandyal",
   "districtValueHindi": "ఖమ్మం",
   "isActive": "Y",
-  "createdBy": "CDAC",
-  "createdDttm": "1679994885000",
-  "modifiedBy": null,
-  "modifiedDttm": null,
-  "districtCd": "S0109"
+  "parlimentNo":"17"
 },
 {
   "state": "S02",
   "districtNo": "19",
+  "constutionNo":[1,2,3,4,5,6,7],
   "districtValue": "Kurnool",
   "districtValueHindi": "ఖమ్మం",
   "isActive": "Y",
-  "createdBy": "CDAC",
-  "createdDttm": "1679994885000",
-  "modifiedBy": null,
-  "modifiedDttm": null,
-  "districtCd": "S0109"
+  "parlimentNo":"18"
 },
 {
   "state": "S02",
   "districtNo": "20",
+  "constutionNo":[1,2,3,4,5,6,7,8],
   "districtValue": "Anantapur",
   "districtValueHindi": "ఖమ్మం",
   "isActive": "Y",
-  "createdBy": "CDAC",
-  "createdDttm": "1679994885000",
-  "modifiedBy": null,
-  "modifiedDttm": null,
-  "districtCd": "S0109"
+  "parlimentNo":"19"
 },
 {
   "state": "S02",
   "districtNo": "21",
+  "constutionNo":[1,2,3,4,5,6],
   "districtValue": "Sri Sathya Sai",
   "districtValueHindi": "ఖమ్మం",
   "isActive": "Y",
-  "createdBy": "CDAC",
-  "createdDttm": "1679994885000",
-  "modifiedBy": null,
-  "modifiedDttm": null,
-  "districtCd": "S0109"
+  "parlimentNo":"20"
 },
 {
   "state": "S02",
   "districtNo": "22",
+  "constutionNo":[1,2,3,4,5,6,7],
   "districtValue": "Kadapa",
   "districtValueHindi": "ఖమ్మం",
   "isActive": "Y",
-  "createdBy": "CDAC",
-  "createdDttm": "1679994885000",
-  "modifiedBy": null,
-  "modifiedDttm": null,
-  "districtCd": "S0109"
+  "parlimentNo":"21"
 },
 {
   "state": "S02",
   "districtNo": "23",
-  "districtValue": "Anantapur",
+  "constutionNo":[1,2,3,4,5,6,7,8],
+  "districtValue": "Nellore",
   "districtValueHindi": "ఖమ్మం",
   "isActive": "Y",
-  "createdBy": "CDAC",
-  "createdDttm": "1679994885000",
-  "modifiedBy": null,
-  "modifiedDttm": null,
-  "districtCd": "S0109"
+  "parlimentNo":"22"
 },
 {
   "state": "S02",
   "districtNo": "24",
-  "districtValue": "Nellore",
+  "constutionNo":[1,2,3,4,5,6],
+  "districtValue": "Tirupati",
   "districtValueHindi": "ఖమ్మం",
   "isActive": "Y",
-  "createdBy": "CDAC",
-  "createdDttm": "1679994885000",
-  "modifiedBy": null,
-  "modifiedDttm": null,
-  "districtCd": "S0109"
+  "parlimentNo":"23"
 },
 {
   "state": "S02",
   "districtNo": "25",
-  "districtValue": "Tirupati",
+  "constutionNo":[1,2,3,4,5,6],
+  "districtValue": "Annamayya",
   "districtValueHindi": "ఖమ్మం",
   "isActive": "Y",
-  "createdBy": "CDAC",
-  "createdDttm": "1679994885000",
-  "modifiedBy": null,
-  "modifiedDttm": null,
-  "districtCd": "S0109"
+  "parlimentNo":"24"
 },
 {
   "state": "S02",
   "districtNo": "26",
-  "districtValue": "Annamayya",
-  "districtValueHindi": "ఖమ్మం",
-  "isActive": "Y",
-  "createdBy": "CDAC",
-  "createdDttm": "1679994885000",
-  "modifiedBy": null,
-  "modifiedDttm": null,
-  "districtCd": "S0109"
-},
-{
-  "state": "S02",
-  "districtNo": "27",
+  "constutionNo":[1,2,3,4,5,6,7,8],
   "districtValue": "Chittoor",
   "districtValueHindi": "ఖమ్మం",
   "isActive": "Y",
-  "createdBy": "CDAC",
-  "createdDttm": "1679994885000",
-  "modifiedBy": null,
-  "modifiedDttm": null,
-  "districtCd": "S0109"
+  "parlimentNo":"25"
 }
     ],
     "parlimentList":[
@@ -1979,7 +1882,13 @@
           "constutionNo" :"1",
           "constutionValue": "Palakonda",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals":[
+            {"id":"1","value" :"Palakonda"},
+            {"id":"2","value" :"Seethampeta"},
+            {"id":"3","value" :"Veeraghattam"},
+            {"id":"4","value" :"Bhamini"}
+          ]
         },
         {
           "state": "S02",
@@ -1987,7 +1896,14 @@
           "constutionNo" :"2",
           "constutionValue": "Kurupam",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals":[
+            {"id":"1","value" :"Kurupam"},
+            {"id":"2","value" :"Gummalaxmipuram"},
+            {"id":"3","value" :"Jiyyammavalasa"},
+            {"id":"4","value" :"Komarada"},
+            {"id":"5","value" :"Garugubilli"}
+          ]
         },
         {
           "state": "S02",
@@ -1995,7 +1911,12 @@
           "constutionNo" :"3",
           "constutionValue": "Parvathipuram",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Parvathipuram"},
+            {"id":"2","value" :"Seethanagaram"},
+            {"id":"3","value" :"Balijipeta"}
+          ]
         },
         {
           "state": "S02",
@@ -2003,7 +1924,13 @@
           "constutionNo" :"4",
           "constutionValue": "Salur",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Salur"},
+            {"id":"2","value" :"Pachipenta"},
+            {"id":"3","value" :"Mentada"},
+            {"id":"4","value" :"Makkuva"}
+          ]
         },
         {
           "state": "S02",
@@ -2011,7 +1938,15 @@
           "constutionNo" :"5",
           "constutionValue": "Araku Valley",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Munchingi Puttu"},
+            {"id":"2","value" :"Peda Bayalu"},
+            {"id":"3","value" :"Dumbriguda"},
+            {"id":"4","value" :"Araku Valley"},
+            {"id":"5","value" :"Hukumpeta"},
+            {"id":"6","value" :"Ananthagiri"}
+          ]
         },
         {
           "state": "S02",
@@ -2019,7 +1954,14 @@
           "constutionNo" :"6",
           "constutionValue": "Paderu",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Paderu"},
+            {"id":"2","value" :"G.Madugula"},
+            {"id":"3","value" :"Chintapalli"},
+            {"id":"4","value" :"Gudem Kotha Veedhi"},
+            {"id":"5","value" :"Koyyuru"}
+          ]
         },
         {
           "state": "S02",
@@ -2027,7 +1969,20 @@
           "constutionNo" :"7",
           "constutionValue": "Rampachodavaram",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Maredumilli"},
+            {"id":"2","value" :"Devipatnam"},
+            {"id":"3","value" :"Y.Ramavaram"},
+            {"id":"4","value" :"Addateegala"},
+            {"id":"5","value" :"Gangavaram"},
+            {"id":"6","value" :"Rampachodavaram"},
+            {"id":"7","value" :"Rajavommangi"},
+            {"id":"8","value" :"Kunavaram"},
+            {"id":"9","value" :"Chintoor"},
+            {"id":"10","value" :"Vararamachandrapuram"},
+            {"id":"11","value" :"Nellipaka"}
+          ]
         },
         {
           "state": "S02",
@@ -2035,7 +1990,13 @@
           "constutionNo" :"1",
           "constutionValue": "Ichchapuram",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Kanchili"},
+            {"id":"2","value" :"Ichchapuram"},
+            {"id":"3","value" :"Kaviti"},
+            {"id":"4","value" :"Sompeta"}
+          ]
         },
         {
           "state": "S02",
@@ -2043,7 +2004,12 @@
           "constutionNo" :"2",
           "constutionValue": "Palasa",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Palasa"},
+            {"id":"2","value" :"Mandasa"},
+            {"id":"3","value" :"Vajrapu Kotturu"}
+          ]
         },
         {
           "state": "S02",
@@ -2051,7 +2017,13 @@
           "constutionNo" :"3",
           "constutionValue": "Tekkali",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Nandigam"},
+            {"id":"2","value" :"Tekkali"},
+            {"id":"3","value" :"Santha Bommali"},
+            {"id":"4","value" :"Kotabommali"}
+          ]
         },
         {
           "state": "S02",
@@ -2059,7 +2031,14 @@
           "constutionNo" :"4",
           "constutionValue": "Pathapatnam",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Pathapatnam"},
+            {"id":"2","value" :"Meliaputti"},
+            {"id":"3","value" :"L. N. Peta"},
+            {"id":"4","value" :"Kothur"},
+            {"id":"4","value" :"Hiramandalam"}
+          ]
         },
         {
           "state": "S02",
@@ -2067,7 +2046,11 @@
           "constutionNo" :"5",
           "constutionValue": "Srikakulam",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Srikakulam"},
+            {"id":"2","value" :"Gara"}
+          ]
         },
         {
           "state": "S02",
@@ -2075,7 +2058,13 @@
           "constutionNo" :"6",
           "constutionValue": "Amadalavalasa",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Amudalavalasa"},
+            {"id":"2","value" :"Ponduru"},
+            {"id":"3","value" :"Sarubujjili"},
+            {"id":"4","value" :"Burja"}
+          ]
         },
         {
           "state": "S02",
@@ -2083,7 +2072,13 @@
           "constutionNo" :"7",
           "constutionValue": "Narasannapeta",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Narasannapeta"},
+            {"id":"2","value" :"Jalumuru"},
+            {"id":"3","value" :"Saravakota"},
+            {"id":"4","value" :"Polaki"}
+          ]
         },
         {
           "state": "S02",
@@ -2091,7 +2086,13 @@
           "constutionNo" :"1",
           "constutionValue": "Etcherla",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Etcherla"},
+            {"id":"2","value" :"Laveru"},
+            {"id":"3","value" :"Ranasthalam"},
+            {"id":"4","value" :"G.Sigadam"}
+          ]
         },
         {
           "state": "S02",
@@ -2099,14 +2100,27 @@
           "constutionNo" :"2",
           "constutionValue": "Rajam",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Rajam"},
+            {"id":"2","value" :"Vangara"},
+            {"id":"3","value" :"Santhakaviti"},
+            {"id":"4","value" :"Regidi"},
+            {"id":"5","value" :"Amadalavalasa"}
+          ]
         },{
           "state": "S02",
           "parlimentNo":"3",
           "constutionNo" :"3",
           "constutionValue": "Bobbili",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Bobbili"},
+            {"id":"2","value" :"Ramabhadrapuram"},
+            {"id":"3","value" :"Badangi"},
+            {"id":"4","value" :"Therlam"}
+          ]
         },
         {
           "state": "S02",
@@ -2114,7 +2128,13 @@
           "constutionNo" :"4",
           "constutionValue": "Cheepurupalli",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Cheepurupalli"},
+            {"id":"2","value" :"Garividi"},
+            {"id":"3","value" :"Gurla"},
+            {"id":"4","value" :"Merakamudidam"}
+          ]
         },
         {
           "state": "S02",
@@ -2122,7 +2142,14 @@
           "constutionNo" :"5",
           "constutionValue": "Gajapathinagaram",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Gajapathinagaram"},
+            {"id":"2","value" :"Bondapalli"},
+            {"id":"3","value" :"Gantyada"},
+            {"id":"4","value" :"Dattirajeru"},
+            {"id":"5","value" :"Jami"}
+          ]
         },
         {
           "state": "S02",
@@ -2130,7 +2157,13 @@
           "constutionNo" :"6",
           "constutionValue": "Nellimarla",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Nellimarla"},
+            {"id":"2","value" :"Poosapatirega"},
+            {"id":"3","value" :"Denkada"},
+            {"id":"4","value" :"Bhogapuram"}
+          ]
         },
         {
           "state": "S02",
@@ -2138,7 +2171,10 @@
           "constutionNo" :"7",
           "constutionValue": "Vizianagaram",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Vizianagaram"}
+          ]
         },
         {
           "state": "S02",
@@ -2146,7 +2182,14 @@
           "constutionNo" :"1",
           "constutionValue": "Srungavarapukota",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Srungavarapukota"},
+            {"id":"2","value" :"Lakkavarapukota"},
+            {"id":"3","value" :"Kothavalasa"},
+            {"id":"4","value" :"Vepada"},
+            {"id":"5","value" :"Jami"}
+          ]
         },
         {
           "state": "S02",
@@ -2154,14 +2197,24 @@
           "constutionNo" :"2",
           "constutionValue": "Bheemili",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Bheemili"},
+            {"id":"2","value" :"Anandapuram"},
+            {"id":"3","value" :"Padmanabham"},
+            {"id":"4","value" :"Visakhapatnam Rural"}
+          ]
         },{
           "state": "S02",
           "parlimentNo":"4",
           "constutionNo" :"3",
           "constutionValue": "Visakhapatnam East",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Visakhapatnam (Urban)-1"}
+            
+          ]
         },
         {
           "state": "S02",
@@ -2169,7 +2222,10 @@
           "constutionNo" :"4",
           "constutionValue": "Visakhapatnam South",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Visakhapatnam (Urban)-2"}
+          ]
         },
         {
           "state": "S02",
@@ -2177,7 +2233,10 @@
           "constutionNo" :"5",
           "constutionValue": "Visakhapatnam North",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Visakhapatnam (Urban)-3"}
+          ]
         },
         {
           "state": "S02",
@@ -2185,7 +2244,10 @@
           "constutionNo" :"6",
           "constutionValue": "Visakhapatnam West",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Visakhapatnam (M.Corp)"}
+          ]
         },
         {
           "state": "S02",
@@ -2193,7 +2255,11 @@
           "constutionNo" :"7",
           "constutionValue": "Gajuwaka",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Gajuwaka"},
+            {"id":"1","value" :"Pedagantyada"}
+          ]
         },
         {
           "state": "S02",
@@ -2201,7 +2267,13 @@
           "constutionNo" :"1",
           "constutionValue": "Chodavaram",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Chodavaram"},
+            {"id":"2","value" :"Butchayyapeta"},
+            {"id":"3","value" :"Ravikamatham"},
+            {"id":"4","value" :"Rolugunta"}
+          ]
         },
         {
           "state": "S02",
@@ -2209,14 +2281,24 @@
           "constutionNo" :"2",
           "constutionValue": "Madugula",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Madugula"},
+            {"id":"2","value" :"Cheedikada"},
+            {"id":"3","value" :"Devarapalli"},
+            {"id":"4","value" :"K.Kotapadu"}
+          ]
         },{
           "state": "S02",
           "parlimentNo":"5",
           "constutionNo" :"3",
           "constutionValue": "Anakapalle",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Anakapalli"},
+            {"id":"2","value" :"Kasimkota"}
+          ]
         },
         {
           "state": "S02",
@@ -2224,7 +2306,13 @@
           "constutionNo" :"4",
           "constutionValue": "Pendurthi",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Pedagantyada (excluding areas included in Gajuwaka(GVMC))"},
+            {"id":"2","value" :"Parawada"},
+            {"id":"3","value" :"Sabbavaram"},
+            {"id":"4","value" :"Pendurthi"}
+          ]
         },
         {
           "state": "S02",
@@ -2232,7 +2320,13 @@
           "constutionNo" :"5",
           "constutionValue": "Elamanchili",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Rambilli"},
+            {"id":"2","value" :"Munagapaka"},
+            {"id":"3","value" :"Atchutapuram"},
+            {"id":"4","value" :"Elamanchili"}
+          ]
         },
         {
           "state": "S02",
@@ -2240,7 +2334,13 @@
           "constutionNo" :"6",
           "constutionValue": "Payakaraopet",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Kotauratla"},
+            {"id":"2","value" :"Nakkapalli"},
+            {"id":"3","value" :"Payakaraopeta"},
+            {"id":"4","value" :"S.Rayavaram"}
+          ]
         },
         {
           "state": "S02",
@@ -2248,7 +2348,13 @@
           "constutionNo" :"7",
           "constutionValue": "Narsipatnam",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Nathavaram"},
+            {"id":"2","value" :"Golugonda"},
+            {"id":"3","value" :"Narsipatnam"},
+            {"id":"4","value" :"Makavarapalem"}
+          ]
         },
         {
           "state": "S02",
@@ -2256,7 +2362,12 @@
           "constutionNo" :"1",
           "constutionValue": "Tuni",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Thondangi"},
+            {"id":"2","value" :"Kotananduru"},
+            {"id":"3","value" :"Tuni"}
+          ]
         },
         {
           "state": "S02",
@@ -2264,14 +2375,25 @@
           "constutionNo" :"2",
           "constutionValue": "Prathipadu",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Sankhavaram"},
+            {"id":"2","value" :"Prathipadu"},
+            {"id":"3","value" :"Yeleswaram"},
+            {"id":"4","value" :"Rowthulapudi"}
+          ]
         },{
           "state": "S02",
           "parlimentNo":"6",
           "constutionNo" :"3",
           "constutionValue": "Pithapuram",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Gollaprolu"},
+            {"id":"2","value" :"Pithapuram"},
+            {"id":"3","value" :"Kothapalle"}
+          ]
         },
         {
           "state": "S02",
@@ -2279,7 +2401,12 @@
           "constutionNo" :"4",
           "constutionValue": "Kakinada Rural",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Kakinada (urban) mandal (Part) Kakinada(M) Ward No. 66 to 70"},
+            {"id":"2","value" :"Kakinada Rural"},
+            {"id":"3","value" :"Karapa"}
+          ]
         },
         {
           "state": "S02",
@@ -2287,7 +2414,11 @@
           "constutionNo" :"5",
           "constutionValue": "Peddapuram",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Samalkota"},
+            {"id":"2","value" :"Peddapuram"}
+          ]
         },
         {
           "state": "S02",
@@ -2295,7 +2426,10 @@
           "constutionNo" :"6",
           "constutionValue": "Kakinada City",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Kakinada (urban)"}
+          ]
         },
         {
           "state": "S02",
@@ -2303,7 +2437,13 @@
           "constutionNo" :"7",
           "constutionValue": "Jaggampeta",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Gokavaram"},
+            {"id":"2","value" :"Jaggampeta"},
+            {"id":"3","value" :"Gandepalle"},
+            {"id":"4","value" :"Kirlampudi"}
+          ]
         },
         {
           "state": "S02",
@@ -2311,7 +2451,12 @@
           "constutionNo" :"1",
           "constutionValue": "Ramachandrapuram",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Kajuluru"},
+            {"id":"2","value" :"Ramachandrapuram"},
+            {"id":"3","value" :"Pamarru"}
+          ]
         },
 
         {
@@ -2320,7 +2465,13 @@
           "constutionNo" :"2",
           "constutionValue": "Mummidivaram",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Island Polavaram"},
+            {"id":"2","value" :"Mummidivaram"},
+            {"id":"3","value" :"Thallarevu"},
+            {"id":"4","value" :"Katrenikona"}
+          ]
         },
 
         {
@@ -2329,7 +2480,12 @@
           "constutionNo" :"3",
           "constutionValue": "Amalapuram",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Uppalaguptam"},
+            {"id":"2","value" :"Allavaram"},
+            {"id":"3","value" :"Amalapuram"}
+          ]
         },
 
         {
@@ -2338,7 +2494,13 @@
           "constutionNo" :"4",
           "constutionValue": "Razole",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Razole"},
+            {"id":"2","value" :"Malikipuram"},
+            {"id":"3","value" :"Sakhinetipalle"},
+            {"id":"3","value" :"Mamidikuduru (Part)"}
+          ]
         },
 
         {
@@ -2347,7 +2509,13 @@
           "constutionNo" :"5",
           "constutionValue": "Gannavaram",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"P.Gannavaram"},
+            {"id":"2","value" :"Ambajipeta"},
+            {"id":"3","value" :"Ainavilli"},
+            {"id":"3","value" :"Mamidikuduru (Part)"}
+          ]
         },
 
         {
@@ -2356,7 +2524,13 @@
           "constutionNo" :"6",
           "constutionValue": "Kothapeta",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Ravulapalem"},
+            {"id":"2","value" :"Kothapeta"},
+            {"id":"3","value" :"Atreyapuram"},
+            {"id":"3","value" :"Alamuru"}
+          ]
         },
 
         {
@@ -2365,7 +2539,12 @@
           "constutionNo" :"7",
           "constutionValue": "Mandapeta",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Mandapeta"},
+            {"id":"2","value" :"Rayavaram"},
+            {"id":"3","value" :"Kapileswarapuram"}
+          ]
         },
 
         {
@@ -2374,7 +2553,13 @@
           "constutionNo" :"1",
           "constutionValue": "Anaparthy",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Pedapudi"},
+            {"id":"2","value" :"Biccavolu"},
+            {"id":"3","value" :"Rangampeta"},
+            {"id":"4","value" :"Anaparthy"}
+          ]
         },
 
         {
@@ -2383,7 +2568,12 @@
           "constutionNo" :"2",
           "constutionValue": "Rajanagaram",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Rajanagaram"},
+            {"id":"2","value" :"Seethanagaram"},
+            {"id":"3","value" :"Korukonda"}
+          ]
         },
 
         {
@@ -2392,7 +2582,10 @@
           "constutionNo" :"3",
           "constutionValue": "Rajamahendravaram City",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Rajahmundry City"}
+          ]
         },
 
         {
@@ -2401,7 +2594,12 @@
           "constutionNo" :"4",
           "constutionValue": "Rajamahendravaram Rural",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Kadiam"},
+            {"id":"2","value" :"Rajahmundry Rural"},
+            {"id":"3","value" :"Rajahmundry Municipal Corporation"}
+          ]
         },
 
         {
@@ -2410,7 +2608,12 @@
           "constutionNo" :"5",
           "constutionValue": "Kovvur",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Kovvur"},
+            {"id":"2","value" :"Chagallu"},
+            {"id":"3","value" :"Tallapudi"}
+          ]
         },
 
         {
@@ -2419,7 +2622,12 @@
           "constutionNo" :"6",
           "constutionValue": "Nidadavole",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Nidadavole"},
+            {"id":"2","value" :"Undrajavaram"},
+            {"id":"3","value" :"Peravali"}
+          ]
         },
 
         {
@@ -2428,7 +2636,12 @@
           "constutionNo" :"7",
           "constutionValue": "Gopalapuram",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Dwaraka Tirumala"},
+            {"id":"2","value" :"Nallajerla"},
+            {"id":"3","value" :"Gopalapuram"}
+          ]
         },
 
         {
@@ -2437,7 +2650,13 @@
           "constutionNo" :"1",
           "constutionValue": "Achanta",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Penugonda"},
+            {"id":"2","value" :"Achanta"},
+            {"id":"3","value" :"Penumantra"},
+            {"id":"4","value" :"Poduru (Part)"}
+          ]
         },
 
         {
@@ -2446,7 +2665,12 @@
           "constutionNo" :"2",
           "constutionValue": "Palakollu",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Palakollu"},
+            {"id":"2","value" :"Yelamanchili"},
+            {"id":"3","value" :"Poduru (Part)"}
+          ]
         },
 
         {
@@ -2455,7 +2679,11 @@
           "constutionNo" :"3",
           "constutionValue": "Narasapuram",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Mogalthur"},
+            {"id":"2","value" :"Narsapuram"}
+          ]
         },
         {
           "state": "S02",
@@ -2463,7 +2691,11 @@
           "constutionNo" :"4",
           "constutionValue": "Bhimavaram",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Bhimavaram"},
+            {"id":"2","value" :"Veeravasaram"}
+          ]
         },
 
         {
@@ -2472,7 +2704,13 @@
           "constutionNo" :"5",
           "constutionValue": "Undi",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Kalla"},
+            {"id":"2","value" :"Palacoderu"},
+            {"id":"3","value" :"Undi"},
+            {"id":"4","value" :"Akividu"}
+          ]
         },
         {
           "state": "S02",
@@ -2480,7 +2718,12 @@
           "constutionNo" :"6",
           "constutionValue": "Tanuku",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Tanuku"},
+            {"id":"2","value" :"Attili"},
+            {"id":"3","value" :"Iragavaram"}
+          ]
         },
         {
           "state": "S02",
@@ -2488,7 +2731,11 @@
           "constutionNo" :"7",
           "constutionValue": "Tadepalligudem",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Tadepalligudem"},
+            {"id":"2","value" :"Pentapadu"}
+          ]
         },
         {
           "state": "S02",
@@ -2496,7 +2743,13 @@
           "constutionNo" :"1",
           "constutionValue": "Unguturu",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Unguturu"},
+            {"id":"2","value" :"Bhimadole"},
+            {"id":"3","value" :"Nidamarru"},
+            {"id":"4","value" :"Ganapavaram"}
+          ]
         },
         {
           "state": "S02",
@@ -2504,7 +2757,13 @@
           "constutionNo" :"2",
           "constutionValue": "Denduluru",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Denduluru"},
+            {"id":"2","value" :"Pedavegi"},
+            {"id":"3","value" :"Pedapadu"},
+            {"id":"4","value" :"Eluru (part)"}
+          ]
         },
         {
           "state": "S02",
@@ -2512,7 +2771,11 @@
           "constutionNo" :"3",
           "constutionValue": "Eluru",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Eluru mandal"},
+            {"id":"2","value" :"Eluru Municipal Corporation (Ward No.1 to 50)"}
+          ]
         },
         {
           "state": "S02",
@@ -2520,7 +2783,16 @@
           "constutionNo" :"4",
           "constutionValue": "Polavaram",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Polavaram"},
+            {"id":"2","value" :"Buttayagudem"},
+            {"id":"3","value" :"Jeelugumilli"},
+            {"id":"4","value" :"Koyyalagudem"},
+            {"id":"5","value" :"T.Narasapuram"},
+            {"id":"6","value" :"Kukkunoor"},
+            {"id":"7","value" :"Velerupadu"}
+          ]
         },
         {
           "state": "S02",
@@ -2528,7 +2800,13 @@
           "constutionNo" :"5",
           "constutionValue": "Chintalapudi",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Chintalapudi"},
+            {"id":"2","value" :"Lingapalem"},
+            {"id":"3","value" :"Kamavarapukota"},
+            {"id":"4","value" :"Jangareddigudem"}
+          ]
         },
         {
           "state": "S02",
@@ -2536,7 +2814,13 @@
           "constutionNo" :"6",
           "constutionValue": "Nuzvid",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Agiripalli"},
+            {"id":"2","value" :"Chatrai"},
+            {"id":"3","value" :"Musunuru"},
+            {"id":"4","value" :"Nuzvid"}
+          ]
         },
         {
           "state": "S02",
@@ -2544,7 +2828,13 @@
           "constutionNo" :"7",
           "constutionValue": "Kaikalur",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Mandavalli"},
+            {"id":"2","value" :"Kaikalur"},
+            {"id":"3","value" :"Kalidindi"},
+            {"id":"4","value" :"Mudinepalle"}
+          ]
         },
         {
           "state": "S02",
@@ -2552,7 +2842,13 @@
           "constutionNo" :"1",
           "constutionValue": "Gannavaram",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Bapulapadu"},
+            {"id":"2","value" :"Gannavaram"},
+            {"id":"3","value" :"Unguturu"},
+            {"id":"4","value" :"Vijayawada Rural (Part)"}
+          ]
         },
         {
           "state": "S02",
@@ -2560,7 +2856,12 @@
           "constutionNo" :"2",
           "constutionValue": "Gudivada",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Gudivada"},
+            {"id":"2","value" :"Gudlavalleru"},
+            {"id":"3","value" :"Nandivada"}
+          ]
         },
         {
           "state": "S02",
@@ -2568,7 +2869,13 @@
           "constutionNo" :"3",
           "constutionValue": "Pedana",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Gudur"},
+            {"id":"2","value" :"Pedana"},
+            {"id":"3","value" :"Bantumilli"},
+            {"id":"3","value" :"Kruthivennu"}
+          ]
         },
         {
           "state": "S02",
@@ -2576,7 +2883,10 @@
           "constutionNo" :"4",
           "constutionValue": "Machilipatnam",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Machilipatnam mandal"}
+          ]
         },
         {
           "state": "S02",
@@ -2584,7 +2894,15 @@
           "constutionNo" :"5",
           "constutionValue": "Avanigadda ",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Avanigadda"},
+            {"id":"2","value" :"Nagayalanka"},
+            {"id":"3","value" :"Koduru"},
+            {"id":"4","value" :"Challapalli"},
+            {"id":"5","value" :"Mopidevi"},
+            {"id":"6","value" :"Ghantashala"}
+          ]
         },
         {
           "state": "S02",
@@ -2592,7 +2910,14 @@
           "constutionNo" :"6",
           "constutionValue": "Pamarru",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Pamarru"},
+            {"id":"2","value" :"Thotlavalluru"},
+            {"id":"3","value" :"Pamidimukkala"},
+            {"id":"4","value" :"Movva"},
+            {"id":"5","value" :"Pedaparupudi"}
+          ]
         },
         {
           "state": "S02",
@@ -2600,7 +2925,12 @@
           "constutionNo" :"7",
           "constutionValue": "Penamaluru",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Kankipadu"},
+            {"id":"2","value" :"Vuyyuru"},
+            {"id":"3","value" :"Penamaluru"}
+          ]
         },
         {
           "state": "S02",
@@ -2608,7 +2938,13 @@
           "constutionNo" :"1",
           "constutionValue": "Tiruvuru",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"A. Konduru"},
+            {"id":"2","value" :"Gampalagudem"},
+            {"id":"3","value" :"Tiruvuru"},
+            {"id":"4","value" :"Vissannapet"}
+          ]
         },
         {
           "state": "S02",
@@ -2616,7 +2952,11 @@
           "constutionNo" :"2",
           "constutionValue": "Vijayawada West",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Vijayawada Urban mandal (Part)"},
+            {"id":"2","value" :"Vijayawada Municipal Corporation (Ward No. 1 to 13, 15 to 19, 75 and 76)"}
+          ]
         },
         {
           "state": "S02",
@@ -2624,7 +2964,11 @@
           "constutionNo" :"4",
           "constutionValue": "Vijayawada Central",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Vijayawada Urban mandal (Part)"},
+            {"id":"2","value" :"Vijayawada Municipal Corporation (Ward No. 14, 20 to 31, 33 to 35, 42 to 44, 49, 77 and 78)"}
+          ]
         },
         {
           "state": "S02",
@@ -2632,7 +2976,11 @@
           "constutionNo" :"5",
           "constutionValue": "Vijayawada East",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Vijayawada Urban mandal (Part)"},
+            {"id":"2","value" :"Vijayawada Municipal Corporation (Ward No. 32, 36 to 41, 45 to 48 and 50 to 74)"}
+          ]
         },
         {
           "state": "S02",
@@ -2640,7 +2988,14 @@
           "constutionNo" :"6",
           "constutionValue": "Mylavaram",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Ibrahimpatnam mandal"},
+            {"id":"2","value" :"G. Konduru mandal"},
+            {"id":"3","value" :"Mylavaram mandal"},
+            {"id":"4","value" :"Reddigudem mandal"},
+            {"id":"5","value" :"Vijayawada (Rural) mandal (part)"}
+          ]
         },
         {
           "state": "S02",
@@ -2648,7 +3003,13 @@
           "constutionNo" :"7",
           "constutionValue": "Nandigama",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Kanchikacherla"},
+            {"id":"2","value" :"Chandarlapadu"},
+            {"id":"3","value" :"Veerullapadu"},
+            {"id":"4","value" :"Nandigama (Part)"}
+          ]
         },
         {
           "state": "S02",
@@ -2656,7 +3017,13 @@
           "constutionNo" :"8",
           "constutionValue": "Jaggayyapeta",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Vatsavai"},
+            {"id":"2","value" :"Jaggayyapeta"},
+            {"id":"3","value" :"Penuganchiprolu"},
+            {"id":"4","value" :"Nandigama (Part)"}
+          ]
         },
         {
           "state": "S02",
@@ -2664,7 +3031,13 @@
           "constutionNo" :"1",
           "constutionValue": "Tadikonda",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Tullur"},
+            {"id":"2","value" :"Tadikonda"},
+            {"id":"3","value" :"Phirangipuram"},
+            {"id":"4","value" :"Medikonduru"}
+          ]
         },
         {
           "state": "S02",
@@ -2672,7 +3045,12 @@
           "constutionNo" :"2",
           "constutionValue": "Mangalagiri",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Mangalagiri"},
+            {"id":"2","value" :"Tadepalli"},
+            {"id":"3","value" :"Duggirala"}
+          ]
         },
         {
           "state": "S02",
@@ -2680,7 +3058,12 @@
           "constutionNo" :"3",
           "constutionValue": "Ponnur",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Ponnur"},
+            {"id":"2","value" :"Chebrolu"},
+            {"id":"3","value" :"Pedakakani"}
+          ]
         },
         {
           "state": "S02",
@@ -2688,7 +3071,11 @@
           "constutionNo" :"4",
           "constutionValue": "Tenali",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Tenali"},
+            {"id":"2","value" :"Kollipara"}
+          ]
         },
         {
           "state": "S02",
@@ -2696,7 +3083,14 @@
           "constutionNo" :"5",
           "constutionValue": "Prathipadu",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Guntur Rural mandal"},
+            {"id":"2","value" :"Kakumanu"},
+            {"id":"3","value" :"Prathipadu"},
+            {"id":"4","value" :"Pedanandipadu"},
+            {"id":"4","value" :"Vatticherukuru"}
+          ]
         },
         {
           "state": "S02",
@@ -2704,7 +3098,10 @@
           "constutionNo" :"6",
           "constutionValue": "Guntur West",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Guntur mandal"}
+          ]
         },
         {
           "state": "S02",
@@ -2712,7 +3109,10 @@
           "constutionNo" :"7",
           "constutionValue": "Guntur East",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :" Guntur mandal-Ward No.7 to 23"}
+          ]
         },
         {
           "state": "S02",
@@ -2720,7 +3120,14 @@
           "constutionNo" :"1",
           "constutionValue": "Pedakurapadu",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Bellamkonda"},
+            {"id":"2","value" :"Atchampet"},
+            {"id":"3","value" :"Krosuru"},
+            {"id":"4","value" :"Amaravathi"},
+            {"id":"4","value" :"Pedakurapadu"}
+          ]
         },
         {
           "state": "S02",
@@ -2728,7 +3135,12 @@
           "constutionNo" :"2",
           "constutionValue": "Chilakaluripet",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Nadendla"},
+            {"id":"2","value" :"Chilakaluripet"},
+            {"id":"3","value" :"Edlapudu"}
+          ]
         },
         {
           "state": "S02",
@@ -2736,7 +3148,11 @@
           "constutionNo" :"3",
           "constutionValue": "Narasaraopet",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Rompicherla"},
+            {"id":"2","value" :"Narsaraopet"}
+          ]
         },
         {
           "state": "S02",
@@ -2744,7 +3160,13 @@
           "constutionNo" :"4",
           "constutionValue": "Sattenapalle",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Sattenapalle"},
+            {"id":"2","value" :"Rajupalem"},
+            {"id":"3","value" :"Nekarikallu"},
+            {"id":"4","value" :"Muppalla"}
+          ]
         },
         {
           "state": "S02",
@@ -2752,7 +3174,14 @@
           "constutionNo" :"5",
           "constutionValue": "Vinukonda",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Ipur"},
+            {"id":"2","value" :"Vinukonda"},
+            {"id":"3","value" :"Nuzendla"},
+            {"id":"4","value" :"Savalyapuram"},
+            {"id":"4","value" :"Bollapalle"}
+          ]
         },
         {
           "state": "S02",
@@ -2760,7 +3189,13 @@
           "constutionNo" :"6",
           "constutionValue": "Gurazala",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Gurajala"},
+            {"id":"2","value" :"Dachepalle"},
+            {"id":"3","value" :"Piduguralla"},
+            {"id":"4","value" :"Machavaram"}
+          ]
         },
         {
           "state": "S02",
@@ -2768,7 +3203,14 @@
           "constutionNo" :"7",
           "constutionValue": "Macherla",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Macherla"},
+            {"id":"2","value" :"Veldurthi"},
+            {"id":"3","value" :"Durgi"},
+            {"id":"4","value" :"Rentachintala"},
+            {"id":"4","value" :"Karempudi"}
+          ]
         },
         {
           "state": "S02",
@@ -2776,7 +3218,14 @@
           "constutionNo" :"1",
           "constutionValue": "Vemuru",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Vemuru"},
+            {"id":"2","value" :"Kollur"},
+            {"id":"3","value" :"Tsundur"},
+            {"id":"4","value" :"Bhattiprolu"},
+            {"id":"4","value" :"Amruthalur"}
+          ]
         },
         {
           "state": "S02",
@@ -2784,7 +3233,13 @@
           "constutionNo" :"2",
           "constutionValue": "Repalle",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Nizampatnam"},
+            {"id":"2","value" :"Nagaram"},
+            {"id":"3","value" :"Cherukupalle"},
+            {"id":"4","value" :"Repalle"}
+          ]
         },
         {
           "state": "S02",
@@ -2792,7 +3247,12 @@
           "constutionNo" :"3",
           "constutionValue": "Bapatla",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Bapatla"},
+            {"id":"2","value" :"Pittalavanipalem"},
+            {"id":"3","value" :"Karlapalem"}
+          ]
         },
         {
           "state": "S02",
@@ -2800,7 +3260,15 @@
           "constutionNo" :"4",
           "constutionValue": "Parchur",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Yeddanapudi"},
+            {"id":"2","value" :"Parchur"},
+            {"id":"3","value" :"Karamchedu"},
+            {"id":"4","value" :"Inkollu"},
+            {"id":"4","value" :"Chinaganjam"},
+            {"id":"4","value" :"Martur"}
+          ]
         },
         {
           "state": "S02",
@@ -2808,7 +3276,14 @@
           "constutionNo" :"5",
           "constutionValue": "Addanki",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Janakavram Panguluru"},
+            {"id":"2","value" :"Addanki"},
+            {"id":"3","value" :"Santhamaguluru"},
+            {"id":"4","value" :"Ballikurava"},
+            {"id":"4","value" :"Korsipadu"}
+          ]
         },
         {
           "state": "S02",
@@ -2816,7 +3291,11 @@
           "constutionNo" :"6",
           "constutionValue": "Chirala",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Chirala"},
+            {"id":"2","value" :"Vetapalem"}
+          ]
         },
         {
           "state": "S02",
@@ -2824,7 +3303,13 @@
           "constutionNo" :"7",
           "constutionValue": "Santhanuthalapadu",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Naguluppalapadu"},
+            {"id":"2","value" :"Maddipadu"},
+            {"id":"3","value" :"Santhanuthalapadu"},
+            {"id":"4","value" :"Chimakurthi"}
+          ]
         },
 
         {
@@ -2833,14 +3318,29 @@
           "constutionNo" :"1",
           "constutionValue": "Yerragondapalem",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Yerragondlapalem"},
+            {"id":"2","value" :"Pullalacheruvu"},
+            {"id":"3","value" :"Tripuranthakam"},
+            {"id":"4","value" :"Dornala"},
+            {"id":"5","value" :"Peda"},
+            {"id":"6","value" :"Araveedu"}
+          ]
         },{
           "state": "S02",
           "parlimentNo":"16",
           "constutionNo" :"2",
           "constutionValue": "Darsi",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Tallur"},
+            {"id":"2","value" :"Kurichedu"},
+            {"id":"3","value" :"Mundlamuru"},
+            {"id":"4","value" :"Darsi"},
+            {"id":"5","value" :"Donakonda"}
+          ]
         },
         {
           "state": "S02",
@@ -2848,7 +3348,11 @@
           "constutionNo" :"3",
           "constutionValue": "Ongole",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Ongole"},
+            {"id":"2","value" :"Kothapatnam"}
+          ]
         },
         {
           "state": "S02",
@@ -2856,7 +3360,15 @@
           "constutionNo" :"4",
           "constutionValue": "Kondapi",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Singarayakonda"},
+            {"id":"2","value" :"Kondapi"},
+            {"id":"3","value" :"Tangutur"},
+            {"id":"4","value" :"Zarugumilli"},
+            {"id":"5","value" :"Ponnaluru"},
+            {"id":"6","value" :"Marripudi"}
+          ]
         },
         {
           "state": "S02",
@@ -2864,7 +3376,13 @@
           "constutionNo" :"5",
           "constutionValue": "Markapuram",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Konakanamitla"},
+            {"id":"2","value" :"Podili"},
+            {"id":"3","value" :"Markapuram"},
+            {"id":"4","value" :"Tarlupadu"}
+          ]
         },
         {
           "state": "S02",
@@ -2872,7 +3390,15 @@
           "constutionNo" :"6",
           "constutionValue": "Giddalur",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Bestavaripeta"},
+            {"id":"2","value" :"Racherla"},
+            {"id":"3","value" :"Giddalur"},
+            {"id":"4","value" :"Komarolu"},
+            {"id":"5","value" :"Cumbum"},
+            {"id":"6","value" :"Ardhaveedu"}
+          ]
         },
         {
           "state": "S02",
@@ -2880,7 +3406,15 @@
           "constutionNo" :"7",
           "constutionValue": "Kanigiri",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"HM Padu"},
+            {"id":"2","value" :"CS Puram"},
+            {"id":"3","value" :"Pamuru"},
+            {"id":"4","value" :"Velligandla"},
+            {"id":"5","value" :"PC Palli"},
+            {"id":"6","value" :"Kanigiri"}
+          ]
         },
         {
           "state": "S02",
@@ -2888,7 +3422,15 @@
           "constutionNo" :"1",
           "constutionValue": "Allagadda",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Sirvel"},
+            {"id":"2","value" :"Allagadda"},
+            {"id":"3","value" :"Dornipadu"},
+            {"id":"4","value" :"Uyyalawada"},
+            {"id":"5","value" :"Chagalamarri"},
+            {"id":"6","value" :"Rudravaram"}
+          ]
         },
         {
           "state": "S02",
@@ -2896,7 +3438,14 @@
           "constutionNo" :"2",
           "constutionValue": "Srisailam",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Srisailam"},
+            {"id":"2","value" :"Atmakur"},
+            {"id":"3","value" :"Velgode"},
+            {"id":"4","value" :"Bandi Atmakur"},
+            {"id":"5","value" :"Mahanandi"}
+          ]
         },
         {
           "state": "S02",
@@ -2904,7 +3453,15 @@
           "constutionNo" :"3",
           "constutionValue": "Nandikotkur",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Nandikotkur"},
+            {"id":"2","value" :"Pagidyala"},
+            {"id":"3","value" :"J. Bungalow"},
+            {"id":"4","value" :"Kothapalle"},
+            {"id":"5","value" :"Pamulapadu"},
+            {"id":"6","value" :"Midthur"}
+          ]
         },
         {
           "state": "S02",
@@ -2912,7 +3469,13 @@
           "constutionNo" :"4",
           "constutionValue": "Panyam",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Kallur"},
+            {"id":"2","value" :"Orvakal"},
+            {"id":"3","value" :"Panyam"},
+            {"id":"4","value" :"Gadivemula"}
+          ]
         },
         {
           "state": "S02",
@@ -2920,7 +3483,12 @@
           "constutionNo" :"5",
           "constutionValue": "Nandyal",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Nandyal Urban"},
+            {"id":"2","value" :"Nandyal Rural(new)"},
+            {"id":"3","value" :"Gospadu"}
+          ]
         },
         {
           "state": "S02",
@@ -2928,7 +3496,14 @@
           "constutionNo" :"6",
           "constutionValue": "Banaganapalle",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Banaganapalle"},
+            {"id":"2","value" :"Koilkuntla"},
+            {"id":"3","value" :"Owk"},
+            {"id":"4","value" :"Sanjamala"},
+            {"id":"5","value" :"Kolimigundla"}
+          ]
         },
         {
           "state": "S02",
@@ -2936,7 +3511,12 @@
           "constutionNo" :"7",
           "constutionValue": "Dhone",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Bethamcherla"},
+            {"id":"2","value" :"Dhone"},
+            {"id":"3","value" :"Peapally"}
+          ]
         },
         {
           "state": "S02",
@@ -2944,7 +3524,10 @@
           "constutionNo" :"1",
           "constutionValue": "Kurnool",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Kurnool"}
+          ]
         },
         {
           "state": "S02",
@@ -2952,7 +3535,14 @@
           "constutionNo" :"2",
           "constutionValue": "Pattikonda",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Krishnagiri"},
+            {"id":"2","value" :"Veldurthi"},
+            {"id":"3","value" :"Pattikonda"},
+            {"id":"4","value" :"Maddikera"},
+            {"id":"5","value" :"Tuggali"}
+          ]
         },
         {
           "state": "S02",
@@ -2960,7 +3550,13 @@
           "constutionNo" :"3",
           "constutionValue": "Kodumur",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Kurnool"},
+            {"id":"2","value" :"C.Belagal"},
+            {"id":"3","value" :"Kodumur"},
+            {"id":"4","value" :"Gudur-Kurnool"}
+          ]
         },
         {
           "state": "S02",
@@ -2968,7 +3564,12 @@
           "constutionNo" :"4",
           "constutionValue": "Yemmiganur",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Nandavaram"},
+            {"id":"2","value" :"Yemmiganur"},
+            {"id":"3","value" :"Gonegandla"}
+          ]
         },
         {
           "state": "S02",
@@ -2976,7 +3577,13 @@
           "constutionNo" :"5",
           "constutionValue": "Mantralayam",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Peda Kadubur"},
+            {"id":"2","value" :"Mantralayam"},
+            {"id":"3","value" :"Kosigi"},
+            {"id":"4","value" :"Kowthalam"}
+          ]
         },
         {
           "state": "S02",
@@ -2984,7 +3591,10 @@
           "constutionNo" :"6",
           "constutionValue": "Adoni",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Adoni"}
+          ]
         },
         {
           "state": "S02",
@@ -2992,7 +3602,15 @@
           "constutionNo" :"7",
           "constutionValue": "Alur",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Devanakonda"},
+            {"id":"2","value" :"Holagunda"},
+            {"id":"3","value" :"Halaharvi"},
+            {"id":"4","value" :"Alur"},
+            {"id":"5","value" :"Aspari"},
+            {"id":"6","value" :"Chippagiri"}
+          ]
         },
         {
           "state": "S02",
@@ -3000,7 +3618,14 @@
           "constutionNo" :"1",
           "constutionValue": "Rayadurg",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"D. Hirehal"},
+            {"id":"2","value" :"Rayadurg"},
+            {"id":"3","value" :"Kanekal"},
+            {"id":"4","value" :"Bommanahal"},
+            {"id":"5","value" :"Gummagatta"}
+          ]
         },
         {
           "state": "S02",
@@ -3008,7 +3633,14 @@
           "constutionNo" :"2",
           "constutionValue": "Uravakonda",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Vidapanakal"},
+            {"id":"2","value" :"Vajrakarur"},
+            {"id":"3","value" :"Uravakonda"},
+            {"id":"4","value" :"Beluguppa"},
+            {"id":"5","value" :"Kudair"}
+          ]
         },
         {
           "state": "S02",
@@ -3016,7 +3648,12 @@
           "constutionNo" :"3",
           "constutionValue": "Guntakal",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Guntakal"},
+            {"id":"2","value" :"Gooty"},
+            {"id":"3","value" :"Pamidi"}
+          ]
         },
         {
           "state": "S02",
@@ -3024,7 +3661,13 @@
           "constutionNo" :"4",
           "constutionValue": "Tadpatri",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Peddavadugur"},
+            {"id":"2","value" :"Yadiki"},
+            {"id":"3","value" :"Tadpatri"},
+            {"id":"4","value" :"Peddapappur"}
+          ]
         },
         {
           "state": "S02",
@@ -3032,7 +3675,15 @@
           "constutionNo" :"5",
           "constutionValue": "Singanamala",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Garladinne"},
+            {"id":"2","value" :"Singanamala"},
+            {"id":"3","value" :"Putlur"},
+            {"id":"4","value" :"Yellanur"},
+            {"id":"5","value" :"Narpala"},
+            {"id":"6","value" :"B.K. Samudram"}
+          ]
         },
         {
           "state": "S02",
@@ -3040,7 +3691,11 @@
           "constutionNo" :"6",
           "constutionValue": "Anantapur Urban",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Anantapur Urban"}
+          ]
+          
         },
         {
           "state": "S02",
@@ -3048,7 +3703,14 @@
           "constutionNo" :"7",
           "constutionValue": "Kalyandurg",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Brahmsamudram"},
+            {"id":"2","value" :"Kalyandurg"},
+            {"id":"3","value" :"Settur"},
+            {"id":"4","value" :"Kundrupi"},
+            {"id":"5","value" :"Kambdur"}
+          ]
         },
         {
           "state": "S02",
@@ -3056,7 +3718,10 @@
           "constutionNo" :"1",
           "constutionValue": "Raptadu",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Raptadu"}
+          ]
         },
         {
           "state": "S02",
@@ -3064,7 +3729,14 @@
           "constutionNo" :"2",
           "constutionValue": "Madakasira",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Madakasira"},
+            {"id":"2","value" :"Amarapuram"},
+            {"id":"3","value" :"Gudibanda"},
+            {"id":"4","value" :"Rolla"},
+            {"id":"4","value" :"Agali"}
+          ]
         },
         {
           "state": "S02",
@@ -3072,7 +3744,12 @@
           "constutionNo" :"3",
           "constutionValue": "Hindupur",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Hindupur"},
+            {"id":"2","value" :"Lepakshi"},
+            {"id":"3","value" :"Chilamathur"}
+          ]
         },
         {
           "state": "S02",
@@ -3080,7 +3757,14 @@
           "constutionNo" :"4",
           "constutionValue": "Penukonda",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Parigi"},
+            {"id":"2","value" :"Penukonda"},
+            {"id":"3","value" :"Gorantla"},
+            {"id":"4","value" :"Somandepalle"},
+            {"id":"5","value" :"Roddam"}
+          ]
         },
         {
           "state": "S02",
@@ -3088,7 +3772,15 @@
           "constutionNo" :"5",
           "constutionValue": "Puttaparthi",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Nallamada"},
+            {"id":"2","value" :"Bukkapatnam"},
+            {"id":"3","value" :"Kothacheruvu"},
+            {"id":"4","value" :"Puttaparthi"},
+            {"id":"5","value" :"O.D. Cheruvu"},
+            {"id":"6","value" :"Amadugur"}
+          ]
         },
         {
           "state": "S02",
@@ -3096,7 +3788,13 @@
           "constutionNo" :"6",
           "constutionValue": "Dharmavaram",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Dharmavaram"},
+            {"id":"2","value" :"Bathalapalle"},
+            {"id":"3","value" :"Tadimarri"},
+            {"id":"4","value" :"Mudigubba"}
+          ]
         },
         {
           "state": "S02",
@@ -3104,7 +3802,14 @@
           "constutionNo" :"7",
           "constutionValue": "Kadiri",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Tanakallu"},
+            {"id":"2","value" :"Nambulipulikunta"},
+            {"id":"3","value" :"Gandlapenta"},
+            {"id":"4","value" :"Kadiri"},
+            {"id":"5","value" :"Nallacheruvu"}
+          ]
         },
         {
           "state": "S02",
@@ -3112,7 +3817,16 @@
           "constutionNo" :"1",
           "constutionValue": "Badvel",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Kalasapadu"},
+            {"id":"2","value" :"B.Kodur"},
+            {"id":"3","value" :"Sri Avadhutha Kasinaya"},
+            {"id":"4","value" :"Porumamilla"},
+            {"id":"5","value" :"Badvel"},
+            {"id":"6","value" :"Gopavaram"},
+            {"id":"7","value" :"Atlur"}
+          ]
         },
         {
           "state": "S02",
@@ -3120,7 +3834,10 @@
           "constutionNo" :"2",
           "constutionValue": "Kadapa",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Kadapa"}
+          ]
         },
         {
           "state": "S02",
@@ -3128,7 +3845,17 @@
           "constutionNo" :"3",
           "constutionValue": "Pulivendla",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Simhadripuram"},
+            {"id":"2","value" :"Lingala"},
+            {"id":"3","value" :"Thondur"},
+            {"id":"4","value" :"Porumamilla"},
+            {"id":"5","value" :"Pulivendula"},
+            {"id":"6","value" :"Vemula"},
+            {"id":"7","value" :"Vempalle"},
+            {"id":"8","value" :"Chakrayapet"}
+          ]
         },
         {
           "state": "S02",
@@ -3136,7 +3863,15 @@
           "constutionNo" :"4",
           "constutionValue": "Kamalapuram",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Pendlimarri"},
+            {"id":"2","value" :"Chinthakommadinne"},
+            {"id":"3","value" :"Kamalapuram"},
+            {"id":"4","value" :"Vallur"},
+            {"id":"5","value" :"Chennur"},
+            {"id":"6","value" :"Veerapunayunipalle"}
+          ]
         },
         {
           "state": "S02",
@@ -3144,7 +3879,15 @@
           "constutionNo" :"5",
           "constutionValue": "Jammalamadugu",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Peddamudium"},
+            {"id":"2","value" :"Mylavaram"},
+            {"id":"3","value" :"Kondapuram"},
+            {"id":"4","value" :"Jammalamadugu"},
+            {"id":"5","value" :"Muddanur"},
+            {"id":"6","value" :"Yerraguntla"}
+          ]
         },
         {
           "state": "S02",
@@ -3152,7 +3895,11 @@
           "constutionNo" :"6",
           "constutionValue": "Proddatur",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Rajupalem"},
+            {"id":"2","value" :"Proddatur"}
+          ]
         },
         {
           "state": "S02",
@@ -3160,7 +3907,14 @@
           "constutionNo" :"7",
           "constutionValue": "Mydukur",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Duvvur"},
+            {"id":"2","value" :"Mydukur"},
+            {"id":"3","value" :"Khajipet"},
+            {"id":"4","value" :"Brahmamgarimattam"},
+            {"id":"5","value" :"Chapadu"}
+          ]
         },
         {
           "state": "S02",
@@ -3168,7 +3922,14 @@
           "constutionNo" :"1",
           "constutionValue": "Kandukur",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Lingasamudram"},
+            {"id":"2","value" :"Voletivaripalem"},
+            {"id":"3","value" :"Kandukur"},
+            {"id":"4","value" :"Gudluru"},
+            {"id":"5","value" :"Ulavapadu"}
+          ]
         },
         {
           "state": "S02",
@@ -3176,7 +3937,13 @@
           "constutionNo" :"2",
           "constutionValue": "Kavali",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Kavali"},
+            {"id":"2","value" :"Bogole"},
+            {"id":"3","value" :"Allur"},
+            {"id":"4","value" :"Dagadarthi"}
+          ]
         },
         {
           "state": "S02",
@@ -3184,7 +3951,15 @@
           "constutionNo" :"3",
           "constutionValue": "Atmakur",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Chejerla"},
+            {"id":"2","value" :"Atmakur"},
+            {"id":"3","value" :"Anumasamudrampeta"},
+            {"id":"4","value" :"Marripadu"},
+            {"id":"5","value" :"Sangam"},
+            {"id":"6","value" :"Ananthasagaram"}
+          ]
         },
         {
           "state": "S02",
@@ -3192,7 +3967,14 @@
           "constutionNo" :"4",
           "constutionValue": "Kovuru",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Vidavalur"},
+            {"id":"2","value" :"Kodavalur"},
+            {"id":"3","value" :"Kovur"},
+            {"id":"4","value" :"Buchireddipalem"},
+            {"id":"5","value" :"Indukurpet"}
+          ]
         },
         {
           "state": "S02",
@@ -3200,7 +3982,10 @@
           "constutionNo" :"5",
           "constutionValue": "Nellore City",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Nellore City"}
+          ]
         },
         {
           "state": "S02",
@@ -3208,7 +3993,10 @@
           "constutionNo" :"6",
           "constutionValue": "Nellore Rural",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Nellore Rural"}
+          ]
         },
         {
           "state": "S02",
@@ -3216,63 +4004,121 @@
           "constutionNo" :"7",
           "constutionValue": "Udayagiri",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Jaladanki"},
+            {"id":"2","value" :"Seetharamapuram"},
+            {"id":"3","value" :"Udayagiri"},
+            {"id":"4","value" :"Varikuntapadu"},
+            {"id":"5","value" :"Vinjamur"},
+            {"id":"6","value" :"Duttalur"},
+            {"id":"7","value" :"Kaligiri"},
+            {"id":"8","value" :"Kondapuram"}
+          ]
         },
         {
           "state": "S02",
           "parlimentNo":"23",
           "constutionNo" :"1",
-          "constutionValue": "Kandukur",
+          "constutionValue": "Sarvepalli",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Podalakur"},
+            {"id":"2","value" :"Thotapalligudur"},
+            {"id":"3","value" :"Muthukur"},
+            {"id":"4","value" :"Venkatachalam"},
+            {"id":"5","value" :"Manubolu"}
+          ]
         },
         {
           "state": "S02",
           "parlimentNo":"23",
           "constutionNo" :"2",
-          "constutionValue": "Kavali",
+          "constutionValue": "Gudur",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Chillakur"},
+            {"id":"2","value" :"Kota"},
+            {"id":"3","value" :"Vakadu"},
+            {"id":"4","value" :"Chittamur"}
+          ]
         },
         {
           "state": "S02",
           "parlimentNo":"23",
           "constutionNo" :"3",
-          "constutionValue": "Atmakur",
+          "constutionValue": "Sullurpeta",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Ojili"},
+            {"id":"2","value" :"Naidupet"},
+            {"id":"3","value" :"Pellakur"},
+            {"id":"4","value" :"Doravarisatram"},
+            {"id":"5","value" :"Sullurupeta"},
+            {"id":"5","value" :"Tada"}
+          ]
         },
         {
           "state": "S02",
           "parlimentNo":"23",
           "constutionNo" :"4",
-          "constutionValue": "Kovuru",
+          "constutionValue": "Venkatagiri",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Kaluvoya"},
+            {"id":"2","value" :"Rapur"},
+            {"id":"3","value" :"Sydapuram"},
+            {"id":"4","value" :"Dakkili"},
+            {"id":"5","value" :"Venkatagiri"},
+            {"id":"5","value" :"Balayapalle"}
+          ]
         },
         {
           "state": "S02",
           "parlimentNo":"23",
           "constutionNo" :"5",
-          "constutionValue": "Nellore City",
+          "constutionValue": "Tirupati",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Tirupati (urban) mandal"},
+            {"id":"2","value" :"Tirupati (rural) mandal"}
+          ]
         },
         {
           "state": "S02",
           "parlimentNo":"23",
           "constutionNo" :"6",
-          "constutionValue": "Nellore Rural",
+          "constutionValue": "Srikalahasti",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Renigunta"},
+            {"id":"2","value" :"Yerpedu"},
+            {"id":"3","value" :"Srikalahasti"},
+            {"id":"4","value" :"Thottambedu"}
+          ]
         },
         {
           "state": "S02",
           "parlimentNo":"23",
           "constutionNo" :"7",
-          "constutionValue": "Udayagiri",
+          "constutionValue": "Satyavedu",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Narayanavanam"},
+            {"id":"2","value" :"B.N. Kandriga"},
+            {"id":"3","value" :"Varadaiahpalem"},
+            {"id":"4","value" :"K.V.B. Puram"},
+            {"id":"5","value" :"Pitchatur"},
+            {"id":"6","value" :"Satyavedu"},
+            {"id":"7","value" :"Nagalapuram"}
+          ]
         },
         {
           "state": "S02",
@@ -3280,7 +4126,15 @@
           "constutionNo" :"1",
           "constutionValue": "Rajampet",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Siddavatam"},
+            {"id":"2","value" :"Vontimitta"},
+            {"id":"3","value" :"Nandalur"},
+            {"id":"4","value" :"Rajampet"},
+            {"id":"5","value" :"Veeraballe"},
+            {"id":"6","value" :"Sundupalli"}
+          ]
         },
         {
           "state": "S02",
@@ -3288,7 +4142,14 @@
           "constutionNo" :"2",
           "constutionValue": "Kodur",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Penagalur"},
+            {"id":"2","value" :"Chitvel"},
+            {"id":"3","value" :"Pullampeta"},
+            {"id":"4","value" :"Obulavaripalle"},
+            {"id":"5","value" :"Railway Koduru"}
+          ]
         },
         {
           "state": "S02",
@@ -3296,7 +4157,15 @@
           "constutionNo" :"3",
           "constutionValue": "Rayachoti",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Sambepalli"},
+            {"id":"2","value" :"Chinnamandem"},
+            {"id":"3","value" :"Rayachoti"},
+            {"id":"4","value" :"Galiveedu"},
+            {"id":"5","value" :"Lakkireddipalli"},
+            {"id":"6","value" :"Ramapuram"}
+          ]
         },
         {
           "state": "S02",
@@ -3304,7 +4173,15 @@
           "constutionNo" :"4",
           "constutionValue": "Thamballapalle",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Thambalapalle"},
+            {"id":"2","value" :"Mulakalacheru"},
+            {"id":"3","value" :"Peddamandyam"},
+            {"id":"4","value" :"Kurabalakota"},
+            {"id":"5","value" :"B.Kothakota"},
+            {"id":"6","value" :"Peddathippasamudram"}
+          ]
         },
         {
           "state": "S02",
@@ -3312,7 +4189,15 @@
           "constutionNo" :"5",
           "constutionValue": "Pileru",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Gurramkonda"},
+            {"id":"2","value" :"Valmikipuram"},
+            {"id":"3","value" :"Pileru"},
+            {"id":"4","value" :"Kalikiri"},
+            {"id":"5","value" :"Kalakada"},
+            {"id":"6","value" :"Kambhamvaripalle"}
+          ]
         },
         {
           "state": "S02",
@@ -3320,7 +4205,12 @@
           "constutionNo" :"6",
           "constutionValue": "Madanapalle",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Ramasamudram"},
+            {"id":"2","value" :"Madanapalle"},
+            {"id":"3","value" :"Nimmanapalli"}
+          ]
         },
         {
           "state": "S02",
@@ -3328,7 +4218,15 @@
           "constutionNo" :"7",
           "constutionValue": "Punganur",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Sodam"},
+            {"id":"2","value" :"Somala"},
+            {"id":"3","value" :"Chowdepalle"},
+            {"id":"4","value" :"Punganur"},
+            {"id":"5","value" :"Pulicherla"},
+            {"id":"6","value" :"Rompicherla"}
+          ]
         },
         {
           "state": "S02",
@@ -3336,7 +4234,15 @@
           "constutionNo" :"1",
           "constutionValue": "Chandragiri",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Chandragiri"},
+            {"id":"2","value" :"Pakala"},
+            {"id":"3","value" :"Ramachandrapuram"},
+            {"id":"4","value" :"Chinnagottigalu"},
+            {"id":"5","value" :"Yerravaripale"},
+            {"id":"6","value" :"Konkachennayyagunta"}
+          ]
         },
         {
           "state": "S02",
@@ -3344,7 +4250,14 @@
           "constutionNo" :"2",
           "constutionValue": "Nagari",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"NINDRA (Chittoor)"},
+            {"id":"2","value" :"Vijayapuram (Chittoor)"},
+            {"id":"3","value" :"Nagari (Chittoor)"},
+            {"id":"4","value" :"Puttur (Tirupati)"},
+            {"id":"5","value" :"Vadamalapeta (Tirupati)"}
+          ]
         },
         {
           "state": "S02",
@@ -3352,7 +4265,15 @@
           "constutionNo" :"3",
           "constutionValue": "Gangadhara Nellore",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Penumuru"},
+            {"id":"2","value" :"Vedurukuppam"},
+            {"id":"3","value" :"Karvetinagar"},
+            {"id":"4","value" :"S. R. Puram"},
+            {"id":"5","value" :"G. D. Nellore"},
+            {"id":"5","value" :"Palasamudram"}
+          ]
         },
         {
           "state": "S02",
@@ -3360,7 +4281,11 @@
           "constutionNo" :"4",
           "constutionValue": "Chittoor",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Chittoor"},
+            {"id":"2","value" :"Gudipala"}
+          ]
         },
         {
           "state": "S02",
@@ -3368,7 +4293,14 @@
           "constutionNo" :"5",
           "constutionValue": "Puthalapattu",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Irala"},
+            {"id":"2","value" :"Puthalapattu"},
+            {"id":"3","value" :"Thavanampalle"},
+            {"id":"4","value" :"Bangarupalem"},
+            {"id":"5","value" :"Yadamari"}
+          ]
         },
         {
           "state": "S02",
@@ -3376,7 +4308,14 @@
           "constutionNo" :"6",
           "constutionValue": "Palamaner",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :"Palamaneru"},
+            {"id":"2","value" :"Gangavaram"},
+            {"id":"3","value" :"Baireddypalle"},
+            {"id":"4","value" :"Peddapanjani"},
+            {"id":"5","value" :"V. Kota"}
+          ]
         },
         {
           "state": "S02",
@@ -3384,7 +4323,14 @@
           "constutionNo" :"7",
           "constutionValue": "Kuppam",
           "constutionHindi": "ఇచ్ఛాపురం",
-          "isActive": "Y"
+          "isActive": "Y",
+          "mandals": [
+            {"id":"1","value" :" Kuppam Municipality"},
+            {"id":"2","value" :"GangavKuppamaram"},
+            {"id":"3","value" :"Gudupalle"},
+            {"id":"4","value" :"Santipuram"},
+            {"id":"5","value" :"Ramakuppam"}
+          ]
         }
     ],
     "mandalList" :[

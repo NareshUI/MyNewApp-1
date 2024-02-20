@@ -46,9 +46,9 @@
             <label class="control-label">Constituency</label>
           </div>
           <div class="col-md-9">
-            <select class="form-select form-select-sm" aria-label="Default select example">
+            <select class="form-select form-select-sm" aria-label="Default select example" (change)="constutionsChange($event)">
               <option selected>Please Select Constituency</option>
-              <option *ngFor="let const of constutions">{{const.constutionValue}}</option>
+              <option *ngFor="let const of constutions" value="{{const.constutionNo}}">{{const.constutionValue}}</option>
             </select>
           </div>
         </div>
@@ -61,10 +61,11 @@
             <label class="control-label">District</label>
           </div>
           <div class="col-md-9">
-            <select class="form-select form-select-sm" aria-label="Default select example" (change)="districtChange($event)">
+            <!-- <select class="form-select form-select-sm" aria-label="Default select example">
               <option selected>Select the District</option>
               <option *ngFor="let dist of districtList" value="{{dist.districtNo}}">{{dist.districtValue}}</option>
-            </select>
+            </select> -->
+            <input type="text" readonly value="{{selectedDist?.districtValue}}" class="form-control form-select-sm"/>
           </div>
         </div>
         <div class="col-md-4 row">
@@ -74,8 +75,7 @@
           <div class="col-md-9">
             <select class="form-select form-select-sm" aria-label="Default select example">
               <option selected>Select Mandal</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
+              <option *ngFor="let mand of mandals">{{mand.value}}</option>
             </select>
           </div>
         </div>
