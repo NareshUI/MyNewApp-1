@@ -3,6 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { NgbModal,ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 import * as Highcharts from 'highcharts';
+import { SharedService } from '../shared.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -32,20 +34,25 @@ export class DashboardComponent implements OnInit {
   selectedDist: any;
   Configuration: any;
   mandals:any =[];
-  constructor(private modalService:NgbModal,private httpService : HttpClient,public fb: FormBuilder) { }
+  constructor(private modalService:NgbModal,private router : Router,public fb: FormBuilder,private sharedService : SharedService) { }
 
   ngOnInit(): void {
+    if(sessionStorage.getItem('logged') === "true"){
 
-    let data=localStorage.getItem('chartData');
-    if(data){
-      this.arr=JSON.parse(data)
+      let data=localStorage.getItem('chartData');
+      if(data){
+        this.arr=JSON.parse(data)
+      }
+      this.today = new Date().toISOString().split('T')[0];
+      this.suveyForm =  new FormGroup({
+        'question':new FormControl(null,[Validators.required])
+      });
+      
+      this.loadData();
+
+    }else{
+      this.router.navigate(['/login']);
     }
-    this.today = new Date().toISOString().split('T')[0];
-    this.suveyForm =  new FormGroup({
-      'question':new FormControl(null,[Validators.required])
-    });
-    
-    this.loadData();
     
   }
 
@@ -159,18 +166,14 @@ export class DashboardComponent implements OnInit {
     window.print();
   }
 
-  loadData(){
-    this.httpService.get(this.url).subscribe((resp :any) =>{
-      if(resp){
-        this.Configuration = resp;
-        this.questionsList = resp.questionsList;
-        this.stateList = resp.statesList;
-        this.districtList = resp.districtList;
-        this.parlimentList = resp.parlimentList;
-        this.constutions = resp.constutions;
-      }
-    })
-  }
+   loadData(){
+    this.Configuration = this.sharedService.infoData;
+    this.questionsList = this.Configuration.questionsList;
+    this.stateList = this.Configuration.statesList;
+    this.districtList = this.Configuration.districtList;
+    this.parlimentList = this.Configuration.parlimentList;
+    this.constutions = this.Configuration.constutions;
+   }
   stateChange(event:any){
     this.parlimentList = [];
     this.selectedState = event.target.value;
@@ -192,5 +195,10 @@ export class DashboardComponent implements OnInit {
     if(this.selectedDist.constutionNo.includes(this.selectedConstution)){
       return this.selectedDist;
     }
+  }
+
+  logout(){
+    sessionStorage.removeItem('logged');
+    this.router.navigate(['/login'])
   }
 }

@@ -1,0 +1,47 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-7">
+            <img class="survey-img" src="./assets/survey.jpg"
+                style="width: 80% !important;padding-top: 1px;border: 1px solid gray;">
+        </div>
+
+        <div class="col-4 p-5 mt-5">
+            <form [formGroup]="loginForm">
+                <div class="text-center mb-3" style="font-weight: bold; font-size: 20px;">Survey Login Form</div>
+                <div class="">
+                    <label class="form-label mt-3">User Name</label>
+                    <input type="text" class="form-control" placeholder="Enter User name" required="true"
+                        formControlName="userName">
+                </div>
+                <div class="">
+                    <label class="form-label mt-3">Password</label>
+                    <input type="password" class="form-control" placeholder="Enter password" required="true"
+                        formControlName="password">
+                </div>
+                <div class="mt-5">
+                    <button type="button" class="btn btn-primary w-100"
+                        [ngClass]="{'disabled':!loginForm.valid}" (click)="login()">Login</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<div class="toast align-items-center text-white bg-primary border-0" *ngIf="showToast" [ngClass]="{'d-block':showToast}" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body">
+       Login Successfully
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+  </div>
+
+  <div class="toast align-items-center text-white bg-danger border-0" *ngIf="showDanger" [ngClass]="{'d-block':showDanger}" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body">
+        You have incorrect User Name or Password
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close" (click)="closeToast()"></button>
+    </div>
+  </div>

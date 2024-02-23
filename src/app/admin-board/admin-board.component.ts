@@ -24,12 +24,16 @@ export class AdminBoardComponent implements OnInit {
   constructor(private httpService:HttpClient,private modalService:NgbModal,private router:Router) { }
 
   ngOnInit(): void {
-    this.suveyForm =  new FormGroup({
-      'question':new FormControl(null,[Validators.required]),
-      'answer':new FormControl(null,[Validators.required]),
-      'value':new FormControl(null,[Validators.required])
-    });
-    this.loadData();
+    if(sessionStorage.getItem('logged') === "true"){
+      this.suveyForm =  new FormGroup({
+        'question':new FormControl(null,[Validators.required]),
+        'answer':new FormControl(null,[Validators.required]),
+        'value':new FormControl(null,[Validators.required])
+      });
+      this.loadData();
+    }else{
+      this.router.navigate(['/login']);
+    }
   }
 
   questionChange(eve:any){

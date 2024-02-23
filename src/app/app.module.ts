@@ -10,13 +10,15 @@ import { HighchartsChartModule } from 'highcharts-angular';
 import { HttpClientModule } from  '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AdminBoardComponent } from './admin-board/admin-board.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     ModalComponent,
-    AdminBoardComponent
+    AdminBoardComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

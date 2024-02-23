@@ -1,4 +1,8 @@
 {
+    "loginInfo":{
+      "userId":"Admin",
+      "password":12345
+    },
     "questionsList":[
         {
             "id":1,
@@ -57,29 +61,29 @@
       }
     ],
     "districtList" : [
-        {
-            "state": "S01",
-            "districtNo": "1",
-            "districtValue": "Adilabad",
-            "districtValueHindi": "ఆదిలాబాద్",
-            "effectiveFrom": "1640975400000",
-            "effectiveTo": "4102338600000",
-            "isActive": "Y",
-            "createdBy": "CDAC",
-            "createdDttm": "1679994885000",
-            "modifiedBy": null,
-            "modifiedDttm": null,
-            "expiresIn": 86400,
-            "districtCd": "S0104"
-        },
-        {
-            "state": "S01",
-            "districtNo": "2",
-            "districtValue": "Nizamabad",
-            "districtValueHindi": "నిజామాబాదు",
-            "isActive": "Y",
-            "districtCd": "S0104"
-        },
+    {
+        "state": "S01",
+        "districtNo": "1",
+        "districtValue": "Adilabad",
+        "districtValueHindi": "ఆదిలాబాద్",
+        "effectiveFrom": "1640975400000",
+        "effectiveTo": "4102338600000",
+        "isActive": "Y",
+        "createdBy": "CDAC",
+        "createdDttm": "1679994885000",
+        "modifiedBy": null,
+        "modifiedDttm": null,
+        "expiresIn": 86400,
+        "districtCd": "S0104"
+    },
+    {
+        "state": "S01",
+        "districtNo": "2",
+        "districtValue": "Nizamabad",
+        "districtValueHindi": "నిజామాబాదు",
+        "isActive": "Y",
+        "districtCd": "S0104"
+    },
     {
         "state": "S01",
         "districtNo": "3",

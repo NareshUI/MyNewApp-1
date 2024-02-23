@@ -18,3 +18,10 @@
     justify-content: flex-start;
     gap: 15px;
 }
+.btnLogout{
+    float: right;
+    position: absolute;
+    right: 17px;
+    top: 12px;
+    padding-bottom: 7px;
+}
