@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { SharedService } from '../shared.service';
 
 @Component({
   selector: 'app-admin-board',
@@ -21,7 +22,15 @@ export class AdminBoardComponent implements OnInit {
   showLoader:boolean= true;
   closeResult : string ="";
   result: any;
-  constructor(private httpService:HttpClient,private modalService:NgbModal,private router:Router) { }
+  selectedParliment: any;
+  mandals: any=[];
+  Configuration: any;
+  selectedState: any;
+  stateList: any;
+  selectedConstution: any;
+  selectedDist: any;
+
+  constructor(private httpService:HttpClient,private modalService:NgbModal,private router:Router, private sharedService:SharedService) { }
 
   ngOnInit(): void {
     if(sessionStorage.getItem('logged') === "true"){
@@ -37,24 +46,66 @@ export class AdminBoardComponent implements OnInit {
   }
 
   questionChange(eve:any){
-    this.answersList = [];debugger;
+    this.answersList = [];
     if(eve.target.selectedIndex > 0){
       this.answersList = this.questionsList[eve.target.selectedIndex-1].data;
     }
   }
 
-  loadData(){
-    let url: string = '/assets/StateInfo.json';
-    this.httpService.get(url).subscribe((resp :any) =>{
-      if(resp){
-        this.questionsList = resp.questionsList;
-        this.districtList = resp.districtList;
-        this.parlimentList = resp.parlimentList;
-        this.constutions = resp.constutions;
-        this.showLoader = false;
-      }
-    })
+  parlimentChange(event:any){
+    this.constutions = [];
+    this.mandals = [];
+    this.selectedParliment = event.target.value;
+    this.constutions = this.Configuration.constutions.filter((c:any) => c.parlimentNo === this.selectedParliment && c.state === this.selectedState);
   }
+
+  stateChange(event:any){
+    this.parlimentList = [];
+    this.selectedState = event.target.value;
+    this.parlimentList = this.Configuration.parlimentList.filter((p:any) => p.state === this.selectedState);
+  }
+
+  loadData(){
+      if(this.sharedService.infoData){
+        this.Configuration = this.sharedService.infoData;
+        this.questionsList = this.Configuration.questionsList;
+        this.stateList = this.Configuration.statesList;
+        this.districtList = this.Configuration.districtList;
+        this.parlimentList = this.Configuration.parlimentList;
+        this.constutions = this.Configuration.constutions;
+      }else{
+         let url = this.sharedService.url;
+        this.httpService.get(url).subscribe((resp :any) =>{
+          if(resp){
+            this.Configuration = this.sharedService.infoData = resp;
+            this.questionsList = this.Configuration.questionsList;
+            this.stateList = this.Configuration.statesList;
+            this.districtList = this.Configuration.districtList;
+            this.parlimentList = this.Configuration.parlimentList;
+            this.constutions = this.Configuration.constutions; 
+            this.showLoader= false;
+          }
+        })
+      }
+ }
+
+ constutionsChange(event:any){
+  this.selectedConstution = event.target.value;
+  let constutionObj = this.constutions.find((x: { constutionNo: any; }) => x.constutionNo == this.selectedConstution);
+  if(constutionObj){
+    this.mandals = constutionObj.mandals;
+    this.selectedDist = {};
+    this.selectedDist = this.districtList.find((x: {
+      parlimentNo: any; state: any; }) => x.state == this.selectedState && x.parlimentNo == this.selectedParliment);
+    if(this.selectedDist.constutionNo.includes(this.selectedConstution)){
+      
+      return this.selectedDist ? this.selectedDist : this.selectedDist.districtValue ="";
+    }
+  }else{
+    this.selectedDist.districtValue =""
+    this.mandals =[]
+  }
+}
 
   saveData(modalId:any){
     if(this.suveyForm.valid){

@@ -42,35 +42,21 @@
                             <label class="control-label">State :</label>
                         </div>
                         <div class="col-md-10">
-                            <select class="form-select form-select-sm" aria-label="Default select example">
+                            <select class="form-select form-select-sm" aria-label="Default select example" (change)="stateChange($event)">
                                 <option value="0" selected>Please Select State</option>
-                                <option value="1">Telangana</option>
-                                <option value="2">Andhra Pradesh</option>
-                            </select>
+                                <option *ngFor="let st of stateList" value="{{st.stateNo}}">{{st.stateValue}}</option>
+                              </select>
                         </div>
                     </div>
-
-                    <div class="row mb-3">
-                        <div class="col-md-2">
-                            <label class="control-label">District :</label>
-                        </div>
-                        <div class="col-md-10">
-                            <select class="form-select form-select-sm" aria-label="Default select example">
-                                <option selected>Select the District</option>
-                                <option *ngFor="let dist of districtList" value="{{dist.districtNo}}">{{dist.districtValue}}</option>
-                            </select>
-                        </div>
-                    </div>
-
                     <div class="row mb-3">
                         <div class="col-md-2">
                             <label class="control-label">Parlament :</label>
                         </div>
                         <div class="col-md-10">
-                            <select class="form-select form-select-sm" aria-label="Default select example">
+                            <select class="form-select form-select-sm" aria-label="Default select example" (change)="parlimentChange($event)">
                                 <option selected>Please Select Parlamemnt</option>
                                 <option *ngFor="let parliment of parlimentList" value="{{parliment.parlimentNo}}">{{parliment.parlimentValue}}</option>
-                            </select>
+                              </select>
                         </div>
                     </div>
 
@@ -79,10 +65,19 @@
                             <label class="control-label">Constituency :</label>
                         </div>
                         <div class="col-md-10">
-                            <select class="form-select form-select-sm" aria-label="Default select example">
+                            <select class="form-select form-select-sm" aria-label="Default select example" (change)="constutionsChange($event)">
                                 <option selected>Please Select Constituency</option>
-                                <option *ngFor="let const of constutions">{{const.constutionValue}}</option>
-                            </select>
+                                <option *ngFor="let const of constutions" value="{{const.constutionNo}}">{{const.constutionValue}}</option>
+                              </select>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-2">
+                            <label class="control-label">District :</label>
+                        </div>
+                        <div class="col-md-10">
+                            <input type="text" readonly value="{{selectedDist?.districtValue}}" class="form-control form-select-sm" disabled/>
                         </div>
                     </div>
 
@@ -93,9 +88,8 @@
                         <div class="col-md-10">
                             <select class="form-select form-select-sm" aria-label="Default select example">
                                 <option selected>Select Mandal</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                            </select>
+                                <option *ngFor="let mand of mandals">{{mand.value}}</option>
+                              </select>
                         </div>
                     </div>
 

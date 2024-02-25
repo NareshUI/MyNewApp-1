@@ -188,12 +188,17 @@ export class DashboardComponent implements OnInit {
   constutionsChange(event:any){
     this.selectedConstution = event.target.value;
     let constutionObj = this.constutions.find((x: { constutionNo: any; }) => x.constutionNo == this.selectedConstution);
-    this.mandals = constutionObj.mandals;
-    this.selectedDist = {};
-    this.selectedDist = this.districtList.find((x: {
-      parlimentNo: any; state: any; }) => x.state == this.selectedState && x.parlimentNo == this.selectedParliment);
-    if(this.selectedDist.constutionNo.includes(this.selectedConstution)){
-      return this.selectedDist;
+    if(constutionObj){
+      this.mandals = constutionObj.mandals;
+      this.selectedDist = {};
+      this.selectedDist = this.districtList.find((x: {
+        parlimentNo: any; state: any; }) => x.state == this.selectedState && x.parlimentNo == this.selectedParliment);
+      if(this.selectedDist.constutionNo.includes(this.selectedConstution)){
+        return this.selectedDist;
+      }
+    }else{
+      this.selectedDist.districtValue =""
+      this.mandals =[]
     }
   }
 
