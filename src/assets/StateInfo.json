@@ -2217,7 +2217,7 @@
           "parlimentNo":"3",
           "constutionNo" :"7",
           "constutionValue": "Vizianagaram",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "విజయనగరం",
           "isActive": "Y",
           "mandals": [
             {"id":"1","value" :"Vizianagaram"}
@@ -2228,7 +2228,7 @@
           "parlimentNo":"4",
           "constutionNo" :"1",
           "constutionValue": "Srungavarapukota",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "శృంగవరపుకోట",
           "isActive": "Y",
           "mandals": [
             {"id":"1","value" :"Srungavarapukota"},
@@ -2243,7 +2243,7 @@
           "parlimentNo":"4",
           "constutionNo" :"2",
           "constutionValue": "Bheemili",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "భీమిలి",
           "isActive": "Y",
           "mandals": [
             {"id":"1","value" :"Bheemili"},
@@ -2256,7 +2256,7 @@
           "parlimentNo":"4",
           "constutionNo" :"3",
           "constutionValue": "Visakhapatnam East",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "విశాఖపట్నం తూర్పు",
           "isActive": "Y",
           "mandals": [
             {"id":"1","value" :"Visakhapatnam (Urban)-1"}
@@ -2268,7 +2268,7 @@
           "parlimentNo":"4",
           "constutionNo" :"4",
           "constutionValue": "Visakhapatnam South",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "విశాఖపట్నం దక్షిణ",
           "isActive": "Y",
           "mandals": [
             {"id":"1","value" :"Visakhapatnam (Urban)-2"}
@@ -2279,7 +2279,7 @@
           "parlimentNo":"4",
           "constutionNo" :"5",
           "constutionValue": "Visakhapatnam North",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "విశాఖపట్నం ఉత్తరం",
           "isActive": "Y",
           "mandals": [
             {"id":"1","value" :"Visakhapatnam (Urban)-3"}
@@ -2290,7 +2290,7 @@
           "parlimentNo":"4",
           "constutionNo" :"6",
           "constutionValue": "Visakhapatnam West",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "విశాఖపట్నం వెస్ట్",
           "isActive": "Y",
           "mandals": [
             {"id":"1","value" :"Visakhapatnam (M.Corp)"}
@@ -2301,7 +2301,7 @@
           "parlimentNo":"4",
           "constutionNo" :"7",
           "constutionValue": "Gajuwaka",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "గాజువాక",
           "isActive": "Y",
           "mandals": [
             {"id":"1","value" :"Gajuwaka"},
@@ -2313,7 +2313,7 @@
           "parlimentNo":"5",
           "constutionNo" :"1",
           "constutionValue": "Chodavaram",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "చోడవరం",
           "isActive": "Y",
           "mandals": [
             {"id":"1","value" :"Chodavaram"},
@@ -2327,7 +2327,7 @@
           "parlimentNo":"5",
           "constutionNo" :"2",
           "constutionValue": "Madugula",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "మాడుగుల",
           "isActive": "Y",
           "mandals": [
             {"id":"1","value" :"Madugula"},
@@ -2340,7 +2340,7 @@
           "parlimentNo":"5",
           "constutionNo" :"3",
           "constutionValue": "Anakapalle",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "అనకాపల్లిsss",
           "isActive": "Y",
           "mandals": [
             {"id":"1","value" :"Anakapalli"},

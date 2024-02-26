@@ -38,6 +38,8 @@ export class DashboardComponent implements OnInit {
   showConstution : boolean= false;
   showDistAndMandals : boolean= false;
   DisplayErrors :any =[];
+  showList : boolean = false;
+  selectedMandal: any;
   constructor(private modalService:NgbModal,private router : Router,public fb: FormBuilder,private sharedService : SharedService) { }
 
   ngOnInit(): void {
@@ -99,6 +101,7 @@ export class DashboardComponent implements OnInit {
   }
 
   private createChartColumn(seriesdata:any,values:any,colors:any): void {
+    this.showList = true;
     const data: any[] = [];
     // let colors = ['#00FF00','#FF00BF','#FF001B','#FG00C0','#FD0090'];
     // let values = [80,70,65,73,69];
@@ -165,6 +168,8 @@ export class DashboardComponent implements OnInit {
     if(this.chart){
       this.chart.destroy();
     }
+    this.currentQIndex=0;
+    this.showList = false;
     this.suveyForm.reset();
   }
 
@@ -177,9 +182,7 @@ export class DashboardComponent implements OnInit {
       this.Configuration = this.sharedService.infoData;
       this.questionsList = this.Configuration.questionsList;
       this.stateList = this.Configuration.statesList;
-       this.districtList = this.Configuration.districtList;
-      // this.parlimentList = this.Configuration.parlimentList;
-      // this.constutions = this.Configuration.constutions;
+      this.districtList = this.Configuration.districtList;
       this.showLoader= false;
     }else{
       this.showLoader= true;
@@ -188,9 +191,7 @@ export class DashboardComponent implements OnInit {
           this.Configuration = this.sharedService.infoData = resp;
           this.questionsList = this.Configuration.questionsList;
           this.stateList = this.Configuration.statesList;
-           this.districtList = this.Configuration.districtList;
-          // this.parlimentList = this.Configuration.parlimentList;
-          // this.constutions = this.Configuration.constutions; 
+          this.districtList = this.Configuration.districtList; 
           this.showLoader= false;
         }
       })
@@ -244,7 +245,35 @@ export class DashboardComponent implements OnInit {
     }
   }
 
+  madalChange(eve:any){
+    if(eve.target.value > 0){
+      this.selectedMandal = eve.target.value;
+    }else{
+      this.selectedMandal = "";
+    }
+  }
+
   closeToast(){
 
+  }
+  findVal(selected:string,listType:string){
+    if(listType == 'state'){
+      let obj = this.stateList.find((x: { stateNo: any; }) => x.stateNo == selected);
+      return obj?.stateValue;
+    }
+    if(listType == 'parliment'){
+      let obj = this.parlimentList.find((x: { parlimentNo: any; }) => x.parlimentNo == selected);
+      return obj?.parlimentValue;
+    }
+    if(listType == 'Constituency'){
+      let obj = this.constutions.find((x: { constutionNo: any; }) => x.constutionNo == selected);
+      return obj?.constutionValue;
+    }
+    if(listType == 'mandal'){
+      let obj = this.mandals.find((x:{id: any; }) => x.id == selected);
+      
+      return obj ? obj.value : "";
+    }
+    
   }
 }

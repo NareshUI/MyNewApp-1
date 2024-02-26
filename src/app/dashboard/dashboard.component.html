@@ -2,16 +2,16 @@
 <div class="spinner-border" role="status" *ngIf="showLoader">
   <span class="sr-only"></span>
 </div>
-<div class="row custom-container">
+<div class="row custom-container no-print">
   <form [formGroup]="suveyForm">
     <div class="col-md-12">
       <div class="row">
         <div class="col-md-1">
           <label class="control-label">Question</label>
         </div>
-        <div class="col-md-8" style="padding-left: 5px;">
-          <select class="form-select form-select-sm"  aria-label="Default select example" formControlName = "question" (change)="questionChange($event)">
-            <option >Please Select Question</option>
+        <div class="col-md-8" style="padding-left: 5px;" >
+          <select class="form-select form-select-sm"  *ngIf="questionsList.length>0" aria-label="Default select example" formControlName = "question" (change)="questionChange($event)">
+            <option id="0" selected>Please Select Question</option>
             <option id="{{question.id}}"  title="{{question.id}}" *ngFor="let question of questionsList">{{question.questionValue}}</option>
           </select>
         </div>
@@ -90,9 +90,9 @@
             <label class="control-label">Mandal</label>
           </div>
           <div class="col-md-9">
-            <select class="form-select form-select-sm" aria-label="Default select example">
-              <option selected>Select Mandal</option>
-              <option *ngFor="let mand of mandals">{{mand.value}}</option>
+            <select class="form-select form-select-sm" aria-label="Default select example" (change)="madalChange($event)">
+              <option id="0" selected>Select Mandal</option>
+              <option id="{{mand.id}}" value="{{mand.id}}" *ngFor="let mand of mandals">{{mand.value}}</option>
             </select>
           </div>
         </div>
@@ -146,7 +146,18 @@
   <div class="col-md-5">
     <div id="chart-column"></div>
   </div>
- 
+</div>
+<div class="row">
+  <div class="col-md-3"></div>
+    <div class="col-md-8">
+      <ol id="menu" *ngIf="showList && selectedState != '0'">
+        <li>State : <span class="fw400">{{findVal(selectedState,'state')}}</span></li>
+        <li>Parlament : <span class="fw400">{{findVal(selectedParliment,'parliment')}}</span></li>
+        <li>Constituency : <span class="fw400">{{findVal(selectedConstution,'Constituency')}}</span></li>
+        <li>District :<span class="fw400">{{selectedDist?.districtValue}}</span></li>
+        <li>Mandal : <span class="fw400">{{findVal(selectedMandal,'mandal')}}</span></li>
+      </ol> 
+    </div>
 </div>
 
 <div class="toast align-items-center text-white bg-danger border-0" *ngIf="DisplayErrors.length > 0" [ngClass]="{'d-block':DisplayErrors.length > 0}" role="alert" aria-live="assertive" aria-atomic="true">

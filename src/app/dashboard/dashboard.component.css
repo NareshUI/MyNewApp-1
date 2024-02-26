@@ -42,3 +42,22 @@ input::-webkit-inner-spin-button {
     display: flex;
     gap:8px;
 }
+ol#menu {
+    display:inline;
+    list-style-type: square;
+    font-size: 12px;
+    display: inline-flex;
+    gap: 28px;
+    font-weight: 500;
+  }
+  .fw400{
+    font-weight: 400;
+    font-size: 11px;
+  }
+  @media print
+    {    
+        .no-print, .no-print *
+        {
+            display: none !important;
+        }
+    }
