@@ -47,17 +47,60 @@
             "questionValue":"రాబోయే ఎన్నికల్లో ఆంధ్రపదేశ్ రాష్ట్రానికి ఎవరు ముఖ్యమంత్రిిగా అయితే బాగుటుంది?",
             "data":["శ్రీ వై ఎస్ జగన్మోహన్ రెడ్డి","శ్రీ నారా  చంద్రబాబు నాయుడు","పవన్ కళ్యాణ్","OTHERS"],
             "colors":["#58de38","#F7A35B","#8185E8","#F95780"]
+        },
+        {
+          "id":"7",
+          "questionNo":"7",
+          "questionValue":"Example1",
+          "data":["OTHERS","ONE","TWO","THREE"],
+          "colors":["#58de38","#F7A35B","#8185E8","#F95780"]
+        },
+        {
+          "id":"8",
+          "questionNo":"8",
+          "questionValue":"Example2",
+          "data":["OTHERS","ONE","TWO","THREE"],
+          "colors":["#58de38","#F7A35B","#8185E8","#F95780"]
+        },
+        {
+            "id":"9",
+            "questionNo":"9",
+            "questionValue":"Example3",
+            "data":["OTHERS","ONE","TWO","THREE"],
+            "colors":["#58de38","#F7A35B","#8185E8","#F95780"]
+        },
+        {
+          "id":"10",
+          "questionNo":"10",
+          "questionValue":"Example4",
+          "data":["OTHERS","ONE","TWO","THREE"],
+          "colors":["#58de38","#F7A35B","#8185E8","#F95780"]
+        },
+        {
+      "id":"11",
+      "questionNo":"11",
+      "questionValue":"Example5",
+      "data":["OTHERS","ONE","TWO","THREE"],
+      "colors":["#58de38","#F7A35B","#8185E8","#F95780"]
+        },
+        {
+          "id":"12",
+          "questionNo":"12",
+          "questionValue":"Example6",
+          "data":["OTHERS","ONE","TWO","THREE"],
+          "colors":["#58de38","#F7A35B","#8185E8","#F95780"]
         }
-
     ],
     "statesList":[
       {
         "stateNo":"S01",
-        "stateValue":"Telangana"
+        "stateValue":"Telangana",
+        "stateTelValue":"తెలంగాణ"
       },
       {
         "stateNo":"S02",
-        "stateValue":"Andhra Pradesh"
+        "stateValue":"Andhra Pradesh",
+        "stateTelValue":"ఆంధ్రప్రదేశ్"
       }
     ],
     "districtList" : [
@@ -620,7 +663,7 @@
         "state": "S02",
         "parlimentNo":"1",
         "parlimentValue": "Araku",
-        "parlimentHindi": "ఇచ్ఛాపురం",
+        "parlimentHindi": "అరకు",
         "isActive": "Y",
         "districtCd": "S0101"
       },
@@ -628,7 +671,7 @@
         "state": "S02",
         "parlimentNo":"2",
         "parlimentValue": "Srikakulam",
-        "parlimentHindi": "ఇచ్ఛాపురం",
+        "parlimentHindi": "శ్రీకాకుళం",
         "isActive": "Y",
         "districtCd": "S0101"
       },
@@ -636,7 +679,7 @@
         "state": "S02",
         "parlimentNo":"3",
         "parlimentValue": "Vizianagaram",
-        "parlimentHindi": "ఇచ్ఛాపురం",
+        "parlimentHindi": "విజయనగరం",
         "isActive": "Y",
         "districtCd": "S0101"
       },
@@ -644,7 +687,7 @@
         "state": "S02",
         "parlimentNo":"4",
         "parlimentValue": "Visakhapatnam",
-        "parlimentHindi": "ఇచ్ఛాపురం",
+        "parlimentHindi": "విశాఖపట్నం",
         "isActive": "Y",
         "districtCd": "S0101"
       },
@@ -652,7 +695,7 @@
         "state": "S02",
         "parlimentNo":"5",
         "parlimentValue": "Anakapalli",
-        "parlimentHindi": "ఇచ్ఛాపురం",
+        "parlimentHindi": "అనకాపల్లి",
         "isActive": "Y",
         "districtCd": "S0101"
       },
@@ -660,7 +703,7 @@
         "state": "S02",
         "parlimentNo":"6",
         "parlimentValue": "Kakinada",
-        "parlimentHindi": "ఇచ్ఛాపురం",
+        "parlimentHindi": "కాకినాడ",
         "isActive": "Y",
         "districtCd": "S0101"
       },
@@ -668,7 +711,7 @@
         "state": "S02",
         "parlimentNo":"7",
         "parlimentValue": "Amalapuram",
-        "parlimentHindi": "ఇచ్ఛాపురం",
+        "parlimentHindi": "అమలాపురం",
         "isActive": "Y",
         "districtCd": "S0101"
       },
@@ -676,7 +719,7 @@
         "state": "S02",
         "parlimentNo":"8",
         "parlimentValue": "Rajahmundry",
-        "parlimentHindi": "ఇచ్ఛాపురం",
+        "parlimentHindi": "రాజమండ్రి",
         "isActive": "Y",
         "districtCd": "S0101"
       },
@@ -684,7 +727,7 @@
         "state": "S02",
         "parlimentNo":"9",
         "parlimentValue": "Narasapuram",
-        "parlimentHindi": "ఇచ్ఛాపురం",
+        "parlimentHindi": "నరసాపురం",
         "isActive": "Y",
         "districtCd": "S0101"
       },
@@ -692,7 +735,7 @@
         "state": "S02",
         "parlimentNo":"10",
         "parlimentValue": "Eluru",
-        "parlimentHindi": "ఇచ్ఛాపురం",
+        "parlimentHindi": "ఏలూరు",
         "isActive": "Y",
         "districtCd": "S0101"
       },
@@ -700,7 +743,7 @@
         "state": "S02",
         "parlimentNo":"11",
         "parlimentValue": "Machilipatnam",
-        "parlimentHindi": "ఇచ్ఛాపురం",
+        "parlimentHindi": "మచిలీపట్నం",
         "isActive": "Y",
         "districtCd": "S0101"
       },
@@ -708,7 +751,7 @@
         "state": "S02",
         "parlimentNo":"12",
         "parlimentValue": "Vijayawada",
-        "parlimentHindi": "ఇచ్ఛాపురం",
+        "parlimentHindi": "విజయవాడ",
         "isActive": "Y",
         "districtCd": "S0101"
       },
@@ -716,7 +759,7 @@
         "state": "S02",
         "parlimentNo":"13",
         "parlimentValue": "Guntur",
-        "parlimentHindi": "ఇచ్ఛాపురం",
+        "parlimentHindi": "గుంటూరు",
         "isActive": "Y",
         "districtCd": "S0101"
       },
@@ -724,7 +767,7 @@
         "state": "S02",
         "parlimentNo":"14",
         "parlimentValue": "Narasaraopet",
-        "parlimentHindi": "ఇచ్ఛాపురం",
+        "parlimentHindi": "నరసరావుపేట",
         "isActive": "Y",
         "districtCd": "S0101"
       },
@@ -732,7 +775,7 @@
         "state": "S02",
         "parlimentNo":"15",
         "parlimentValue": "Bapatla",
-        "parlimentHindi": "ఇచ్ఛాపురం",
+        "parlimentHindi": "బాపట్ల",
         "isActive": "Y",
         "districtCd": "S0101"
       },
@@ -740,7 +783,7 @@
         "state": "S02",
         "parlimentNo":"16",
         "parlimentValue": "Ongole",
-        "parlimentHindi": "ఇచ్ఛాపురం",
+        "parlimentHindi": "ఒంగోలు",
         "isActive": "Y",
         "districtCd": "S0101"
       },
@@ -748,7 +791,7 @@
         "state": "S02",
         "parlimentNo":"17",
         "parlimentValue": "Nandyal",
-        "parlimentHindi": "ఇచ్ఛాపురం",
+        "parlimentHindi": "నంద్యాల",
         "isActive": "Y",
         "districtCd": "S0101"
       },
@@ -756,7 +799,7 @@
         "state": "S02",
         "parlimentNo":"18",
         "parlimentValue": "Kurnool",
-        "parlimentHindi": "ఇచ్ఛాపురం",
+        "parlimentHindi": "కర్నూలు",
         "isActive": "Y",
         "districtCd": "S0101"
       },
@@ -764,7 +807,7 @@
         "state": "S02",
         "parlimentNo":"19",
         "parlimentValue": "Anantapur",
-        "parlimentHindi": "ఇచ్ఛాపురం",
+        "parlimentHindi": "అనంతపురం",
         "isActive": "Y",
         "districtCd": "S0101"
       },
@@ -772,7 +815,7 @@
         "state": "S02",
         "parlimentNo":"20",
         "parlimentValue": "Hindupur",
-        "parlimentHindi": "ఇచ్ఛాపురం",
+        "parlimentHindi": "హిందూపూర్",
         "isActive": "Y",
         "districtCd": "S0101"
       },
@@ -780,7 +823,7 @@
         "state": "S02",
         "parlimentNo":"21",
         "parlimentValue": "Kadapa",
-        "parlimentHindi": "ఇచ్ఛాపురం",
+        "parlimentHindi": "కడప",
         "isActive": "Y",
         "districtCd": "S0101"
       },
@@ -788,7 +831,7 @@
         "state": "S02",
         "parlimentNo":"22",
         "parlimentValue": "Nellore",
-        "parlimentHindi": "ఇచ్ఛాపురం",
+        "parlimentHindi": "నెల్లూరు",
         "isActive": "Y",
         "districtCd": "S0101"
       },
@@ -796,7 +839,7 @@
         "state": "S02",
         "parlimentNo":"23",
         "parlimentValue": "Tirupati",
-        "parlimentHindi": "ఇచ్ఛాపురం",
+        "parlimentHindi": "తిరుపతి",
         "isActive": "Y",
         "districtCd": "S0101"
       },
@@ -804,7 +847,7 @@
         "state": "S02",
         "parlimentNo":"24",
         "parlimentValue": "Rajampet",
-        "parlimentHindi": "ఇచ్ఛాపురం",
+        "parlimentHindi": "రాజంపేట",
         "isActive": "Y",
         "districtCd": "S0101"
       },
@@ -812,7 +855,7 @@
         "state": "S02",
         "parlimentNo":"25",
         "parlimentValue": "Chittoor",
-        "parlimentHindi": "ఇచ్ఛాపురం",
+        "parlimentHindi": "చిత్తూరు",
         "isActive": "Y",
         "districtCd": "S0101"
       }
@@ -1885,7 +1928,7 @@
           "parlimentNo":"1",
           "constutionNo" :"1",
           "constutionValue": "Palakonda",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "పాలకొండ",
           "isActive": "Y",
           "mandals":[
             {"id":"1","value" :"Palakonda"},
@@ -1899,7 +1942,7 @@
           "parlimentNo":"1",
           "constutionNo" :"2",
           "constutionValue": "Kurupam",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "కురుపాం",
           "isActive": "Y",
           "mandals":[
             {"id":"1","value" :"Kurupam"},
@@ -1914,7 +1957,7 @@
           "parlimentNo":"1",
           "constutionNo" :"3",
           "constutionValue": "Parvathipuram",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "పార్వతీపురం",
           "isActive": "Y",
           "mandals": [
             {"id":"1","value" :"Parvathipuram"},
@@ -1927,7 +1970,7 @@
           "parlimentNo":"1",
           "constutionNo" :"4",
           "constutionValue": "Salur",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "సాలూరు",
           "isActive": "Y",
           "mandals": [
             {"id":"1","value" :"Salur"},
@@ -1941,7 +1984,7 @@
           "parlimentNo":"1",
           "constutionNo" :"5",
           "constutionValue": "Araku Valley",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "అరకు లోయ",
           "isActive": "Y",
           "mandals": [
             {"id":"1","value" :"Munchingi Puttu"},
@@ -1957,7 +2000,7 @@
           "parlimentNo":"1",
           "constutionNo" :"6",
           "constutionValue": "Paderu",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "పాడేరు",
           "isActive": "Y",
           "mandals": [
             {"id":"1","value" :"Paderu"},
@@ -1972,7 +2015,7 @@
           "parlimentNo":"1",
           "constutionNo" :"7",
           "constutionValue": "Rampachodavaram",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "రంపచోడవరం",
           "isActive": "Y",
           "mandals": [
             {"id":"1","value" :"Maredumilli"},
@@ -2007,7 +2050,7 @@
           "parlimentNo":"2",
           "constutionNo" :"2",
           "constutionValue": "Palasa",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "పలాస",
           "isActive": "Y",
           "mandals": [
             {"id":"1","value" :"Palasa"},
@@ -2020,7 +2063,7 @@
           "parlimentNo":"2",
           "constutionNo" :"3",
           "constutionValue": "Tekkali",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "టెక్కలి",
           "isActive": "Y",
           "mandals": [
             {"id":"1","value" :"Nandigam"},
@@ -2034,7 +2077,7 @@
           "parlimentNo":"2",
           "constutionNo" :"4",
           "constutionValue": "Pathapatnam",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "పాతపట్నం",
           "isActive": "Y",
           "mandals": [
             {"id":"1","value" :"Pathapatnam"},
@@ -2049,7 +2092,7 @@
           "parlimentNo":"2",
           "constutionNo" :"5",
           "constutionValue": "Srikakulam",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "శ్రీకాకుళం",
           "isActive": "Y",
           "mandals": [
             {"id":"1","value" :"Srikakulam"},
@@ -2061,7 +2104,7 @@
           "parlimentNo":"2",
           "constutionNo" :"6",
           "constutionValue": "Amadalavalasa",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "ఆమదాలవలస",
           "isActive": "Y",
           "mandals": [
             {"id":"1","value" :"Amudalavalasa"},
@@ -2075,7 +2118,7 @@
           "parlimentNo":"2",
           "constutionNo" :"7",
           "constutionValue": "Narasannapeta",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "నరసన్నపేట",
           "isActive": "Y",
           "mandals": [
             {"id":"1","value" :"Narasannapeta"},
@@ -2089,7 +2132,7 @@
           "parlimentNo":"3",
           "constutionNo" :"1",
           "constutionValue": "Etcherla",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "ఎచ్చెర్ల",
           "isActive": "Y",
           "mandals": [
             {"id":"1","value" :"Etcherla"},
@@ -2103,7 +2146,7 @@
           "parlimentNo":"3",
           "constutionNo" :"2",
           "constutionValue": "Rajam",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "రాజం",
           "isActive": "Y",
           "mandals": [
             {"id":"1","value" :"Rajam"},
@@ -2117,7 +2160,7 @@
           "parlimentNo":"3",
           "constutionNo" :"3",
           "constutionValue": "Bobbili",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "బొబ్బిలి",
           "isActive": "Y",
           "mandals": [
             {"id":"1","value" :"Bobbili"},
@@ -2131,7 +2174,7 @@
           "parlimentNo":"3",
           "constutionNo" :"4",
           "constutionValue": "Cheepurupalli",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "చీపురుపల్లి",
           "isActive": "Y",
           "mandals": [
             {"id":"1","value" :"Cheepurupalli"},
@@ -2145,7 +2188,7 @@
           "parlimentNo":"3",
           "constutionNo" :"5",
           "constutionValue": "Gajapathinagaram",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "గజపతినగరం",
           "isActive": "Y",
           "mandals": [
             {"id":"1","value" :"Gajapathinagaram"},
@@ -2160,7 +2203,7 @@
           "parlimentNo":"3",
           "constutionNo" :"6",
           "constutionValue": "Nellimarla",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "నెల్లిమర్ల",
           "isActive": "Y",
           "mandals": [
             {"id":"1","value" :"Nellimarla"},

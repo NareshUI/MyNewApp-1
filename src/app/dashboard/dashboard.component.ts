@@ -27,6 +27,7 @@ export class DashboardComponent implements OnInit {
   selectedParliment: any;
   chart : any;
   arr:any=[];
+  showLoader:boolean= true;
   stateList: any;
   selectedState: any;
   currentQIndex: any =0;
@@ -34,6 +35,9 @@ export class DashboardComponent implements OnInit {
   selectedDist: any;
   Configuration: any;
   mandals:any =[];
+  showConstution : boolean= false;
+  showDistAndMandals : boolean= false;
+  DisplayErrors :any =[];
   constructor(private modalService:NgbModal,private router : Router,public fb: FormBuilder,private sharedService : SharedService) { }
 
   ngOnInit(): void {
@@ -47,7 +51,7 @@ export class DashboardComponent implements OnInit {
       this.suveyForm =  new FormGroup({
         'question':new FormControl(null,[Validators.required])
       });
-      
+
       this.loadData();
 
     }else{
@@ -88,6 +92,9 @@ export class DashboardComponent implements OnInit {
       if(obj && data){
         this.createChartColumn(data.data,obj.value,data.colors);
       }
+    }else{
+      //this.DisplayErrors.push("Please Select Question");
+      alert("Please Select Question");
     }
   }
 
@@ -99,10 +106,11 @@ export class DashboardComponent implements OnInit {
     for (let i = 0; i < seriesdata.length; i++) {
       data.push({
         name: seriesdata[i],
-        y: values[i],
+        data: [values[i]],
         color: colors[i],
       });
     }
+    //let xAxisLabels = seriesdata.toString().replaceAll(',','&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;');
 
     this.chart = Highcharts.chart(
       'chart-column' as any,
@@ -119,25 +127,28 @@ export class DashboardComponent implements OnInit {
         legend: {
           enabled: true,
         },
+        xAxis: {
+          type: 'category',
+            categories: " "
+        },
         yAxis: {
           min: 0,
           title: "",
           lineWidth: 1,
           showLastLabel: true,
         },
-        xAxis: {
-          type: 'category',
-        },
-        tooltip: {
-          headerFormat: `<div>Value: {point.key}</div>`,
-          pointFormat: `<div>{series.name}: {point.y}</div>`,
-          shared: true,
-          useHTML: true,
-        },
         plotOptions: {
-         
+          column: {
+            groupPadding: 0.15,
+          },
+          tooltip: {
+            headerFormat: `<div>Value: {point.key}</div>`,
+            pointFormat: `<div>{series.name}: {point.y}</div>`,
+            shared: true,
+            useHTML: true,
+          },
           series:{
-            pointWidth: values.length > 4 ? 100 : 120,
+            pointWidth: values.length > 4 ? 60 : 80,
             dataLabels: {
               enabled: true,
               format: `{point.y:.1f} %`,
@@ -145,12 +156,7 @@ export class DashboardComponent implements OnInit {
             },
           }
         },
-        series: [
-          {
-            name: 'Poll Survey',
-            data,
-          },
-        ],
+        series: data,
       } as any
     );
   }
@@ -167,12 +173,28 @@ export class DashboardComponent implements OnInit {
   }
 
    loadData(){
-    this.Configuration = this.sharedService.infoData;
-    this.questionsList = this.Configuration.questionsList;
-    this.stateList = this.Configuration.statesList;
-    this.districtList = this.Configuration.districtList;
-    this.parlimentList = this.Configuration.parlimentList;
-    this.constutions = this.Configuration.constutions;
+    if(this.sharedService.infoData){
+      this.Configuration = this.sharedService.infoData;
+      this.questionsList = this.Configuration.questionsList;
+      this.stateList = this.Configuration.statesList;
+       this.districtList = this.Configuration.districtList;
+      // this.parlimentList = this.Configuration.parlimentList;
+      // this.constutions = this.Configuration.constutions;
+      this.showLoader= false;
+    }else{
+      this.showLoader= true;
+      this.sharedService.loadData().subscribe((resp :any) =>{
+        if(resp){
+          this.Configuration = this.sharedService.infoData = resp;
+          this.questionsList = this.Configuration.questionsList;
+          this.stateList = this.Configuration.statesList;
+           this.districtList = this.Configuration.districtList;
+          // this.parlimentList = this.Configuration.parlimentList;
+          // this.constutions = this.Configuration.constutions; 
+          this.showLoader= false;
+        }
+      })
+    }
    }
   stateChange(event:any){
     this.parlimentList = [];
@@ -205,5 +227,24 @@ export class DashboardComponent implements OnInit {
   logout(){
     sessionStorage.removeItem('logged');
     this.router.navigate(['/login'])
+  }
+
+  displayConstution(e:any){
+    if(e.target.checked){
+      this.showConstution = true;
+    }else{
+      this.showConstution = false;
+    }
+  }
+  displayDistMandal(eve:any){
+    if(eve.target.checked){
+     this.showDistAndMandals = true;
+    }else{
+      this.showDistAndMandals = false;
+    }
+  }
+
+  closeToast(){
+
   }
 }

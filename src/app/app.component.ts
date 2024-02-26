@@ -42,6 +42,30 @@ export class AppComponent {
           'QId': 6,
           'value':[70,66,79,99]
         },
+        {
+          'QId': 7,
+          'value':[66,55,72,85]
+        },
+        {
+          'QId': 8,
+          'value':[54,72,35,75]
+        },
+        {
+          'QId': 9,
+          'value':[45,62,89,69]
+        },
+        {
+          'QId': 10,
+          'value':[40,62,49,69]
+        },
+        {
+          'QId': 11,
+          'value':[52,46,59,49]
+        },
+        {
+          'QId': 12,
+          'value':[65,52,29,49]
+        }
       ];
       localStorage.setItem('chartData',JSON.stringify(this.arr));
     }

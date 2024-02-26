@@ -25,3 +25,20 @@
     top: 12px;
     padding-bottom: 7px;
 }
+.spinner-border{
+    width: 8rem !important;
+    height: 8rem !important;
+    position: absolute;
+    left: 41%;
+    margin-top: 16%;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.dispCheck{
+    display: flex;
+    gap:8px;
+}

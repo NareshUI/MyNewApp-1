@@ -3,3 +3,16 @@
     top: 8px;
     right: 7px;
 }
+.imgCard{
+    margin-top: 5% !important;
+    padding-bottom: 1px !important;
+    border: none;
+}
+.formCard{
+    margin-top: 5% !important;
+    padding-bottom: 5px !important
+}
+.card-header{
+    font-weight: bold;
+    font-size: 20px;
+}

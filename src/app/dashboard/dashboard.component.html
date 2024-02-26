@@ -1,4 +1,7 @@
 
+<div class="spinner-border" role="status" *ngIf="showLoader">
+  <span class="sr-only"></span>
+</div>
 <div class="row custom-container">
   <form [formGroup]="suveyForm">
     <div class="col-md-12">
@@ -13,9 +16,9 @@
           </select>
         </div>
         <div class="col-md-1">
-          <div class="form-check form-switch">
+          <!-- <div class="form-check form-switch">
             <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" data-size="sm" checked>
-          </div>
+          </div> -->
         </div>
         <div class="col-md-1">
           <button type="button" class="btn btn-primary btn-sm btnLogout" (click)="logout()">
@@ -42,28 +45,34 @@
           <div class="col-md-3">
             <label class="control-label">Parlamemnt</label>
           </div>
-          <div class="col-md-9">
+          <div class="col-md-9 dispCheck">
             <select class="form-select form-select-sm" aria-label="Default select example" (change)="parlimentChange($event)">
               <option selected>Please Select Parlamemnt</option>
               <option *ngFor="let parliment of parlimentList" value="{{parliment.parlimentNo}}">{{parliment.parlimentValue}}</option>
             </select>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" data-size="sm" (change)="displayConstution($event)">
+            </div>
           </div>
         </div>
-        <div class="col-md-4 row">
+        <div class="col-md-4 row" *ngIf="showConstution">
           <div class="col-md-3">
             <label class="control-label">Constituency</label>
           </div>
-          <div class="col-md-9">
+          <div class="col-md-9 dispCheck">
             <select class="form-select form-select-sm" aria-label="Default select example" (change)="constutionsChange($event)">
               <option selected>Please Select Constituency</option>
               <option *ngFor="let const of constutions" value="{{const.constutionNo}}">{{const.constutionValue}}</option>
             </select>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" data-size="sm" (change)="displayDistMandal($event)">
+            </div>
           </div>
         </div>
        
        
       </div>
-      <div class="row mt-3">
+      <div class="row mt-3" *ngIf="showConstution && showDistAndMandals">
         <div class="col-md-4 row">
           <div class="col-md-3">
             <label class="control-label">District</label>
@@ -73,7 +82,7 @@
               <option selected>Select the District</option>
               <option *ngFor="let dist of districtList" value="{{dist.districtNo}}">{{dist.districtValue}}</option>
             </select> -->
-            <input type="text" readonly value="{{selectedDist?.districtValue}}" class="form-control form-select-sm"/>
+            <input type="text" readonly value="{{selectedDist?.districtValue}}" class="form-control form-select-sm" disabled/>
           </div>
         </div>
         <div class="col-md-4 row">
@@ -88,7 +97,7 @@
           </div>
         </div>
         <div class="col-md-4 row">
-          <div class="col-md-3">
+          <!-- <div class="col-md-3">
             <label class="control-label">Village/Ward</label>
           </div>
           <div class="col-md-9">
@@ -97,7 +106,7 @@
               <option value="1">One</option>
               <option value="2">Two</option>
             </select>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="row mt-3">
@@ -139,6 +148,18 @@
   </div>
  
 </div>
+
+<div class="toast align-items-center text-white bg-danger border-0" *ngIf="DisplayErrors.length > 0" [ngClass]="{'d-block':DisplayErrors.length > 0}" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="d-flex">
+    <div class="toast-body">
+      <ng-container *ngFor="let err of DisplayErrors">
+        <span>{{err}}</span>
+      </ng-container>
+    </div>
+    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close" (click)="closeToast()"></button>
+  </div>
+</div>
+
 
 <!--<div class="row">
    <div class="col-md-3" *ngFor="let student of studentArray;index as i">
