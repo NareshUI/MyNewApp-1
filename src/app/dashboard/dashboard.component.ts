@@ -85,6 +85,7 @@ export class DashboardComponent implements OnInit {
       this.chart.destroy();
     }
     this.currentQIndex = eve.target.selectedIndex;
+    this.showList = false;
   }
 
   searchData(){
