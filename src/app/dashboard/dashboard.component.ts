@@ -44,11 +44,6 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
     if(sessionStorage.getItem('logged') === "true"){
-
-      let data=localStorage.getItem('chartData');
-      if(data){
-        this.arr=JSON.parse(data)
-      }
       this.today = new Date().toISOString().split('T')[0];
       this.suveyForm =  new FormGroup({
         'question':new FormControl('',[Validators.required]),
