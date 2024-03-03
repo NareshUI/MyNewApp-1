@@ -11,11 +11,13 @@
         </div>
         <div class="col-md-8" style="padding-left: 5px;" >
           <select class="form-select form-select-sm"  *ngIf="questionsList.length>0" aria-label="Default select example" formControlName = "question" (change)="questionChange($event)">
-            <option id="0" selected>Please Select Question</option>
-            <option id="{{question.id}}"  title="{{question.id}}" *ngFor="let question of questionsList">{{question.questionValue}}</option>
+            <!-- <option selected>Please Select Question</option> -->
+            <option value="" disabled selected>Please Select Question</option>
+            <option id="{{question.id}}"  value="{{question.id}}" title="{{question.id}}" *ngFor="let question of questionsList">{{question.questionValue}}</option>
           </select>
         </div>
-        <div class="col-md-1">
+        <div class="col-md-2">
+          <span class="error" *ngIf="!suveyForm.controls['question'].valid">Please select Question</span>
           <!-- <div class="form-check form-switch">
             <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" data-size="sm" checked>
           </div> -->
@@ -35,10 +37,11 @@
             <label class="control-label">State</label>
           </div>
           <div class="col-md-9">
-            <select class="form-select form-select-sm" aria-label="Default select example" (change)="stateChange($event)">
-              <option value="0" selected>Please Select State</option>
-              <option *ngFor="let st of stateList" value="{{st.stateNo}}">{{st.stateValue}}</option>
+            <select class="form-select form-select-sm" aria-label="Default select example" (change)="stateChange($event)" formControlName = "state">
+              <option value="" disabled selected>Please Select State</option>
+              <option id="{{st.stateNo}}" *ngFor="let st of stateList" value="{{st.stateNo}}">{{st.stateValue}}</option>
             </select>
+            <span class="error" style="position: absolute;" *ngIf="!suveyForm.controls['state'].valid">Please select State</span>
           </div>
         </div>
         <div class="col-md-4 row">
@@ -46,12 +49,14 @@
             <label class="control-label">Parlamemnt</label>
           </div>
           <div class="col-md-9 dispCheck">
-            <select class="form-select form-select-sm" aria-label="Default select example" (change)="parlimentChange($event)">
-              <option selected>Please Select Parlamemnt</option>
+            <select class="form-select form-select-sm" aria-label="Default select example" (change)="parlimentChange($event)" formControlName="parliment">
+              <!-- <option selected>Please Select Parlamemnt</option> -->
+              <option value="" disabled selected hidden>Please Select parliment</option>
               <option *ngFor="let parliment of parlimentList" value="{{parliment.parlimentNo}}">{{parliment.parlimentValue}}</option>
             </select>
+            <span class="error" style="position: absolute;padding-top: 28px;padding-left: 2px;" *ngIf="!suveyForm.controls['parliment'].valid">Please select parliment</span>
             <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" data-size="sm" (change)="displayConstution($event)">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" [checked]="showConstution" data-size="sm" (change)="displayConstution($event)">
             </div>
           </div>
         </div>
@@ -60,10 +65,12 @@
             <label class="control-label">Constituency</label>
           </div>
           <div class="col-md-9 dispCheck">
-            <select class="form-select form-select-sm" aria-label="Default select example" (change)="constutionsChange($event)">
-              <option selected>Please Select Constituency</option>
+            <select class="form-select form-select-sm" aria-label="Default select example" (change)="constutionsChange($event)"  formControlName = "constituency">
+              <!-- <option selected>Please Select Constituency</option> -->
+              <option value="" disabled selected>Please Select constituency</option>
               <option *ngFor="let const of constutions" value="{{const.constutionNo}}">{{const.constutionValue}}</option>
             </select>
+            <span class="error" style="position: absolute;padding-top: 28px;padding-left: 2px;" *ngIf="!suveyForm.controls['constituency'].valid">Please select constution</span>
             <div class="form-check form-switch">
               <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" data-size="sm" (change)="displayDistMandal($event)">
             </div>
@@ -82,7 +89,7 @@
               <option selected>Select the District</option>
               <option *ngFor="let dist of districtList" value="{{dist.districtNo}}">{{dist.districtValue}}</option>
             </select> -->
-            <input type="text" readonly value="{{selectedDist?.districtValue}}" class="form-control form-select-sm" disabled/>
+            <input type="text" readonly value="{{selectedDist?.districtValue}}" class="form-control form-select-sm"  formControlName = "district"/>
           </div>
         </div>
         <div class="col-md-4 row">
@@ -90,10 +97,11 @@
             <label class="control-label">Mandal</label>
           </div>
           <div class="col-md-9">
-            <select class="form-select form-select-sm" aria-label="Default select example" (change)="madalChange($event)">
-              <option id="0" selected>Select Mandal</option>
-              <option id="{{mand.id}}" value="{{mand.id}}" *ngFor="let mand of mandals">{{mand.value}}</option>
+            <select class="form-select form-select-sm" aria-label="Default select example" (change)="madalChange($event)" formControlName = "mandal">
+              <!-- <option value="0" selected>Select Mandal</option> -->
+              <option id="{{'MD'+mand.id}}" value="{{mand.id}}" *ngFor="let mand of mandals">{{mand.value}}</option>
             </select>
+            <span class="error" style="position: absolute;padding-top: px;padding-left: 2px;" *ngIf="!suveyForm.controls['mandal'].valid">Please select mandal</span>
           </div>
         </div>
         <div class="col-md-4 row">
@@ -115,7 +123,8 @@
             <label class="control-label">From Date</label>
           </div>
           <div class="col-md-9">
-            <input type="date" class="form-control form-control-sm"/>
+            <input type="date" class="form-control form-control-sm"  formControlName = "fromdate"/>
+            <span class="error" style="position: absolute;padding-top: px;padding-left: 2px;" *ngIf="!suveyForm.controls['fromdate'].valid">Please From date</span>
           </div>
         </div>
         <div class="col-md-4 row">
@@ -123,13 +132,14 @@
             <label class="control-label">To Date</label>
           </div>
           <div class="col-md-9">
-            <input type="date" class="form-control form-control-sm" value="{{today}}"/>
+            <input type="date" class="form-control form-control-sm"  formControlName = "toDate"/>
+            <span class="error" style="position: absolute;padding-top: px;padding-left: 2px;" *ngIf="!suveyForm.controls['toDate'].valid">Please From date</span>
           </div>
         </div>
         <div class="col-md-4 row">
         <div class="btnGrp">
-            <button type="button" class="btn btn-primary btn-sm" (click)="searchData()">Search </button>
-            <button type="button" class="btn btn-success btn-sm" (click)="printPage()">Print </button>
+            <button type="button" class="btn btn-primary btn-sm" [ngClass]="{'disabled':!suveyForm.valid}" (click)="searchData()">Search </button>
+            <button type="button" class="btn btn-success btn-sm" *ngIf="showList" [ngClass]="{'disabled':!suveyForm.valid}" (click)="printPage()">Print </button>
             <button type="button" class="btn btn-dark btn-sm" (click)="resetForm()">Clear </button>
         </div>
         </div>

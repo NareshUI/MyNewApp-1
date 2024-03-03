@@ -51,7 +51,14 @@ export class DashboardComponent implements OnInit {
       }
       this.today = new Date().toISOString().split('T')[0];
       this.suveyForm =  new FormGroup({
-        'question':new FormControl(null,[Validators.required])
+        'question':new FormControl('',[Validators.required]),
+        'state':new FormControl(''),
+        'parliment':new FormControl(''),
+        'constituency':new FormControl(''),
+        'district':new FormControl(null),
+        'mandal':new FormControl(null),
+        'fromdate':new FormControl(null),
+        'toDate':new FormControl(null)
       });
 
       this.loadData();
@@ -86,19 +93,33 @@ export class DashboardComponent implements OnInit {
     }
     this.currentQIndex = eve.target.selectedIndex;
     this.showList = false;
+    this.suveyForm.controls['state'].addValidators(Validators.required);
+    this.suveyForm.controls['state'].updateValueAndValidity(); 
   }
 
   searchData(){
-    if(this.currentQIndex > 0){
-      let data = this.questionsList.find((x: { id: any; }) => x.id == this.currentQIndex);
-      let obj = this.arr.find((x: { QId: any; }) => x.QId == this.currentQIndex);
-      if(obj && data){
-        this.createChartColumn(data.data,obj.value,data.colors);
+    if(this.suveyForm.valid){
+      let payLoad = {
+        "questionNo":Number(this.suveyForm.controls['question'].value),
+        "state":this.suveyForm.controls['state'].value,
+        "parlimentNo":this.suveyForm.controls['parliment'].value,
+        "constutionNo":this.suveyForm.controls['constituency'].value,
+        "mandals":this.suveyForm.controls['mandal'].value,
+        "fromDate":this.suveyForm.controls['fromdate'].value,
+        "toDate":this.suveyForm.controls['toDate'].value
       }
-    }else{
-      //this.DisplayErrors.push("Please Select Question");
-      alert("Please Select Question");
-    }
+  
+      if(this.currentQIndex > 0){
+        let data = this.questionsList.find((x: { id: any; }) => x.id == this.currentQIndex);
+        let obj = this.arr.find((x: { QId: any; }) => x.QId == this.currentQIndex);
+        if(obj && data){
+          this.createChartColumn(data.data,obj.value,data.colors);
+        }
+      }else{
+        //this.DisplayErrors.push("Please Select Question");
+        //alert("Please Select Question");
+      }
+    } 
   }
 
   private createChartColumn(seriesdata:any,values:any,colors:any): void {
@@ -172,6 +193,14 @@ export class DashboardComponent implements OnInit {
     this.currentQIndex=0;
     this.showList = false;
     this.suveyForm.reset();
+    Object.keys(this.suveyForm.controls).forEach(
+      field => {
+        this.suveyForm.controls[field].patchValue('');
+        this.suveyForm.controls[field].setErrors(null);
+      }
+    );
+    this.showConstution = false;
+    this.suveyForm.controls['toDate'].patchValue(this.today);
   }
 
   printPage(){
@@ -197,32 +226,44 @@ export class DashboardComponent implements OnInit {
         }
       })
     }
+    this.suveyForm.controls['toDate'].patchValue(this.today);
    }
   stateChange(event:any){
     this.parlimentList = [];
+    this.suveyForm.controls['parliment'].addValidators(Validators.required);
+    this.suveyForm.controls['parliment'].updateValueAndValidity(); 
     this.selectedState = event.target.value;
+    this.suveyForm.controls['state'].patchValue(event.target.value);
     this.parlimentList = this.Configuration.parlimentList.filter((p:any) => p.state=== this.selectedState);
   }
   parlimentChange(event:any){
     this.constutions = [];
     this.mandals = [];
     this.selectedParliment = event.target.value;
+    this.suveyForm.controls['parliment'].patchValue(event.target.value);
+    this.suveyForm.controls['fromdate'].addValidators(Validators.required);
+    this.suveyForm.controls['fromdate'].updateValueAndValidity();
+    this.suveyForm.controls['toDate'].addValidators(Validators.required);
+    this.suveyForm.controls['toDate'].updateValueAndValidity();
     this.constutions = this.Configuration.constutions.filter((c:any) => c.parlimentNo === this.selectedParliment && c.state === this.selectedState);
   }
   constutionsChange(event:any){
     this.selectedConstution = event.target.value;
+    this.suveyForm.controls['constituency'].patchValue(event.target.value);
     let constutionObj = this.constutions.find((x: { constutionNo: any; }) => x.constutionNo == this.selectedConstution);
     if(constutionObj){
       this.mandals = constutionObj.mandals;
       this.selectedDist = {};
       this.selectedDist = this.districtList.find((x: {
         parlimentNo: any; state: any; }) => x.state == this.selectedState && x.parlimentNo == this.selectedParliment);
-      if(this.selectedDist.constutionNo.includes(this.selectedConstution)){
+      if(this.selectedDist.constutionNo.includes(Number(this.selectedConstution))){
+        this.suveyForm.controls['district'].patchValue(this.selectedDist?.districtValue);
         return this.selectedDist;
       }
     }else{
       this.selectedDist.districtValue =""
       this.mandals =[]
+      this.suveyForm.controls['district'].patchValue('');
     }
   }
 
@@ -234,22 +275,33 @@ export class DashboardComponent implements OnInit {
   displayConstution(e:any){
     if(e.target.checked){
       this.showConstution = true;
+      this.suveyForm.controls['constituency'].addValidators(Validators.required);
+      this.suveyForm.controls['constituency'].updateValueAndValidity(); 
+      
     }else{
       this.showConstution = false;
+      this.suveyForm.controls['constituency'].removeValidators(Validators.required);
+      this.suveyForm.controls['constituency'].updateValueAndValidity(); 
     }
   }
   displayDistMandal(eve:any){
     if(eve.target.checked){
      this.showDistAndMandals = true;
+     this.suveyForm.controls['mandal'].addValidators(Validators.required);
+      this.suveyForm.controls['mandal'].updateValueAndValidity(); 
     }else{
       this.showDistAndMandals = false;
+      this.suveyForm.controls['mandal'].removeValidators(Validators.required);
+      this.suveyForm.controls['mandal'].updateValueAndValidity(); 
     }
   }
 
   madalChange(eve:any){
-    if(eve.target.value > 0){
+    if(eve.target.value != "0"){
       this.selectedMandal = eve.target.value;
+      this.suveyForm.controls['mandal'].patchValue(eve.target.value);
     }else{
+      this.suveyForm.controls['mandal'].patchValue('');
       this.selectedMandal = "";
     }
   }
