@@ -18,8 +18,8 @@
                         </div>
                         <div class="col-md-10">
                             <select *ngIf="questionsList.length>0" class="form-select form-select-sm"  aria-label="Default select example" formControlName = "question" (change)="questionChange($event)">
-                                <option selected>Please Select Question</option>
-                                <option id="{{question.id}}" *ngFor="let question of questionsList;">{{question.questionValue}}</option>
+                                <option value="" selected>Please Select Question</option>
+                                <option id="{{question.id}}"  value="{{question.id}}" *ngFor="let question of questionsList;">{{question.questionValue}}</option>
                             </select>
                         </div>
                     </div>
@@ -42,8 +42,8 @@
                             <label class="control-label">State :</label>
                         </div>
                         <div class="col-md-10">
-                            <select class="form-select form-select-sm" aria-label="Default select example" (change)="stateChange($event)">
-                                <option value="0" selected>Please Select State</option>
+                            <select class="form-select form-select-sm" aria-label="Default select example" (change)="stateChange($event)" formControlName = "state">
+                                <option value="" selected>Please Select State</option>
                                 <option *ngFor="let st of stateList" value="{{st.stateNo}}">{{st.stateValue}}</option>
                               </select>
                         </div>
@@ -53,8 +53,8 @@
                             <label class="control-label">Parlament :</label>
                         </div>
                         <div class="col-md-10">
-                            <select class="form-select form-select-sm" aria-label="Default select example" (change)="parlimentChange($event)">
-                                <option selected>Please Select Parlamemnt</option>
+                            <select class="form-select form-select-sm" aria-label="Default select example" (change)="parlimentChange($event)" formControlName = "parliment">
+                                <option value="" selected>Please Select Parlamemnt</option>
                                 <option *ngFor="let parliment of parlimentList" value="{{parliment.parlimentNo}}">{{parliment.parlimentValue}}</option>
                               </select>
                         </div>
@@ -65,8 +65,8 @@
                             <label class="control-label">Constituency :</label>
                         </div>
                         <div class="col-md-10">
-                            <select class="form-select form-select-sm" aria-label="Default select example" (change)="constutionsChange($event)">
-                                <option selected>Please Select Constituency</option>
+                            <select class="form-select form-select-sm" aria-label="Default select example" (change)="constutionsChange($event)"  formControlName = "constituency">
+                                <option value="" selected>Please Select Constituency</option>
                                 <option *ngFor="let const of constutions" value="{{const.constutionNo}}">{{const.constutionValue}}</option>
                               </select>
                         </div>
@@ -86,9 +86,9 @@
                             <label class="control-label">Mandal :</label>
                         </div>
                         <div class="col-md-10">
-                            <select class="form-select form-select-sm" aria-label="Default select example">
-                                <option selected>Select Mandal</option>
-                                <option *ngFor="let mand of mandals">{{mand.value}}</option>
+                            <select class="form-select form-select-sm" aria-label="Default select example"  formControlName = "mandal">
+                                <option value="" selected>Select Mandal</option>
+                                <option value="{{mand.id}}" *ngFor="let mand of mandals">{{mand.value}}</option>
                               </select>
                         </div>
                     </div>
@@ -98,7 +98,7 @@
                             <label class="control-label">Date :</label>
                         </div>
                         <div class="col-md-10">
-                            <input type="date" class="form-control form-control-sm"/>
+                            <input type="date" class="form-control form-control-sm"  formControlName = "date"/>
                         </div>
                     </div>
 

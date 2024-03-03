@@ -161,11 +161,11 @@
   <div class="col-md-3"></div>
     <div class="col-md-8">
       <ol id="menu" *ngIf="showList && selectedState != '0'">
-        <li>State : <span class="fw400">{{findVal(selectedState,'state')}}</span></li>
-        <li>Parlament : <span class="fw400">{{findVal(selectedParliment,'parliment')}}</span></li>
-        <li>Constituency : <span class="fw400">{{findVal(selectedConstution,'Constituency')}}</span></li>
-        <li>District :<span class="fw400">{{selectedDist?.districtValue}}</span></li>
-        <li>Mandal : <span class="fw400">{{findVal(selectedMandal,'mandal')}}</span></li>
+        <li *ngIf="selectedState">State : <span class="fw400">{{findVal(selectedState,'state')}}</span></li>
+        <li  *ngIf="selectedParliment">Parlament : <span class="fw400">{{findVal(selectedParliment,'parliment')}}</span></li>
+        <li  *ngIf="selectedConstution">Constituency : <span class="fw400">{{findVal(selectedConstution,'Constituency')}}</span></li>
+        <li *ngIf="selectedDist?.districtValue">District :<span class="fw400">{{selectedDist?.districtValue}}</span></li>
+        <li *ngIf="selectedMandal">Mandal : <span class="fw400">{{findVal(selectedMandal,'mandal')}}</span></li>
       </ol> 
     </div>
 </div>

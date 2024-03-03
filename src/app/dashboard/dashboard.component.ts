@@ -110,14 +110,26 @@ export class DashboardComponent implements OnInit {
       }
   
       if(this.currentQIndex > 0){
-        let data = this.questionsList.find((x: { id: any; }) => x.id == this.currentQIndex);
-        let obj = this.arr.find((x: { QId: any; }) => x.QId == this.currentQIndex);
-        if(obj && data){
-          this.createChartColumn(data.data,obj.value,data.colors);
-        }
-      }else{
-        //this.DisplayErrors.push("Please Select Question");
-        //alert("Please Select Question");
+        this.sharedService.getChaerData(payLoad).subscribe((res) => {
+          let dataValues: any=[];
+          if(res.success){
+            let questionInfo = this.questionsList.find((x: { id: any; }) => x.id == this.currentQIndex);
+            for(let i = 1; i <= questionInfo.data.length;i++){
+                Object.entries(res.message).forEach(([key, value]) => {
+                  let indx = Number(key)//+1;
+                  if(indx === i && indx > 0){
+                    dataValues[indx-1] =Number(value);
+                  }
+                });
+            }
+            if(questionInfo && dataValues.length>0){
+              this.createChartColumn(questionInfo.data,dataValues,questionInfo.colors);
+            }
+          }else{
+            console.log(res);
+            alert("no data Found");
+          }
+        });
       }
     } 
   }
@@ -131,11 +143,10 @@ export class DashboardComponent implements OnInit {
     for (let i = 0; i < seriesdata.length; i++) {
       data.push({
         name: seriesdata[i],
-        data: [values[i]],
+        data:  values[i] ? [values[i]] : '',
         color: colors[i],
       });
     }
-    //let xAxisLabels = seriesdata.toString().replaceAll(',','&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;');
 
     this.chart = Highcharts.chart(
       'chart-column' as any,

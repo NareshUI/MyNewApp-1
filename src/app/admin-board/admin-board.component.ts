@@ -35,9 +35,14 @@ export class AdminBoardComponent implements OnInit {
   ngOnInit(): void {
     if(sessionStorage.getItem('logged') === "true"){
       this.suveyForm =  new FormGroup({
-        'question':new FormControl(null,[Validators.required]),
-        'answer':new FormControl(null,[Validators.required]),
-        'value':new FormControl(null,[Validators.required])
+        'question':new FormControl('',[Validators.required]),
+        'answer':new FormControl('',[Validators.required]),
+        'state':new FormControl('',[Validators.required]),
+        'parliment':new FormControl('',[Validators.required]),
+        'constituency':new FormControl(''),
+        'mandal':new FormControl(''),
+        'date':new FormControl(null),
+        'value':new FormControl(null,[Validators.required]),
       });
       this.loadData();
     }else{
@@ -53,10 +58,17 @@ export class AdminBoardComponent implements OnInit {
   }
 
   parlimentChange(event:any){
-    this.constutions = [];
-    this.mandals = [];
-    this.selectedParliment = event.target.value;
-    this.constutions = this.Configuration.constutions.filter((c:any) => c.parlimentNo === this.selectedParliment && c.state === this.selectedState);
+    if(event.target.value !=- ""){
+      this.constutions = [];
+      this.mandals = [];
+      this.selectedParliment = event.target.value;
+      this.suveyForm.controls['constituency'].addValidators(Validators.required);
+      this.suveyForm.controls['constituency'].updateValueAndValidity(); 
+      this.constutions = this.Configuration.constutions.filter((c:any) => c.parlimentNo === this.selectedParliment && c.state === this.selectedState);
+    }else{
+      this.suveyForm.controls['constituency'].removeValidators(Validators.required);
+      this.suveyForm.controls['constituency'].updateValueAndValidity(); 
+    }
   }
 
   stateChange(event:any){
@@ -109,23 +121,25 @@ export class AdminBoardComponent implements OnInit {
 
   saveData(modalId:any){
     if(this.suveyForm.valid){
-      let qIndx:number;
       let ansIndx :number = this.answersList.indexOf(this.suveyForm.controls['answer'].value);
-      let questionObj = this.questionsList.find((x: { questionValue: any; }) => x.questionValue == this.suveyForm.controls['question'].value);
-      if(questionObj){
-        qIndx = questionObj.id;
-      }
-      let obj = localStorage.getItem('chartData');
-      if(obj){
-        let dataArray = JSON.parse(obj);
-        dataArray.forEach((element: any) => {
-          if(element.QId == qIndx){
-            element.value[ansIndx] = this.suveyForm.controls['value'].value;
-          }
-        });
-        localStorage.setItem('chartData',JSON.stringify(dataArray));
-      }
-      this.viewDetails(modalId,'Data saved succesfully');
+      let payload = {
+        "questionNo":Number(this.suveyForm.controls['question'].value),
+        "data":ansIndx+1,
+        "state":this.suveyForm.controls['state'].value,
+        "parlimentNo":this.suveyForm.controls['parliment'].value,
+        "constutionNo":this.suveyForm.controls['constituency'].value,
+        "mandals":this.suveyForm.controls['mandal'].value,
+        "fromDate":this.suveyForm.controls['date'].value,
+        "value":this.suveyForm.controls['value'].value
+      };
+      this.sharedService.savePollData(payload).subscribe(res =>{
+        if(res){
+          this.selectedDist ={};
+          this.viewDetails(modalId,'Data saved succesfully');
+        }else{
+          this.viewDetails(modalId,'oops...!,Data not saved');
+        }
+      })
     }
   }
 
