@@ -867,7 +867,7 @@
         "parlimentNo":"1",
         "constutionNo" :"1",
         "constutionValue": "Sirpur",
-        "constutionHindi": "ఇచ్ఛాపురం",
+        "constutionHindi": "సిర్పూర్",
         "isActive": "Y",
         "districtCd": "S0101"
       },
@@ -877,7 +877,7 @@
           "parlimentNo":"2",
           "constutionNo" :"1",
           "constutionValue": "Chennur (SC)",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "చెన్నూర్ (SC)",
           "isActive": "Y"
         },
         {
@@ -886,7 +886,7 @@
           "parlimentNo":"2",
           "constutionNo" :"2",
           "constutionValue": "Bellampalli (SC)",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "బెల్లంపల్లి (SC)",
           "isActive": "Y"
         },
         {
@@ -895,7 +895,7 @@
           "parlimentNo":"2",
           "constutionNo" :"3",
           "constutionValue": "Mancherial",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "మంచిరియల్",
           "isActive": "Y"
         },
         {
@@ -903,8 +903,8 @@
           "districtNo": "1",
           "parlimentNo":"1",
           "constutionNo" :"2",
-          "constutionValue": "Asifabad (ST) ",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionValue": "Asifabad (ST)",
+          "constutionHindi": "ఆసిఫాబాద్ (ఎస్టీ)",
           "isActive": "Y"
         },
         {
@@ -913,7 +913,7 @@
           "parlimentNo":"1",
           "constutionNo" :"3",
           "constutionValue": "Khanapur (ST)",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "ఖానాపూర్ (ఎస్టీ)",
           "isActive": "Y"
         },
         {
@@ -922,7 +922,7 @@
           "parlimentNo":"1",
           "constutionNo" :"4",
           "constutionValue": "Adilabad",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "ఆదిలాబాద్",
           "isActive": "Y"
         },
         {
@@ -931,7 +931,7 @@
           "parlimentNo":"1",
           "constutionNo" :"5",
           "constutionValue": "Boath (ST)",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "బోత్ (ST)",
           "isActive": "Y"
         },
         {
@@ -940,7 +940,7 @@
           "parlimentNo":"1",
           "constutionNo" :"6",
           "constutionValue": "Nirmal",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "నిర్మల్",
           "isActive": "Y"
         },
         {
@@ -949,7 +949,7 @@
           "parlimentNo":"1",
           "constutionNo" :"7",
           "constutionValue": "Mudhole",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "ముధోల్",
           "isActive": "Y"
         },
         {
@@ -2352,7 +2352,7 @@
           "parlimentNo":"5",
           "constutionNo" :"4",
           "constutionValue": "Pendurthi",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "పెందుర్తి",
           "isActive": "Y",
           "mandals": [
             {"id":"1","value" :"Pedagantyada (excluding areas included in Gajuwaka(GVMC))"},
@@ -2366,7 +2366,7 @@
           "parlimentNo":"5",
           "constutionNo" :"5",
           "constutionValue": "Elamanchili",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "ఎలమంచిలి",
           "isActive": "Y",
           "mandals": [
             {"id":"1","value" :"Rambilli"},
@@ -2380,7 +2380,7 @@
           "parlimentNo":"5",
           "constutionNo" :"6",
           "constutionValue": "Payakaraopet",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "పాయకరావుపేట",
           "isActive": "Y",
           "mandals": [
             {"id":"1","value" :"Kotauratla"},
@@ -2394,7 +2394,7 @@
           "parlimentNo":"5",
           "constutionNo" :"7",
           "constutionValue": "Narsipatnam",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "నర్సీపట్నం",
           "isActive": "Y",
           "mandals": [
             {"id":"1","value" :"Nathavaram"},
@@ -2408,7 +2408,7 @@
           "parlimentNo":"6",
           "constutionNo" :"1",
           "constutionValue": "Tuni",
-          "constutionHindi": "ఇచ్ఛాపురం",
+          "constutionHindi": "తుని",
           "isActive": "Y",
           "mandals": [
             {"id":"1","value" :"Thondangi"},
