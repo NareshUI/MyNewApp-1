@@ -121,6 +121,7 @@ export class AdminBoardComponent implements OnInit {
 
   saveData(modalId:any){
     if(this.suveyForm.valid){
+      this.showLoader= true;
       let ansIndx :number = this.answersList.indexOf(this.suveyForm.controls['answer'].value);
       let payload = {
         "questionNo":Number(this.suveyForm.controls['question'].value),
@@ -133,12 +134,13 @@ export class AdminBoardComponent implements OnInit {
         "value":this.suveyForm.controls['value'].value
       };
       this.sharedService.savePollData(payload).subscribe(res =>{
-        if(res){
+        if(res.success){
           this.selectedDist ={};
           this.viewDetails(modalId,'Data saved succesfully');
         }else{
           this.viewDetails(modalId,'oops...!,Data not saved');
         }
+        this.showLoader= false;
       })
     }
   }

@@ -105,6 +105,7 @@ export class DashboardComponent implements OnInit {
       }
   
       if(this.currentQIndex > 0){
+        this.showLoader= true;
         this.sharedService.getChaerData(payLoad).subscribe((res) => {
           let dataValues: any=[];
           if(res.success){
@@ -142,7 +143,7 @@ export class DashboardComponent implements OnInit {
         color: colors[i],
       });
     }
-
+    this.showLoader= false;
     this.chart = Highcharts.chart(
       'chart-column' as any,
       {
