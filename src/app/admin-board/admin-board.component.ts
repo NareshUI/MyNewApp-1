@@ -85,6 +85,7 @@ export class AdminBoardComponent implements OnInit {
         this.districtList = this.Configuration.districtList;
         this.parlimentList = this.Configuration.parlimentList;
         this.constutions = this.Configuration.constutions;
+        this.showLoader= false;
       }else{
          let url = this.sharedService.url;
         this.httpService.get(url).subscribe((resp :any) =>{
@@ -97,7 +98,10 @@ export class AdminBoardComponent implements OnInit {
             this.constutions = this.Configuration.constutions; 
             this.showLoader= false;
           }
-        })
+        },(error) =>{
+          console.log(error);
+          this.showLoader= false;
+        });
       }
  }
 
@@ -141,7 +145,10 @@ export class AdminBoardComponent implements OnInit {
           this.viewDetails(modalId,'oops...!,Data not saved');
         }
         this.showLoader= false;
-      })
+      },(error) =>{
+        console.log(error);
+        this.showLoader= false;
+      });
     }
   }
 

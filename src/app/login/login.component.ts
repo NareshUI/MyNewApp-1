@@ -30,18 +30,23 @@ export class LoginComponent implements OnInit {
         if(res){
           this.sharedService.infoData = res;
           if(res.hasOwnProperty('loginInfo')){
-            if(this.loginForm.controls['userName'].value == res.loginInfo.userId || this.loginForm.controls['password'].value == res.loginInfo.password){
-              sessionStorage.setItem('logged',"true");
-              this.showToast= true;
-              setTimeout(() => {
-                this.router.navigate(['/Dashboard']);
-              },1200);
+            let logObj = res.loginInfo.length > 0 ? res.loginInfo.find((x: { userId: any; }) => x.userId == this.loginForm.controls['userName'].value) : undefined;
+            if(logObj){
+              if(this.loginForm.controls['userName'].value == logObj.userId && this.loginForm.controls['password'].value == logObj.password){
+                sessionStorage.setItem('logged',"true");
+                this.showToast= true;
+                setTimeout(() => {
+                  this.router.navigate(['/Dashboard']);
+                },1200);
+              }else{
+                sessionStorage.removeItem('logged');
+                this.showDanger = true;
+              }
             }else{
               sessionStorage.removeItem('logged');
-              this.showDanger = true;
+                this.showDanger = true;
             }
           }
-         
         }
       });
     }

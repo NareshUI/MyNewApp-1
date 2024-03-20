@@ -1,8 +1,18 @@
 {
-    "loginInfo":{
-      "userId":"Admin",
-      "password":12345
-    },
+    "loginInfo":[
+      {
+        "userId":"Admin",
+        "password":12345
+      },
+      {
+        "userId":"Admin1",
+        "password":54321
+      },
+      {
+        "userId":"Admin2",
+        "password":56789
+      }
+    ],
     "questionsList":[
         {
             "id":1,

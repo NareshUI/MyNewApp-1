@@ -11,6 +11,7 @@ import { HttpClientModule } from  '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AdminBoardComponent } from './admin-board/admin-board.component';
 import { LoginComponent } from './login/login.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import { LoginComponent } from './login/login.component';
     HttpClientModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [{provide:LocationStrategy, useClass:HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

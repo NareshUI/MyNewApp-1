@@ -98,8 +98,8 @@ export class DashboardComponent implements OnInit {
         "questionNo":Number(this.suveyForm.controls['question'].value),
         "state":this.suveyForm.controls['state'].value,
         "parlimentNo":this.suveyForm.controls['parliment'].value,
-        "constutionNo":this.suveyForm.controls['constituency'].value,
-        "mandals":this.suveyForm.controls['mandal'].value,
+        "constutionNo":this.showConstution ? this.suveyForm.controls['constituency'].value : '',
+        "mandals":this.showDistAndMandals ? this.suveyForm.controls['mandal'].value : '',
         "fromDate":this.suveyForm.controls['fromdate'].value,
         "toDate":this.suveyForm.controls['toDate'].value
       }
@@ -123,8 +123,15 @@ export class DashboardComponent implements OnInit {
             }
           }else{
             console.log(res);
+            this.showLoader= false;
+            if(this.chart){
+              this.chart.destroy();
+            }
             alert("no data Found");
           }
+        },(error) =>{
+          console.log(error);
+          this.showLoader= false;
         });
       }
     } 
@@ -231,7 +238,10 @@ export class DashboardComponent implements OnInit {
           this.districtList = this.Configuration.districtList; 
           this.showLoader= false;
         }
-      })
+      },(error) =>{
+        console.log(error);
+        this.showLoader= false;
+      });
     }
     this.suveyForm.controls['toDate'].patchValue(this.today);
    }
