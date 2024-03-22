@@ -83,7 +83,7 @@ export class DashboardComponent implements OnInit {
   }
 
   questionChange(eve:any){
-    if(this.chart){
+    if(this.chart && Object.keys(this.chart).length > 0){
       this.chart.destroy();
     }
     this.currentQIndex = eve.target.selectedIndex;
@@ -94,16 +94,38 @@ export class DashboardComponent implements OnInit {
 
   searchData(){
     if(this.suveyForm.valid){
-      let payLoad = {
-        "questionNo":Number(this.suveyForm.controls['question'].value),
-        "state":this.suveyForm.controls['state'].value,
-        "parlimentNo":this.suveyForm.controls['parliment'].value,
-        "constutionNo":this.showConstution ? this.suveyForm.controls['constituency'].value : '',
-        "mandals":this.showDistAndMandals ? this.suveyForm.controls['mandal'].value : '',
-        "fromDate":this.suveyForm.controls['fromdate'].value,
-        "toDate":this.suveyForm.controls['toDate'].value
+      let payLoad;
+      if(this.showConstution && this.showDistAndMandals){
+        payLoad = {
+          "questionNo":Number(this.suveyForm.controls['question'].value),
+          "state":this.suveyForm.controls['state'].value,
+          "parlimentNo":this.suveyForm.controls['parliment'].value,
+          "constutionNo":this.suveyForm.controls['constituency'].value,
+          "mandals":this.suveyForm.controls['mandal'].value,
+          "fromDate":this.suveyForm.controls['fromdate'].value,
+          "toDate":this.suveyForm.controls['toDate'].value
+        }
       }
-  
+      else if(this.showConstution && !this.showDistAndMandals){
+        payLoad = {
+          "questionNo":Number(this.suveyForm.controls['question'].value),
+          "state":this.suveyForm.controls['state'].value,
+          "parlimentNo":this.suveyForm.controls['parliment'].value,
+          "constutionNo": this.suveyForm.controls['constituency'].value,
+          "fromDate":this.suveyForm.controls['fromdate'].value,
+          "toDate":this.suveyForm.controls['toDate'].value
+        }
+      }else if(!this.showConstution && !this.showDistAndMandals){
+        payLoad = {
+          "questionNo":Number(this.suveyForm.controls['question'].value),
+          "state":this.suveyForm.controls['state'].value,
+          "parlimentNo":this.suveyForm.controls['parliment'].value, 
+          "fromDate":this.suveyForm.controls['fromdate'].value,
+          "toDate":this.suveyForm.controls['toDate'].value
+        }
+      }else{
+        alert("Please select proper data");
+      }
       if(this.currentQIndex > 0){
         this.showLoader= true;
         this.sharedService.getChaerData(payLoad).subscribe((res) => {
@@ -124,9 +146,10 @@ export class DashboardComponent implements OnInit {
           }else{
             console.log(res);
             this.showLoader= false;
-            if(this.chart){
+            if(this.chart && Object.keys(this.chart).length > 0){
               this.chart.destroy();
             }
+            this.showList = false;
             alert("no data Found");
           }
         },(error) =>{
@@ -140,9 +163,6 @@ export class DashboardComponent implements OnInit {
   private createChartColumn(seriesdata:any,values:any,colors:any): void {
     this.showList = true;
     const data: any[] = [];
-    // let colors = ['#00FF00','#FF00BF','#FF001B','#FG00C0','#FD0090'];
-    // let values = [80,70,65,73,69];
-
     for (let i = 0; i < seriesdata.length; i++) {
       data.push({
         name: seriesdata[i],
@@ -201,7 +221,7 @@ export class DashboardComponent implements OnInit {
   }
 
   resetForm(){
-    if(this.chart){
+    if(this.chart && Object.keys(this.chart).length > 0){
       this.chart.destroy();
     }
     this.currentQIndex=0;
