@@ -2,7 +2,7 @@
 <div class="spinner-border" role="status" *ngIf="showLoader">
   <span class="sr-only"></span>
 </div>
-<div class="row custom-container no-print">
+<div class="row custom-container">
   <form [formGroup]="suveyForm">
     <div class="col-md-12">
       <div class="row">
@@ -137,7 +137,7 @@
           </div>
         </div>
         <div class="col-md-4 row">
-        <div class="btnGrp">
+        <div class="btnGrp no-print">
             <button type="button" class="btn btn-primary btn-sm" [ngClass]="{'disabled':!suveyForm.valid}" (click)="searchData()">Search </button>
             <button type="button" class="btn btn-success btn-sm" *ngIf="showList" [ngClass]="{'disabled':!suveyForm.valid}" (click)="printPage()">Print </button>
             <button type="button" class="btn btn-dark btn-sm" (click)="resetForm()">Clear </button>

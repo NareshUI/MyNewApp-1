@@ -8,11 +8,13 @@ import { Component,OnInit } from '@angular/core';
 export class AppComponent {
   title = 'MyNewApp';
   arr:any = [];
+  url: any;
     constructor(){
     }
 
   
   ngOnInit(): void {
+    this.url = location.href;
     // let obj = localStorage.getItem('chartData');
     // if(obj){
 
